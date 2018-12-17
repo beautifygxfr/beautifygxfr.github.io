@@ -5,14 +5,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="修改非Svip也可以贴收藏表情, Beautify">
-    <meta name="description" content="以Dex编辑器打开dex4
-常量搜索 贴收藏表情
-打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector
-打开方法列表，最后一个 onTouchEvent
-
-找到1253行
-修">
+    <meta name="keywords" content="关于闪照, Beautify">
+    <meta name="description" content=".防闪照消失，修改闪照时间，且可以截屏
+//用dex编辑器打开classes2.dex
+//搜索常量”flashpichelper”
+//打开com/tencent/mobileqq/app/FlashPicHelper;
+//打开方法列表">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>修改非Svip也可以贴收藏表情 | Beautify</title>
+    <title>关于闪照 | Beautify</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -115,7 +113,7 @@
         <div class="logo-name">Beautify</div>
         <div class="logo-desc">
             
-            为梦想奋斗！
+            每天都要元气满满！！
             
         </div>
     </div>
@@ -206,13 +204,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd2fe5aj30jg0ay3ys.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        修改非Svip也可以贴收藏表情
+                        关于闪照
                     </div>
                 </div>
             </div>
@@ -326,8 +324,8 @@
                 <span class="post-cate">
                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                     
-                    <a href="/categories/Dex4/" class="post-category" target="_blank">
-                        Dex4
+                    <a href="/categories/Dex2/" class="post-category" target="_blank">
+                        Dex2
                     </a>
                     
                 </span>
@@ -341,136 +339,32 @@
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>以Dex编辑器打开dex4</p>
-<p>常量搜索 贴收藏表情</p>
-<p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p>
-<p>打开方法列表，最后一个 onTouchEvent</p>
-<p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p>
-<p>找到1253行</p>
-<p>修改 nez 为lez</p>
-<p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p>
-<p>保存</p>
+                <p>.防闪照消失，修改闪照时间，且可以截屏</p>
+<p>//用dex编辑器打开classes2.dex</p>
+<p>//搜索常量”flashpichelper”</p>
+<p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p>
+<p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p>
+<p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p>
+<p>//回编译</p>
+<p>//用dex编辑器打开classes4.dex</p>
+<p>//搜索常量”HotChatFlashPicActivity”</p>
+<p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p>
+<p>//继续搜索常量”doOnCreate”</p>
+<p>//打开(Landroid/os/Bundle;)Z</p>
+<p>//搜索”SDK_INT”</p>
+<p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p>
+<p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p>
+<p>//回编译，签名，安装</p>
+<h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p>
+<ol>
+<li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li>
+<li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li>
+</ol>
+<p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>
 
             </div>
             <hr>
 
-            
-            <style>
-    #reward {
-        margin: 40px 0;
-        text-align: center;
-    }
-
-    #reward .reward-link {
-        font-size: 1.88rem;
-    }
-
-    #reward .btn-floating:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    #rewardModal {
-        width: 320px;
-        height: 350px;
-    }
-
-    #rewardModal .reward-title {
-        margin: 15px auto;
-        padding-bottom: 5px;
-    }
-
-    #rewardModal .modal-content {
-        padding: 10px;
-    }
-
-    #rewardModal .close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 1.3rem;
-        line-height: 20px;
-        cursor: pointer;
-    }
-
-    #rewardModal .reward-tabs {
-        margin: 0 auto;
-        width: 210px;
-    }
-
-    .reward-tabs .tabs {
-        height: 38px;
-        margin: 10px auto;
-        padding-left: 0;
-    }
-
-    .reward-tabs .tabs .tab {
-        height: 38px;
-        line-height: 38px;
-    }
-
-    .reward-tabs .tab a {
-        color: #fff;
-        background-color: #ccc;
-    }
-
-    .reward-tabs .tab a:hover {
-        color: #fff;
-    }
-
-    .reward-tabs .wechat-tab .active {
-        color: #fff;
-        background-color: #22AB38;
-    }
-
-    .reward-tabs .alipay-tab .active {
-        color: #fff;
-        background-color: #019FE8;
-    }
-
-    .reward-tabs .reward-img {
-        width: 210px;
-        height: 210px;
-    }
-</style>
-
-<div id="reward">
-    <a class="reward-link btn-floating btn-large waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close"><i class="fa fa-close"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs">
-                        <li class="tab wechat-tab waves-effect waves-light"><a class="active" href="#wechat">微信</a></li>
-                        <li class="tab alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                    </ul>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    $(function () {
-        $('#reward .reward-link').on('click', function () {
-            $('#rewardModal').openModal();
-        });
-
-        $('#rewardModal .close').on('click', function () {
-            $('#rewardModal').closeModal();
-        });
-    });
-</script>
             
 
 
@@ -479,7 +373,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="http://yoursite.com" class="b-link-green">Beautify</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/04/1 (6)/" class="b-link-green">修改非Svip也可以贴收藏表情</a>
+                    <a href="/2018/12/04/18/" class="b-link-green">关于闪照</a>
                 </p>
             </div>
         </div>
@@ -492,28 +386,6 @@
     
 
     
-    <div class="livere-card card" data-aos="fade-up">
-    <!-- 来必力City版安装代码 -->
-    <div id="lv-container" class="card-content" data-id="city" data-uid="MTAyMC80MTY3OC8xODIyNA">
-        <script type="text/javascript">
-            (function (d, s) {
-                let j, e = d.getElementsByTagName(s)[0];
-                if (typeof LivereTower === 'function') {
-                    return;
-                }
-
-                j = d.createElement(s);
-                j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-                j.async = true;
-
-                e.parentNode.insertBefore(j, e);
-            })(document, 'script');
-        </script>
-        <noscript>为正常使用来必力评论功能请激活JavaScript。</noscript>
-    </div>
-    <!-- City版安装代码已完成 -->
-</div>
-    
 
     
 
@@ -525,31 +397,30 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">上一篇</div>
             <div class="card">
-                <a href="/2018/12/04/1 (10)/">
+                <a href="/2018/12/04/2/">
                     <div class="card-image">
                         
-                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd30j48j30jg0ayq3k.jpg" class="responsive-img" alt="抽拉式底栏教程">
+                        <img src="https://www.hdwallpapers.net/previews/dark-silhouette-1160.jpg" class="responsive-img" alt="去除Svip标识">
                         
-                        <span class="card-title">抽拉式底栏教程</span>
+                        <span class="card-title">去除Svip标识</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">以下代码 自行对比源文件cbg修改
-红色字体需删
-&lt;?xml version=”1.0” encoding=”utf-8”?&gt;
-&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:and</div>
+                    <div class="summary">780
+7F02167E
+以Dex编辑器打开Dex6搜索7F02167E
+首先打开第一个
+Lcom/tencent/mobileqq/activity/aio/rebuild/FriendChatPie;
+继续搜索 7F02167E
+打开方</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/XML/" class="post-category" target="_blank">
-                                    XML
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            Likefr
                             
                         </span>
                     </div>
@@ -562,39 +433,37 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/1 (14)/">
+                <a href="/2018/12/04/8/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/00676n0Tgy1fy7qd3k4laj30jg0aygle.jpg" class="responsive-img" alt="去消息界面头像">
+                        <img src="https://ws2.sinaimg.cn/large/00676n0Tgy1fy7qd3vbgej30jg0axmxz.jpg" class="responsive-img" alt="去高能舞试">
                         
-                        <span class="card-title">去消息界面头像</span>
+                        <span class="card-title">去高能舞试</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">1.去好友头像，vdk.xml(763版本)
-定位：    &lt;com.tencent.widget.RecentDynamicAvatarView
-加入代码：
-android:visibility=”gone”
-android:lay</div>
+                    <div class="summary">以dex编辑器打开classes6.dex
+点击右上角 搜索常量 RecentOptPopBar
+搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry
+进入方法列表 e
+删除41 42行 保存
+
+</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            Likefr
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Dex6/" class="post-category" target="_blank">
+                                    Dex6
+                                </a>
+                            
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/教程/" target="_blank">
-                        <span class="chip bg-color">教程</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -665,7 +534,7 @@ android:lay</div>
       <script>
     var now = new Date(); 
     function createtime() { 
-        var grt= new Date("12/15/2018 00:00:00");//在此处修改你的建站时间
+        var grt= new Date("12/16/2018 00:00:00");//在此处修改你的建站时间
         now.setTime(now.getTime()+250); 
         days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
         hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
