@@ -6,7 +6,8 @@
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
     <meta name="keywords" content="去除聊天底栏动画, Beautify">
-    <meta name="description" content="Dex6中找到com/tencent/mobileqq/activity/aio/panel/PanelIconLinearLayout这个类名点击进入，选择方法列表搜索 isRunning找到方法a搜索 return-void删除下面这六">
+    <meta name="description" content="Dex6中找到com/tencent/mobileqq/activity/aio/panel/PanelIconLinearLayout这个类名点击进入，选择方法列表搜索 isRunning
+找到方法a搜索 return-void删除下面这">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -335,15 +336,16 @@
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Dex6中找到<br>com/tencent/mobileqq/activity/aio/panel/<br>PanelIconLinearLayout这个类名<br>点击进入，选择方法列表<br>搜索 isRunning<br>找到方法a<br>搜索 return-void<br>删除下面这六行（从 label标签一直到删if语句开头之前)</p>
+                <p>Dex6中找到<br>com/tencent/mobileqq/activity/aio/panel/PanelIconLinearLayout这个类名<br>点击进入，选择方法列表<br>搜索 isRunning</p>
+<p>找到方法a<br>搜索 return-void<br>删除下面这六行（从 label标签一直到删if语句开头之前)</p>
 <ol>
 <li>label_76:</li>
 <li>move-obiect v0 v8</li>
 <li>check-cast v0 Lcom/tencent/mobile/troop/widget/ RedDotlmageView</li>
 <li>invoke-virtual { v0} Lcom/tencent/mobileqq/troop/ widget/ReddotlmageViewgetDrawable()Landroid/graphics/drawable/Drawable；</li>
 <li>move-result-object v1</li>
+<li>instance-of v2 v1 Lcom/tencent/mobileqq/activity/aio/panel/PanellconLinearLayout$AiolconAnimationDrawabale</li>
 </ol>
-<p>6.instance-of v2 v1 Lcom/tencent/mobileqq/activity/aio/panel/PanellconLinearLayout$AiolconAnimationDrawabale</p>
 <p>再搜索if-nez v2 :label<br>把 最后面的数字 改成21<br>保存退出即可</p>
 <h3 id="原作者-来自cestu"><a href="#原作者-来自cestu" class="headerlink" title="原作者@来自cestu"></a>原作者@来自cestu</h3>
             </div>
