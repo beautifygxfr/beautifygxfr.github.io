@@ -671,19 +671,21 @@ Lcom/tencent/mobileqq/troop/utils/AIOAnimationControlManager;
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/21/">
+                <a href="/2018/12/04/20/">
                     <div class="card-image">
                         
-                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd30j48j30jg0ayq3k.jpg" class="responsive-img" alt="抽拉式底栏教程">
+                        <img src="https://ws4.sinaimg.cn/large/00676n0Tgy1fy7qd2vncij30jg0ay3zq.jpg" class="responsive-img" alt="去除闪照倒计时">
                         
-                        <span class="card-title">抽拉式底栏教程</span>
+                        <span class="card-title">去除闪照倒计时</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">以下代码 自行对比源文件cbg修改
-红色字体需删
-&lt;?xml version=”1.0” encoding=”utf-8”?&gt;
-&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:and</div>
+                    <div class="summary">打开mwj.xml
+搜索CountDownProgressBar
+保留ID其他内容直接删掉，写如下代码进去即可
+android:visibility=”gone”
+android:layout_width=”0dp”
+android:lay</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
