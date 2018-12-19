@@ -5,12 +5,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="关于闪照, Beautify">
-    <meta name="description" content=".防闪照消失，修改闪照时间，且可以截屏
-//用dex编辑器打开classes2.dex
-//搜索常量”flashpichelper”
-//打开com/tencent/mobileqq/app/FlashPicHelper;
-//打开方法列表">
+    <meta name="keywords" content="防冻结, Beautify">
+    <meta name="description" content="
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>关于闪照 | Beautify</title>
+    <title>防冻结 | Beautify</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -191,7 +188,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '';
+        let pwd = '67e23991ff72d5adb78b448d04b66aa3645268b8167c0a4e84a5a2206dc4f58c';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -204,13 +201,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd2fe5aj30jg0ay3ys.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        关于闪照
+                        防冻结
                     </div>
                 </div>
             </div>
@@ -321,46 +318,16 @@
             
             <div class="post-info">
                 
-                <span class="post-cate">
-                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                    
-                    <a href="/categories/Dex2/" class="post-category" target="_blank">
-                        Dex2
-                    </a>
-                    
-                </span>
-                
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-12-04
+                    <i class="fa fa-clock-o fa-fw"></i>2018-12-01
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>.防闪照消失，修改闪照时间，且可以截屏</p>
-<p>//用dex编辑器打开classes2.dex</p>
-<p>//搜索常量”flashpichelper”</p>
-<p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p>
-<p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p>
-<p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p>
-<p>//回编译</p>
-<p>//用dex编辑器打开classes4.dex</p>
-<p>//搜索常量”HotChatFlashPicActivity”</p>
-<p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p>
-<p>//继续搜索常量”doOnCreate”</p>
-<p>//打开(Landroid/os/Bundle;)Z</p>
-<p>//搜索”SDK_INT”</p>
-<p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p>
-<p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p>
-<p>//回编译，签名，安装</p>
-<h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p>
-<ol>
-<li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li>
-<li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li>
-</ol>
-<p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>
+                <a id="more"></a>
 
             </div>
             <hr>
@@ -373,7 +340,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="http://yoursite.com" class="b-link-green">Beautify</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/04/18/" class="b-link-green">关于闪照</a>
+                    <a href="/2018/12/01/27/" class="b-link-green">防冻结</a>
                 </p>
             </div>
         </div>
@@ -656,31 +623,28 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">上一篇</div>
             <div class="card">
-                <a href="/2018/12/04/21/">
+                <a href="/2018/12/04/1/">
                     <div class="card-image">
                         
-                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd30j48j30jg0ayq3k.jpg" class="responsive-img" alt="抽拉式底栏教程">
+                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd2ain6j30jg0aydgx.jpg" class="responsive-img" alt="什么都没有">
                         
-                        <span class="card-title">抽拉式底栏教程</span>
+                        <span class="card-title">什么都没有</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">以下代码 自行对比源文件cbg修改
-红色字体需删
-&lt;?xml version=”1.0” encoding=”utf-8”?&gt;
-&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:and</div>
+                    <div class="summary">Quick StartCreate a new post1$ hexo new "My New Post"
+More info: Writing
+Run server1$ hexo server
+More info: Server
+Gene</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/XML/" class="post-category" target="_blank">
-                                    XML
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            Likefr
                             
                         </span>
                     </div>
@@ -691,26 +655,23 @@
         
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">下一篇</div>
+            <div class="article-badge right-badge text-color">本篇</div>
             <div class="card">
-                <a href="/2018/12/04/4/">
+                <a href="/2018/12/01/27/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/00676n0Tgy1fy7qd44h4fj30jg0ay74c.jpg" class="responsive-img" alt="去群聊炫彩昵称">
                         
-                        <span class="card-title">去群聊炫彩昵称</span>
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="防冻结">
+                        
+                        <span class="card-title">防冻结</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">以Dex++编辑器 打开classes2.dex
-搜索 ColorNickManager
-进入Lcom/tencent/mobileqq/vas/ColorNickManager
-打开这个类
-如下图删除
-然后右上角搜索 setTextCol</div>
+                    <div class="summary">
+</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-01
                             </span>
                         <span class="publish-author">
                             
@@ -720,6 +681,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>

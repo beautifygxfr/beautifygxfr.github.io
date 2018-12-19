@@ -5,12 +5,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="关于闪照, Beautify">
-    <meta name="description" content=".防闪照消失，修改闪照时间，且可以截屏
-//用dex编辑器打开classes2.dex
-//搜索常量”flashpichelper”
-//打开com/tencent/mobileqq/app/FlashPicHelper;
-//打开方法列表">
+    <meta name="keywords" content="修改输入框光标颜色, Beautify">
+    <meta name="description" content="首先在Rc找一个无用的xml (或者在Arsc新增一个xml)将里面内容全删 写上以下代码(需要删注释)
+12345678910111213&amp;lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&amp;gt;&amp;lt;sh">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>关于闪照 | Beautify</title>
+    <title>修改输入框光标颜色 | Beautify</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -204,13 +201,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd2fe5aj30jg0ay3ys.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('https://b-ssl.duitang.com/uploads/item/201408/31/20140831024847_UucmG.thumb.700_0.jpeg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        关于闪照
+                        修改输入框光标颜色
                     </div>
                 </div>
             </div>
@@ -319,48 +316,41 @@
     <div class="card">
         <div class="card-content article-info">
             
+            <div class="article-tag">
+                
+                <a href="/tags/教程/" target="_blank">
+                    <span class="chip bg-color">教程</span>
+                </a>
+                
+            </div>
+            
             <div class="post-info">
                 
                 <span class="post-cate">
                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                     
-                    <a href="/categories/Dex2/" class="post-category" target="_blank">
-                        Dex2
+                    <a href="/categories/XML/" class="post-category" target="_blank">
+                        XML
                     </a>
                     
                 </span>
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-12-04
+                    <i class="fa fa-clock-o fa-fw"></i>2018-12-19
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>.防闪照消失，修改闪照时间，且可以截屏</p>
-<p>//用dex编辑器打开classes2.dex</p>
-<p>//搜索常量”flashpichelper”</p>
-<p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p>
-<p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p>
-<p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p>
-<p>//回编译</p>
-<p>//用dex编辑器打开classes4.dex</p>
-<p>//搜索常量”HotChatFlashPicActivity”</p>
-<p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p>
-<p>//继续搜索常量”doOnCreate”</p>
-<p>//打开(Landroid/os/Bundle;)Z</p>
-<p>//搜索”SDK_INT”</p>
-<p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p>
-<p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p>
-<p>//回编译，签名，安装</p>
-<h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p>
-<ol>
-<li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li>
-<li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li>
-</ol>
-<p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>
+                <p>首先在Rc找一个无用的xml<br> (或者在Arsc新增一个xml)<br>将里面内容全删 写上以下代码<br>(需要删注释)</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">shape</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:shape</span>=<span class="string">"rectangle"</span>&gt;</span>小矩形</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">size</span> <span class="attr">android:width</span>=<span class="string">"2dp"</span> /&gt;</span>这个是圆角</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">corners</span> <span class="attr">android:radius</span>=<span class="string">"2dp"</span> /&gt;</span>宽度</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">solid</span> <span class="attr">android:color</span>=<span class="string">"#FF3EA57A"</span> /&gt;</span>颜色代码</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">shape</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>保存后 复制这个xml的Id</p>
+<p>我们来改聊天界面输入框的光标</p>
+<p>打开clc  找到 com.tencent.widget.XEditTextEx</p>
+<p>这一段 下面一行 加上 android:textCursorDrawable=”@你刚才复制的id”<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgrv-U2gUo4JGj5AIwuAg4rBE.png" alt="如图"></p>
+<p>教程原创@cestu</p>
 
             </div>
             <hr>
@@ -373,7 +363,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="http://yoursite.com" class="b-link-green">Beautify</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/04/18/" class="b-link-green">关于闪照</a>
+                    <a href="/2018/12/19/29/" class="b-link-green">修改输入框光标颜色</a>
                 </p>
             </div>
         </div>
@@ -656,34 +646,40 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">上一篇</div>
             <div class="card">
-                <a href="/2018/12/04/21/">
+                <a href="/2018/12/19/28/">
                     <div class="card-image">
                         
-                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd30j48j30jg0ayq3k.jpg" class="responsive-img" alt="抽拉式底栏教程">
+                        <img src="https://b-ssl.duitang.com/uploads/item/201408/31/20140831024929_SWCxx.thumb.700_0.jpeg" class="responsive-img" alt="联系人标签">
                         
-                        <span class="card-title">抽拉式底栏教程</span>
+                        <span class="card-title">联系人标签</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">以下代码 自行对比源文件cbg修改
-红色字体需删
-&lt;?xml version=”1.0” encoding=”utf-8”?&gt;
-&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:and</div>
+                    <div class="summary">Dex6
+12345678910111213141516171819202122232425262728293031323334353637383940414243const/4 v3 3new-array v0 v3 [Ljava/lan</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-19
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/XML/" class="post-category" target="_blank">
-                                    XML
+                            <a href="/categories/Dex6/" class="post-category" target="_blank">
+                                    Dex6
                                 </a>
                             
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/教程/" target="_blank">
+                        <span class="chip bg-color">教程</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -693,32 +689,50 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/4/">
+                <a href="/2018/12/18/26/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/00676n0Tgy1fy7qd44h4fj30jg0ay74c.jpg" class="responsive-img" alt="去群聊炫彩昵称">
+                        <img src="https://b-ssl.duitang.com/uploads/item/201408/31/20140831024549_XZNQC.thumb.700_0.jpeg" class="responsive-img" alt="屏蔽嗨爆字体">
                         
-                        <span class="card-title">去群聊炫彩昵称</span>
+                        <span class="card-title">屏蔽嗨爆字体</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">以Dex++编辑器 打开classes2.dex
-搜索 ColorNickManager
-进入Lcom/tencent/mobileqq/vas/ColorNickManager
-打开这个类
-如下图删除
-然后右上角搜索 setTextCol</div>
+                    <div class="summary">首先复制uyl.png的ID
+（775版本 ID 7F020076）
+然后点击Mt右上角进行Xml
+搜索（十六进制）
+得到ils.xml然后再复制
+ils.xml的ID （7F020076）
+好了以上都是废话emmm
+以Dex编辑器打开De</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-18
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            Likefr
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/XML/" class="post-category" target="_blank">
+                                    XML
+                                </a>
+                            
+                            <a href="/categories/XML/Dex6/" class="post-category" target="_blank">
+                                    Dex6
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/教程/" target="_blank">
+                        <span class="chip bg-color">教程</span>
+                    </a>
+                    
                 </div>
                 
             </div>
