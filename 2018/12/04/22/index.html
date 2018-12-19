@@ -200,7 +200,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('https://ws2.sinaimg.cn/large/00676n0Tgy1fy7qd37ky6j30jg0ayq4o.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('https://b-ssl.duitang.com/uploads/item/201803/01/20180301225213_uQFU2.thumb.700_0.png')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -647,16 +647,19 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">上一篇</div>
             <div class="card">
-                <a href="/2018/12/04/19/">
+                <a href="/2018/12/04/21/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/00676n0Tgy1fy7qd2p3vfj30jg0ayt9p.jpg" class="responsive-img" alt="修改左上角头像为设置按钮">
+                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd30j48j30jg0ayq3k.jpg" class="responsive-img" alt="抽拉式底栏教程">
                         
-                        <span class="card-title">修改左上角头像为设置按钮</span>
+                        <span class="card-title">抽拉式底栏教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击</div>
+                    <div class="summary">以下代码 自行对比源文件cbg修改
+红色字体需删
+&lt;?xml version=”1.0” encoding=”utf-8”?&gt;
+&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:and</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
@@ -681,21 +684,20 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/3/">
+                <a href="/2018/12/04/18/">
                     <div class="card-image">
                         
-                        <img src="https://static1.hdwallpapers.net/wallpapers/2016/04/18/1003/thumb_z-i-g-z-a-g.jpg" class="responsive-img" alt="精简双击聊天气泡后界面">
+                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd2fe5aj30jg0ay3ys.jpg" class="responsive-img" alt="关于闪照">
                         
-                        <span class="card-title">精简双击聊天气泡后界面</span>
+                        <span class="card-title">关于闪照</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">反编译打开　cod.xml
-将46行后面改成0dp
-保存
-效果图
-原创教程@Delete小海
-</div>
+                    <div class="summary">.防闪照消失，修改闪照时间，且可以截屏
+//用dex编辑器打开classes2.dex
+//搜索常量”flashpichelper”
+//打开com/tencent/mobileqq/app/FlashPicHelper;
+//打开方法列表</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
@@ -704,8 +706,8 @@
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/XML/" class="post-category" target="_blank">
-                                    XML
+                            <a href="/categories/Dex2/" class="post-category" target="_blank">
+                                    Dex2
                                 </a>
                             
                             
