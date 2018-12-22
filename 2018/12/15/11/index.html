@@ -338,7 +338,14 @@
             <div id="articleContent">
                 <p>Dex6中找到<br>com/tencent/mobileqq/activity/aio/panel/PanelIconLinearLayout这个类名<br>点击进入，选择方法列表<br>搜索 isRunning</p>
 <p>找到方法a<br>搜索 return-void<br>删除下面这六行（从 label标签一直到删if语句开头之前)</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. label_76:</span><br><span class="line">2. move-obiect v0 v8</span><br><span class="line">3. check-cast v0 Lcom/tencent/mobile/troop/widget/ RedDotlmageView</span><br><span class="line">4. invoke-virtual &#123; v0&#125; Lcom/tencent/mobileqq/troop/ widget/ReddotlmageViewgetDrawable()Landroid/graphics/drawable/Drawable；</span><br><span class="line">5. move-result-object v1</span><br><span class="line">6. instance-of v2 v1 Lcom/tencent/mobileqq/activity/aio/panel/PanellconLinearLayout$AiolconAnimationDrawabale</span><br></pre></td></tr></table></figure>
+<ol>
+<li>label_76:</li>
+<li>move-obiect v0 v8</li>
+<li>check-cast v0 Lcom/tencent/mobile/troop/widget/ RedDotlmageView</li>
+<li>invoke-virtual { v0} Lcom/tencent/mobileqq/troop/ widget/ReddotlmageViewgetDrawable()Landroid/graphics/drawable/Drawable；</li>
+<li>move-result-object v1</li>
+<li>instance-of v2 v1 Lcom/tencent/mobileqq/activity/aio/panel/PanellconLinearLayout$Aio<br>lconAnimationDrawabale</li>
+</ol>
 <p>再搜索if-nez v2 :label<br>把 最后面的数字 改成21<br>保存退出即可</p>
 <h3 id="原作者-来自cestu"><a href="#原作者-来自cestu" class="headerlink" title="原作者@来自cestu"></a>原作者@来自cestu</h3>
             </div>
