@@ -5,8 +5,9 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="修改左上角头像为设置按钮, Beautify">
-    <meta name="description" content="首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击">
+    <meta name="keywords" content="等待上传, Beautify">
+    <meta name="description" content=" 1 2 3 4 5 6 7 8 9 
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>修改左上角头像为设置按钮 | Beautify</title>
+    <title>等待上传 | Beautify</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -206,7 +207,7 @@
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        修改左上角头像为设置按钮
+                        等待上传
                     </div>
                 </div>
             </div>
@@ -325,30 +326,16 @@
             
             <div class="post-info">
                 
-                <span class="post-cate">
-                    <i class="fa fa-bookmark fa-fw icon-category"></i>
-                    
-                    <a href="/categories/XML/" class="post-category" target="_blank">
-                        XML
-                    </a>
-                    
-                </span>
-                
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-12-04
+                    <i class="fa fa-clock-o fa-fw"></i>2018-12-29
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p>
-<p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p>
-<p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure>
-<p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p>
-<p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>
+                <p> 1 2 3 4 5 6 7 8 9 </p>
 
             </div>
             <hr>
@@ -361,7 +348,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="http:/yoursite.com" class="b-link-green">Beautify</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/04/19/" class="b-link-green">修改左上角头像为设置按钮</a>
+                    <a href="/2018/12/29/51/" class="b-link-green">等待上传</a>
                 </p>
             </div>
         </div>
@@ -642,41 +629,33 @@
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">上一篇</div>
+            <div class="article-badge left-badge text-color">本篇</div>
             <div class="card">
-                <a href="/2018/12/04/17/">
+                <a href="/2018/12/29/51/">
                     <div class="card-image">
                         
                         
-                    
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="等待上传">
                         
-                        <span class="card-title">修改非Svip也可以贴收藏表情</span>
+                        <span class="card-title">等待上传</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">以Dex编辑器打开dex4
-常量搜索 贴收藏表情
-打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector
-打开方法列表，最后一个 onTouchEvent
-
-找到1253行
-修</div>
+                    <div class="summary"> 1 2 3 4 5 6 7 8 9 
+</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-29
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Dex4/" class="post-category" target="_blank">
-                                    Dex4
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            Likefr
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -693,30 +672,29 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/7/">
+                <a href="/2018/12/29/50/">
                     <div class="card-image">
                         
-                        <img src="https://www.hdwallpapers.net/previews/deep-void-973.jpg" class="responsive-img" alt="闪照无需长按查看教程">
                         
-                        <span class="card-title">闪照无需长按查看教程</span>
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="792头像右移教程">
+                        
+                        <span class="card-title">792头像右移教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">以Dex编辑器打开Dex4
-搜索Flash
-得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity，
-打开方法　找到onTouch　修改方法如下图
-</div>
+                    <div class="summary">版本为792
+消息布局ozf.xml ozg.xml 版本更新会动布局位置 自行寻找首先进入ozf.xml然后定位&lt;com.tencent.widget.RecentDynamicAvatar​​大概也就是第八那一行
+需要用到14行I</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Dex4/" class="post-category" target="_blank">
-                                    Dex4
+                            <a href="/categories/XML/" class="post-category" target="_blank">
+                                    XML
                                 </a>
                             
                             
@@ -726,8 +704,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/教程/" target="_blank">
-                        <span class="chip bg-color">教程</span>
+                    <a href="/tags/来自群友提供/" target="_blank">
+                        <span class="chip bg-color">来自群友提供</span>
                     </a>
                     
                 </div>
