@@ -3,29 +3,64 @@
   
     
     <entry>
-      <title>快来这里评论吧！！</title>
-      <link href="/2018/12/29/52/"/>
-      <url>/2018/12/29/52/</url>
+      <title>教你新建一个密钥</title>
+      <link href="/2018/12/30/53/"/>
+      <url>/2018/12/30/53/</url>
       
-        <content type="html"><![CDATA[<h3 id="这里是我们的家哇"><a href="#这里是我们的家哇" class="headerlink" title="这里是我们的家哇"></a>这里是我们的家哇</h3><h2 id="你觉得Fr对你们好嘛？"><a href="#你觉得Fr对你们好嘛？" class="headerlink" title="你觉得Fr对你们好嘛？"></a>你觉得Fr对你们好嘛？</h2><h1 id="快来评论吧！！！"><a href="#快来评论吧！！！" class="headerlink" title="快来评论吧！！！"></a>快来评论吧！！！</h1>]]></content>
+        <content type="html"><![CDATA[<p>关于安装包签名制作教程</p><p><img src="http://post.mp.qq.com/kan/video/201189322-6225ae952a9152aj-ej9GZk.html?_wv=2281701505&amp;sig=d106fbefb640ed6d8b6716643e9d277d&amp;time=1525240489" alt="查看视频"></p><p>1.下载 Apkcrack  </p><p>2.打开 Apkcrack并随便点击一个apk格式的安装包3.点击安装包后看到签名两字，点击签名</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg0JTy1gUojdGFyAcwuAg4gA8.png" alt=""></p><p>4点击签名后点击新建密钥</p><p>1.签名算法:选择SHA512WithRSA</p><p>2签名路径:（签名输出路径即签名保存路径）</p><p>3.密钥密码密钥别名别名密码（随意填写）</p><p>4有效期填写100即可</p><p>5姓名（随便填）</p><p>6.国家（填写CN）</p><p>7.地区（随意填写）</p><p>8.组织（随意填写）<br><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAgrZTy1gUowMOktQIwuAg4gA8.png" alt=""></p><p>这样我们就新建了一个密钥　新建的这个文件建议使用Mt打开来对apk进行签名</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 签名密钥 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> 集合 </tag>
+            <tag> 教程 </tag>
             
         </tags>
       
     </entry>
     
     <entry>
-      <title>等待上传</title>
+      <title>去除联想表情</title>
+      <link href="/2018/12/29/52/"/>
+      <url>/2018/12/29/52/</url>
+      
+        <content type="html"><![CDATA[<p>以翻译模式打开Dex2</p><p>右上角过滤keywordlist</p><p>如图将这三个结果依次点击删除 确定保存</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAglrW71wUohPDilQIwwgQ4-AQ.png" alt=""></p><p>点击后删除确定　（三个都要）</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAgtbW71wUokJqU-AIwvwQ4sgY.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>时光轴</title>
       <link href="/2018/12/29/51/"/>
       <url>/2018/12/29/51/</url>
       
-        <content type="html"><![CDATA[<p> 1 2 3 4 5 6 7 8 9 </p>]]></content>
+        <content type="html"><![CDATA[<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">TextView</span>  时光轴 中心横线</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:background</span>=<span class="string">"#FF82B1FF"</span>线条的颜色</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:focusable</span>=<span class="string">"false"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_width</span>=<span class="string">"100dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_height</span>=<span class="string">"2dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerHorizontal</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:rotation</span>=<span class="string">"90"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:background</span>=<span class="string">"@7f030004"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_width</span>=<span class="string">"12dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_height</span>=<span class="string">"12dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerHorizontal</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ImageView</span> 时光轴中心竖线</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:background</span>=<span class="string">"#FF90CAF9"</span>线条的颜色</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_width</span>=<span class="string">"70dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_height</span>=<span class="string">"2dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_below</span>=<span class="string">"@7f0a04d2"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerHorizontal</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:background</span>=<span class="string">"@7f030005"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_width</span>=<span class="string">"23dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_height</span>=<span class="string">"23dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_marginLeft</span>=<span class="string">"174.800308dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_gravity</span>=<span class="string">"center"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:background</span>=<span class="string">"@7f030005"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_width</span>=<span class="string">"23dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_height</span>=<span class="string">"23dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_marginLeft</span>=<span class="string">"260dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:background</span>=<span class="string">"@7f030009"</span>消息框框图片<span class="attr">id</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_width</span>=<span class="string">"288dp"</span>框的长度</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span>框的高度</span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_marginLeft</span>=<span class="string">"-34.900913dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_marginRight</span>=<span class="string">"-122dp"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_toRightOf</span>=<span class="string">"@7f0a0cf1"</span>根据原版本修改<span class="attr">id</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
       
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
       
       
         <tags>
@@ -204,7 +239,7 @@
       <link href="/2018/12/26/43/"/>
       <url>/2018/12/26/43/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex6</p><p>常量搜索　F2FRedpackEntry</p><p>　打开类　<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAghPil2gUoj-23rwMw-Ac4nAE.png" alt=""></p><p>继续搜索 F2FRedpackEntry<br>得方法e 打开　定位到</p><p>hongbaocaidan（往下找第一个　if-eqz）<br>改成　goto</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAg_-ml2gUo8sPpSTC4CDiFCQ.jpg" alt=""></p>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex6</p><p>常量搜索　F2FRedpackEntry</p><p>打开类　<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAghPil2gUoj-23rwMw-Ac4nAE.png" alt=""></p><p>继续搜索 F2FRedpackEntry<br>得方法e 打开　定位到</p><p>hongbaocaidan（往下找第一个　if-eqz）<br>改成　goto</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAg_-ml2gUo8sPpSTC4CDiFCQ.jpg" alt=""></p>]]></content>
       
       
       <categories>
@@ -744,13 +779,25 @@
     </entry>
     
     <entry>
-      <title>去群聊炫彩昵称</title>
-      <link href="/2018/12/04/4/"/>
-      <url>/2018/12/04/4/</url>
+      <title>修改左上角头像为设置按钮</title>
+      <link href="/2018/12/04/19/"/>
+      <url>/2018/12/04/19/</url>
       
-        <content type="html"><![CDATA[<p>以Dex++编辑器 打开classes2.dex</p><p>搜索 ColorNickManager</p><p>进入Lcom/tencent/mobileqq/vas/ColorNickManager<br><a id="more"></a></p><p>打开这个类</p><p>如下图删除<br><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg16r13gUohqzk0AYwuAg4rBE.png" alt="如图"></p><p>然后右上角搜索 setTextColor将其所在的那一行删除</p><p>(删完之后点下一个  3个结果都要删除)</p><p>保存</p><p>原教程 coolopk</p>]]></content>
+        <content type="html"><![CDATA[<p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p><p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p><p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure><p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p><p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>]]></content>
       
       
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -768,6 +815,29 @@
           
       </categories>
       
+      
+    </entry>
+    
+    <entry>
+      <title>去主页全民闯关</title>
+      <link href="/2018/12/04/23/"/>
+      <url>/2018/12/04/23/</url>
+      
+        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -841,29 +911,6 @@
     </entry>
     
     <entry>
-      <title>去主页全民闯关</title>
-      <link href="/2018/12/04/23/"/>
-      <url>/2018/12/04/23/</url>
-      
-        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex2 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>去除气泡</title>
       <link href="/2018/12/04/22/"/>
       <url>/2018/12/04/22/</url>
@@ -887,6 +934,17 @@
     </entry>
     
     <entry>
+      <title>去群聊炫彩昵称</title>
+      <link href="/2018/12/04/4/"/>
+      <url>/2018/12/04/4/</url>
+      
+        <content type="html"><![CDATA[<p>以Dex++编辑器 打开classes2.dex</p><p>搜索 ColorNickManager</p><p>进入Lcom/tencent/mobileqq/vas/ColorNickManager<br><a id="more"></a></p><p>打开这个类</p><p>如下图删除<br><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg16r13gUohqzk0AYwuAg4rBE.png" alt="如图"></p><p>然后右上角搜索 setTextColor将其所在的那一行删除</p><p>(删完之后点下一个  3个结果都要删除)</p><p>保存</p><p>原教程 coolopk</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    <entry>
       <title>抽拉式底栏教程</title>
       <link href="/2018/12/04/21/"/>
       <url>/2018/12/04/21/</url>
@@ -906,23 +964,6 @@
             <tag> 教程 </tag>
             
         </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>精简双击聊天气泡后界面</title>
-      <link href="/2018/12/04/3/"/>
-      <url>/2018/12/04/3/</url>
-      
-        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
       
     </entry>
     
@@ -961,29 +1002,6 @@
     </entry>
     
     <entry>
-      <title>关于闪照</title>
-      <link href="/2018/12/04/18/"/>
-      <url>/2018/12/04/18/</url>
-      
-        <content type="html"><![CDATA[<p>.防闪照消失，修改闪照时间，且可以截屏</p><p>//用dex编辑器打开classes2.dex</p><p>//搜索常量”flashpichelper”</p><p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p><p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p><p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p><p>//回编译</p><p>//用dex编辑器打开classes4.dex</p><p>//搜索常量”HotChatFlashPicActivity”</p><p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p><p>//继续搜索常量”doOnCreate”</p><p>//打开(Landroid/os/Bundle;)Z</p><p>//搜索”SDK_INT”</p><p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p><p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p><p>//回编译，签名，安装</p><h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p><ol><li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li><li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li></ol><p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex2 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>修复收藏底部黑色</title>
       <link href="/2018/12/04/6/"/>
       <url>/2018/12/04/6/</url>
@@ -1007,16 +1025,33 @@
     </entry>
     
     <entry>
-      <title>闪照无需长按查看教程</title>
-      <link href="/2018/12/04/7/"/>
-      <url>/2018/12/04/7/</url>
+      <title>精简双击聊天气泡后界面</title>
+      <link href="/2018/12/04/3/"/>
+      <url>/2018/12/04/3/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4</p><p>搜索Flash<br><a id="more"></a></p><p>得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity，</p><p>打开方法　找到onTouch　修改方法如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgj9mH4AUovPfC_AMw4gk4_ho.jpg" alt=""></p>]]></content>
+        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
       
       
       <categories>
           
-          <category> Dex4 </category>
+          <category> XML </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>关于闪照</title>
+      <link href="/2018/12/04/18/"/>
+      <url>/2018/12/04/18/</url>
+      
+        <content type="html"><![CDATA[<p>.防闪照消失，修改闪照时间，且可以截屏</p><p>//用dex编辑器打开classes2.dex</p><p>//搜索常量”flashpichelper”</p><p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p><p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p><p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p><p>//回编译</p><p>//用dex编辑器打开classes4.dex</p><p>//搜索常量”HotChatFlashPicActivity”</p><p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p><p>//继续搜索常量”doOnCreate”</p><p>//打开(Landroid/os/Bundle;)Z</p><p>//搜索”SDK_INT”</p><p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p><p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p><p>//回编译，签名，安装</p><h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p><ol><li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li><li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li></ol><p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex2 </category>
           
       </categories>
       
@@ -1030,16 +1065,16 @@
     </entry>
     
     <entry>
-      <title>修改左上角头像为设置按钮</title>
-      <link href="/2018/12/04/19/"/>
-      <url>/2018/12/04/19/</url>
+      <title>闪照无需长按查看教程</title>
+      <link href="/2018/12/04/7/"/>
+      <url>/2018/12/04/7/</url>
       
-        <content type="html"><![CDATA[<p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p><p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p><p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure><p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p><p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4</p><p>搜索Flash<br><a id="more"></a></p><p>得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity，</p><p>打开方法　找到onTouch　修改方法如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgj9mH4AUovPfC_AMw4gk4_ho.jpg" alt=""></p>]]></content>
       
       
       <categories>
           
-          <category> XML </category>
+          <category> Dex4 </category>
           
       </categories>
       
