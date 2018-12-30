@@ -221,101 +221,10 @@ android:lay">
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1,
-    #articleContent h2,
-    #articleContent h3,
-    #articleContent h4,
-    #articleContent h5,
-    #articleContent h6 {
-        padding-top: 76px;
-        margin-top: -76px;
-    }
-
-    #articleContent h1 {
-        line-height: 3.5rem;
-    }
-
-    #articleContent h2 {
-        line-height: 3.2rem;
-    }
-
-    #articleContent h3 {
-        line-height: 2.8rem;
-    }
-
-    #articleContent h4 {
-        line-height: 2.5rem;
-    }
-
-    #articleContent h5 {
-        line-height: 2.2rem;
-    }
-
-    #articleContent h6 {
-        line-height: 1.9rem;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-</style>
-<div class="row">
-    <div class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -651,20 +560,24 @@ android:lay">
         <div class="article col s12 m6" data-aos="fade-up">
           
             <div class="card">
-                <a href="/2018/12/15/9/">
+                <a href="/2018/12/04/24/">
                     <div class="card-image">
                         
-                        
-                      
+                        <img src="https://ws4.sinaimg.cn/large/00676n0Tgy1fy7qd3fz35j30jg0axaa8.jpg" class="responsive-img" alt="聊天输入框加字">
                         
                 
                     </div>
                 <div class="card-content article-content">
-                    <div class="summary">去除侧滑右上角白色首先进Arsc复制skin_color_button_blue.xml的Id
-打开Dex6 常量搜索(16进制).  进入 类(Lcom/tencent/mobileqq/activity/recent/DrawerFra</div>
+                    <div class="summary">打开R\o clc.xml
+找到　
+com.tencent.widget.XEditTextEx 这一段
+在下面加上
+android:hint=”你要加的字”
+以实际参考为准
+</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-15
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
                         </span>
                         <span class="publish-author">
                             
@@ -684,7 +597,7 @@ android:lay">
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">去除侧滑右上角白色</span>
+                        <span class="chip bg-color">聊天输入框加字</span>
                     </a>
                     
                 </div>
@@ -696,28 +609,32 @@ android:lay">
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/4/">
+                <a href="/2018/12/04/3/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/00676n0Tgy1fy7qd44h4fj30jg0ay74c.jpg" class="responsive-img" alt="去群聊炫彩昵称">
+                        <img src="https://static1.hdwallpapers.net/wallpapers/2016/04/18/1003/thumb_z-i-g-z-a-g.jpg" class="responsive-img" alt="精简双击聊天气泡后界面">
                         
                     </div>
                
                 <div class="card-content article-content">
-                    <div class="summary">以Dex++编辑器 打开classes2.dex
-搜索 ColorNickManager
-进入Lcom/tencent/mobileqq/vas/ColorNickManager
-打开这个类
-如下图删除
-然后右上角搜索 setTextCol</div>
+                    <div class="summary">反编译打开　cod.xml
+将46行后面改成0dp
+保存
+效果图
+原创教程@Delete小海
+</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-user fa-fw"></i>
-                            Likefr
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/XML/" class="post-category" target="_blank">
+                                    XML
+                                </a>
+                            
                             
                         </span>
                     </div>
@@ -731,53 +648,6 @@ android:lay">
     </div>
 </article>
 </div>
-    </div>
-    <div class="col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title">目录</div>
-            <div id="toc-content">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-    });
-</script>
     
 
 </main>
