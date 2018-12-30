@@ -560,24 +560,20 @@ android:lay">
         <div class="article col s12 m6" data-aos="fade-up">
           
             <div class="card">
-                <a href="/2018/12/04/24/">
+                <a href="/2018/12/15/9/">
                     <div class="card-image">
                         
-                        <img src="https://ws4.sinaimg.cn/large/00676n0Tgy1fy7qd3fz35j30jg0axaa8.jpg" class="responsive-img" alt="聊天输入框加字">
+                        
+                      
                         
                 
                     </div>
                 <div class="card-content article-content">
-                    <div class="summary">打开R\o clc.xml
-找到　
-com.tencent.widget.XEditTextEx 这一段
-在下面加上
-android:hint=”你要加的字”
-以实际参考为准
-</div>
+                    <div class="summary">去除侧滑右上角白色首先进Arsc复制skin_color_button_blue.xml的Id
+打开Dex6 常量搜索(16进制).  进入 类(Lcom/tencent/mobileqq/activity/recent/DrawerFra</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-15
                         </span>
                         <span class="publish-author">
                             
@@ -597,7 +593,7 @@ android:hint=”你要加的字”
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">聊天输入框加字</span>
+                        <span class="chip bg-color">去除侧滑右上角白色</span>
                     </a>
                     
                 </div>
@@ -609,32 +605,28 @@ android:hint=”你要加的字”
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/3/">
+                <a href="/2018/12/04/4/">
                     <div class="card-image">
                         
-                        <img src="https://static1.hdwallpapers.net/wallpapers/2016/04/18/1003/thumb_z-i-g-z-a-g.jpg" class="responsive-img" alt="精简双击聊天气泡后界面">
+                        <img src="https://ws3.sinaimg.cn/large/00676n0Tgy1fy7qd44h4fj30jg0ay74c.jpg" class="responsive-img" alt="去群聊炫彩昵称">
                         
                     </div>
                
                 <div class="card-content article-content">
-                    <div class="summary">反编译打开　cod.xml
-将46行后面改成0dp
-保存
-效果图
-原创教程@Delete小海
-</div>
+                    <div class="summary">以Dex++编辑器 打开classes2.dex
+搜索 ColorNickManager
+进入Lcom/tencent/mobileqq/vas/ColorNickManager
+打开这个类
+如下图删除
+然后右上角搜索 setTextCol</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/XML/" class="post-category" target="_blank">
-                                    XML
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            Likefr
                             
                         </span>
                     </div>
@@ -740,7 +732,7 @@ setInterval("createtime()",250);
    <!--浏览器搞笑标题-->
 <script type="text/javascript" src="\js\FunnyTitle.js"></script>
 
-<!--动态线条背景-->
+<!--动态线条背景
 <script type="text/javascript"
 color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
-</script>
+</script> -->
