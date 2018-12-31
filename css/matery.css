@@ -27,8 +27,9 @@
     }
 }
 
+
 body {
-    background-color: #ffffff;
+    background-image: url(https://ws1.sinaimg.cn/large/00676n0Tgy1fypwb0ppryj31hc0u0jvh.jpg    );
     margin: 0;
     color: #969696;
 }
@@ -162,7 +163,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 100%); /*顶栏和侧滑顶栏渐变背景*/
+    background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%); /*顶栏和侧滑顶栏渐变背景*/
 }
 
 .text-color {
