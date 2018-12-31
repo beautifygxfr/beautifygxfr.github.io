@@ -29,7 +29,7 @@
 
 
 body {
-    background-color: #ffffffff;
+    background-image: url(https://ws1.sinaimg.cn/large/00676n0Tgy1fypwb0ppryj31hc0u0jvh.jpg);
     margin: 0;
     color: #969696;
 }
@@ -395,7 +395,7 @@ header .go-back i {
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.4em;
-    color: rgb(101, 101, 101);
+    color: rgb(255, 255, 255);
 }
 
 .bg-cover .post-title {
