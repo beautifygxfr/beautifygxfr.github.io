@@ -410,7 +410,7 @@
             <div class="reprint">
                 <p>
                     <span class="reprint-tip">转载请注明: </span>
-                    <a href="http:/yoursite.com" class="b-link-green">Beautify</a>
+                    <a href="https:Beautifys.github.io" class="b-link-green">Beautify</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
                     <a href="/2018/12/04/4/" class="b-link-green">去群聊炫彩昵称</a>
                 </p>
@@ -695,19 +695,16 @@
         <div class="article col s12 m6" data-aos="fade-up">
           
             <div class="card">
-                <a href="/2018/12/04/25/">
+                <a href="/2018/12/04/19/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/00676n0Tgy1fy7qd3k4laj30jg0aygle.jpg" class="responsive-img" alt="去消息界面头像">
+                        
+                      
                         
                 
                     </div>
                 <div class="card-content article-content">
-                    <div class="summary">1.去好友头像，vdk.xml(763版本)
-定位：    &lt;com.tencent.widget.RecentDynamicAvatarView
-加入代码：
-android:visibility=”gone”
-android:lay</div>
+                    <div class="summary">首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击</div>
                     <div class="publish-info">
                         <span class="publish-date">
                             <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
@@ -730,7 +727,7 @@ android:lay</div>
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">去消息界面头像</span>
+                        <span class="chip bg-color">修改左上角头像为设置按钮</span>
                     </a>
                     
                 </div>
@@ -742,21 +739,20 @@ android:lay</div>
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/24/">
+                <a href="/2018/12/04/20/">
                     <div class="card-image">
                         
-                        <img src="https://ws4.sinaimg.cn/large/00676n0Tgy1fy7qd3fz35j30jg0axaa8.jpg" class="responsive-img" alt="聊天输入框加字">
+                        <img src="https://ws4.sinaimg.cn/large/00676n0Tgy1fy7qd2vncij30jg0ay3zq.jpg" class="responsive-img" alt="去除闪照倒计时">
                         
                     </div>
                
                 <div class="card-content article-content">
-                    <div class="summary">打开R\o clc.xml
-找到　
-com.tencent.widget.XEditTextEx 这一段
-在下面加上
-android:hint=”你要加的字”
-以实际参考为准
-</div>
+                    <div class="summary">打开mwj.xml
+搜索CountDownProgressBar
+保留ID其他内容直接删掉，写如下代码进去即可
+android:visibility=”gone”
+android:layout_width=”0dp”
+android:lay</div>
                     <div class="publish-info">
                             <span class="publish-date">
                                 <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
@@ -780,7 +776,7 @@ android:hint=”你要加的字”
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">聊天输入框加字</span>
+                        <span class="chip bg-color">去除闪照倒计时</span>
                     </a>
                     
                 </div>
