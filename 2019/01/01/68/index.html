@@ -279,10 +279,101 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1,
+    #articleContent h2,
+    #articleContent h3,
+    #articleContent h4,
+    #articleContent h5,
+    #articleContent h6 {
+        padding-top: 76px;
+        margin-top: -76px;
+    }
+
+    #articleContent h1 {
+        line-height: 3.5rem;
+    }
+
+    #articleContent h2 {
+        line-height: 3.2rem;
+    }
+
+    #articleContent h3 {
+        line-height: 2.8rem;
+    }
+
+    #articleContent h4 {
+        line-height: 2.5rem;
+    }
+
+    #articleContent h5 {
+        line-height: 2.2rem;
+    }
+
+    #articleContent h6 {
+        line-height: 1.9rem;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+</style>
+<div class="row">
+    <div class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -616,7 +707,7 @@
         <div class="article col s12 m6" data-aos="fade-up">
           
             <div class="card">
-                <a href="/2019/01/02/69/">
+                <a href="/2019/01/01/73/">
                     <div class="card-image">
                         
                         
@@ -625,42 +716,22 @@
                 
                     </div>
                 <div class="card-content article-content">
-                    <div class="summary">以Dex编辑器打开 Dex6
-常量搜索　user_guide_weishi_bg打开类　
-
-打开后继续搜索　 initUI 得到方法　a
-打开后方法a后找到倒数第
-四行　后面的0x1388
-把1388改成0
-保存
-原作者@小浅丶
-</div>
+                    <div class="summary">790部分路径来自群内
+头像（切换账号） nfi.xml id:7F0B21C3
+新用户按钮 khi.xml登录按钮 khh.xml侧滑dp 7f0901ea分组未按压7F0D020A分组按压7F0D020B消息布局owh.xml动态布局c</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-02
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-01
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Dex6/" class="post-category" target="_blank">
-                                    Dex6
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            Likefr
                             
                         </span>
                     </div>
                 </div>
             </a>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/教程/" target="_blank">
-                        <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">去除微视启动背景</span>
-                    </a>
-                    
-                </div>
                 
             </div>
         </div>
@@ -719,6 +790,53 @@ android:layout_width=”0dp”</div>
     </div>
 </article>
 </div>
+    </div>
+    <div class="col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title">目录</div>
+            <div id="toc-content">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+    });
+</script>
     
 
 </main>
