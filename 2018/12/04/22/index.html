@@ -276,101 +276,10 @@
 
 
 
-<main class="post-container content">
+<main class="container content">
 
     
-    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
-<style>
-    #articleContent h1,
-    #articleContent h2,
-    #articleContent h3,
-    #articleContent h4,
-    #articleContent h5,
-    #articleContent h6 {
-        padding-top: 76px;
-        margin-top: -76px;
-    }
-
-    #articleContent h1 {
-        line-height: 3.5rem;
-    }
-
-    #articleContent h2 {
-        line-height: 3.2rem;
-    }
-
-    #articleContent h3 {
-        line-height: 2.8rem;
-    }
-
-    #articleContent h4 {
-        line-height: 2.5rem;
-    }
-
-    #articleContent h5 {
-        line-height: 2.2rem;
-    }
-
-    #articleContent h6 {
-        line-height: 1.9rem;
-    }
-
-    #articleContent :focus {
-        outline: none;
-    }
-
-    .toc-fixed {
-        position: fixed;
-        top: 64px;
-    }
-
-    .toc-widget {
-        padding-left: 20px;
-    }
-
-    .toc-widget .toc-title {
-        margin: 35px 0 15px 0;
-        padding-left: 17px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        line-height: 1.5rem;
-    }
-
-    .toc-widget ol {
-        padding: 0;
-        list-style: none;
-    }
-
-    #toc-content ol {
-        padding-left: 10px;
-    }
-
-    #toc-content ol li {
-        padding-left: 10px;
-    }
-
-    #toc-content .toc-link:hover {
-        color: #42b983;
-        font-weight: 700;
-        text-decoration: underline;
-    }
-
-    #toc-content .toc-link::before {
-        background-color: transparent;
-        max-height: 25px;
-    }
-
-    #toc-content .is-active-link {
-        color: #42b983;
-    }
-
-    #toc-content .is-active-link::before {
-        background-color: #42b983;
-    }
-</style>
-<div class="row">
-    <div class="col s12 m12 l9">
-        <!-- 文章内容详情 -->
+    <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
@@ -692,7 +601,7 @@
         verify: 'false' === 'true',
         visitor: 'true' === 'true',
         avatar: 'mm',
-        pageSize: '11',
+        pageSize: '10',
         lang: 'zh-cn',
         placeholder: '请输入你此刻的想法~'
     });
@@ -707,29 +616,27 @@
         <div class="article col s12 m6" data-aos="fade-up">
           
             <div class="card">
-                <a href="/2018/12/04/6/">
+                <a href="/2018/12/15/9/">
                     <div class="card-image">
                         
-                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd40ox6j30jg0ayaay.jpg" class="responsive-img" alt="修复收藏底部黑色">
+                        
+                      
                         
                 
                     </div>
                 <div class="card-content article-content">
-                    <div class="summary">打开Arsc编辑器搜索　移动到分组 如下图.
-然后长按复制ID返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）
-打开第六行后面改成#FFFFFFFF
-
-</div>
+                    <div class="summary">去除侧滑右上角白色首先进Arsc复制skin_color_button_blue.xml的Id
+打开Dex6 常量搜索(16进制).  进入 类(Lcom/tencent/mobileqq/activity/recent/DrawerFra</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-15
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Arsc/" class="post-category" target="_blank">
-                                    Arsc
+                            <a href="/categories/XML/" class="post-category" target="_blank">
+                                    XML
                                 </a>
                             
                             
@@ -742,7 +649,7 @@
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">修复收藏底部黑色</span>
+                        <span class="chip bg-color">去除侧滑右上角白色</span>
                     </a>
                     
                 </div>
@@ -754,18 +661,19 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/25/">
+                <a href="/2018/12/04/20/">
                     <div class="card-image">
                         
-                        <img src="https://ws3.sinaimg.cn/large/00676n0Tgy1fy7qd3k4laj30jg0aygle.jpg" class="responsive-img" alt="去消息界面头像">
+                        <img src="https://ws4.sinaimg.cn/large/00676n0Tgy1fy7qd2vncij30jg0ay3zq.jpg" class="responsive-img" alt="去除闪照倒计时">
                         
                     </div>
                
                 <div class="card-content article-content">
-                    <div class="summary">1.去好友头像，vdk.xml(763版本)
-定位：    &lt;com.tencent.widget.RecentDynamicAvatarView
-加入代码：
+                    <div class="summary">打开mwj.xml
+搜索CountDownProgressBar
+保留ID其他内容直接删掉，写如下代码进去即可
 android:visibility=”gone”
+android:layout_width=”0dp”
 android:lay</div>
                     <div class="publish-info">
                             <span class="publish-date">
@@ -790,7 +698,7 @@ android:lay</div>
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">去消息界面头像</span>
+                        <span class="chip bg-color">去除闪照倒计时</span>
                     </a>
                     
                 </div>
@@ -801,53 +709,6 @@ android:lay</div>
     </div>
 </article>
 </div>
-    </div>
-    <div class="col l3 hide-on-med-and-down">
-        <div class="toc-widget">
-            <div class="toc-title">目录</div>
-            <div id="toc-content">
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="/libs/tocbot/tocbot.min.js"></script>
-<script>
-    $(function () {
-        tocbot.init({
-            tocSelector: '#toc-content',
-            contentSelector: '#articleContent',
-            headingSelector: 'h2, h3, h4'
-        });
-
-        // modify the toc link href to support Chinese.
-        let i = 0;
-        let tocHeading = 'toc-heading-';
-        $('#toc-content a').each(function () {
-            $(this).attr('href', '#' + tocHeading + (++i));
-        });
-
-        // modify the heading title id to support Chinese.
-        i = 0;
-        $('#articleContent').children('h2, h3, h4').each(function () {
-            $(this).attr('id', tocHeading + (++i));
-        });
-
-        // Set scroll toc fixed.
-        let tocHeight = parseInt($(window).height() * 0.4 - 64);
-        let $tocWidget = $('.toc-widget');
-        $(window).scroll(function () {
-            let scroll = $(window).scrollTop();
-            /* add post toc fixed. */
-            if (scroll > tocHeight) {
-                $tocWidget.addClass('toc-fixed');
-            } else {
-                $tocWidget.removeClass('toc-fixed');
-            }
-        });
-    });
-</script>
     
 
 </main>
