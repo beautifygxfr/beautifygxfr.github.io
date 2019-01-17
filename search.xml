@@ -14,6 +14,29 @@
     </entry>
     
     <entry>
+      <title>hwi侧滑注释</title>
+      <link href="/2019/01/17/76/"/>
+      <url>/2019/01/17/76/</url>
+      
+        <content type="html"><![CDATA[<p>&lt;?xml version=”1.0” encoding=”utf-8”?&gt;</p><p>&lt;com.tencent.mobileqq.activity.SettingMeRelativeLayout xmlns:android=”<a href="http://schemas.android.com/apk/res/android&quot;" target="_blank" rel="noopener">http://schemas.android.com/apk/res/android&quot;</a></p><p>   android:orientation=”vertical”</p><p>   android:layout_width=”match_parent”</p><p>   android:layout_height=”match_parent”&gt;</p><p>   RelativeLayout</p><pre><code>android:id=&quot;@7f0a0922&quot;android:focusable=&quot;true&quot;android:layout_width=&quot;match_parent&quot;android:layout_height=&quot;212dp&quot;android:layout_alignParentLeft=&quot;true&quot;android:layout_alignParentTop=&quot;true&quot;&gt;&lt;RelativeLayout    android:id=&quot;@7f0a25cd&quot;    android:background=&quot;@7f0216de&quot;    android:paddingLeft=&quot;@7f0d01f0&quot;    android:focusable=&quot;true&quot;    android:layout_width=&quot;match_parent&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_marginBottom=&quot;15dp&quot;    android:minHeight=&quot;27dp&quot;    android:layout_alignParentBottom=&quot;true&quot;&gt;    &lt;TextView        android:id=&quot;@7f0a25ce&quot;        android:visibility=&quot;gone&quot;        android:drawableLeft=&quot;@7f021aa3&quot;        android:layout_alignParentLeft=&quot;true&quot;        style=&quot;@style/CustomNoteTxt&quot; /&gt;    &lt;ImageView        android:id=&quot;@7f0a25cf&quot;        android:layout_width=&quot;15dp&quot;        android:layout_height=&quot;15dp&quot;        android:layout_marginRight=&quot;4dp&quot;        android:scaleType=&quot;centerCrop&quot;        android:layout_alignParentLeft=&quot;true&quot;        android:layout_centerVertical=&quot;true&quot; /&gt;    &lt;TextView［37~50这个控件是个性签名］        android:textSize=&quot;14dp&quot;（签名文字大小）        android:textColor=&quot;@7f0c0523&quot;（签名文字颜色）        android:ellipsize=&quot;end&quot;        android:id=&quot;@7f0a25d0&quot;        android:duplicateParentState=&quot;true&quot;        android:layout_width=&quot;wrap_content&quot;［这一行和下面一行改成0dp即可去除］        android:layout_height=&quot;wrap_content&quot;        android:maxWidth=&quot;240dp&quot;        android:text=&quot;@null&quot;        android:singleLine=&quot;true&quot;        android:shadowColor=&quot;#7F000000&quot;        android:layout_toRightOf=&quot;@7f0a25cf&quot;        android:layout_centerVertical=&quot;true&quot; /&gt;    &lt;ImageView［个性签名编辑的图片］        android:id=&quot;@7f0a25d1&quot;        android:visibility=&quot;gone&quot;        android:layout_width=&quot;15dp&quot;        android:layout_height=&quot;15dp&quot;        android:layout_marginLeft=&quot;4dp&quot;        android:src=&quot;@7f0216e9&quot;［图片ID］        android:scaleType=&quot;centerCrop&quot;        android:layout_toRightOf=&quot;@7f0a25d0&quot;        android:layout_centerVertical=&quot;true&quot; /&gt;&lt;/RelativeLayout&gt;&lt;RelativeLayout    android:id=&quot;@7f0a25d2&quot;    android:focusable=&quot;true&quot;    android:layout_width=&quot;wrap_content&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_above=&quot;@7f0a25cd&quot;    android:layout_alignParentLeft=&quot;true&quot;&gt;    &lt;com.tencent.mobileqq.vas.avatar.AvatarLayout  ［69~83 侧滑头像］        android:id=&quot;@7f0a0524&quot;        android:layout_width=&quot;@7f0d01f9&quot;［这一行和下面一行是头像大小可以直接改成dp］        android:layout_height=&quot;@7f0d01f9&quot;        android:layout_marginLeft=&quot;21dp&quot;        android:layout_marginTop=&quot;12.599977dp&quot;        android:layout_alignParentLeft=&quot;true&quot;&gt;        &lt;com.tencent.mobileqq.avatar.dynamicavatar.DynamicAvatarView            android:id=&quot;@7f0a21c1&quot;            android:focusable=&quot;false&quot;            android:layout_width=&quot;match_parent&quot;            android:layout_height=&quot;match_parent&quot;            android:src=&quot;@7f02067f&quot;            android:scaleType=&quot;centerCrop&quot; /&gt;    &lt;/com.tencent.mobileqq.vas.avatar.AvatarLayout&gt;    &lt;ImageView［84~93是头像白色圈］        android:id=&quot;@7f0a25d3&quot;        android:background=&quot;@7f021701&quot;这是圈圈图ID        android:focusable=&quot;false&quot;        android:layout_width=&quot;37dp&quot;    这一行和下面一行是大小        android:layout_height=&quot;37dp&quot;        android:layout_marginLeft=&quot;20dp&quot;        android:layout_marginTop=&quot;11.599977dp&quot;        android:scaleType=&quot;fitXY&quot;        android:layout_alignParentLeft=&quot;true&quot; /&gt;    &lt;TextView［侧滑网名］        android:textSize=&quot;30dp&quot;（网名字体大小）        android:textColor=&quot;@7f0c0524&quot;［网名字体颜色］        android:ellipsize=&quot;end&quot;        android:id=&quot;@7f0a047c&quot;        android:focusable=&quot;false&quot;        android:layout_width=&quot;wrap_content&quot;［这一行和下一行改成0dp即可去除］        android:layout_height=&quot;wrap_content&quot;        android:layout_marginLeft=&quot;8dp&quot;        android:layout_marginTop=&quot;12.599977dp&quot;        android:maxWidth=&quot;260dp&quot;        android:singleLine=&quot;true&quot;        android:includeFontPadding=&quot;false&quot;        android:shadowColor=&quot;#7F000000&quot;        android:layout_toRightOf=&quot;@7f0a0524&quot; /&gt;    &lt;TextView侧滑等级图标        android:textSize=&quot;12dp&quot;        android:ellipsize=&quot;end&quot;        android:id=&quot;@7f0a25d4&quot;        android:focusable=&quot;false&quot;        android:layout_width=&quot;match_parent&quot;［这一行和下一行改成0dp即可去除］        android:layout_height=&quot;wrap_content&quot;        android:layout_marginLeft=&quot;20dp&quot;        android:layout_marginTop=&quot;@7f0d01f8&quot;        android:singleLine=&quot;true&quot;        android:drawablePadding=&quot;4dp&quot;        android:layout_below=&quot;@7f0a047c&quot; /&gt;    &lt;com.tencent.image.URLImageView        android:id=&quot;@7f0a0525&quot;        android:background=&quot;@null&quot;        android:focusable=&quot;false&quot;        android:visibility=&quot;gone&quot;        android:layout_width=&quot;45dp&quot;        android:layout_height=&quot;53.099983dp&quot;        android:layout_marginLeft=&quot;16.500002dp&quot;        android:scaleType=&quot;fitXY&quot;        android:layout_alignParentLeft=&quot;true&quot;        android:layout_alignParentTop=&quot;true&quot; /&gt;&lt;/RelativeLayout&gt;</code></pre><p>   </p><p>   -&lt;FrameLayout［134~149行是二维码控件］</p><pre><code>android:id=&quot;@7f0a25d5&quot;android:layout_width=&quot;wrap_content&quot;android:layout_height=&quot;wrap_content&quot;android:layout_marginTop=&quot;35dp&quot;android:layout_marginRight=&quot;@7f0d01e7&quot;android:layout_alignParentRight=&quot;true&quot;&gt;&lt;ImageView    android:id=&quot;@7f0a25d6&quot;    android:layout_width=&quot;wrap_content&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_marginRight=&quot;15dp&quot;    android:src=&quot;@7f0216e7&quot;［二维码图片］    android:scaleType=&quot;centerCrop&quot;    android:contentDescription=&quot;二维码&quot; /&gt;</code></pre><p>   </p><p>   -&lt;LinearLayout［150~184是打卡］</p><pre><code>android:gravity=&quot;center_vertical&quot;android:orientation=&quot;horizontal&quot;(水平)android:id=&quot;@7f0a25d7&quot;android:paddingLeft=&quot;20dp&quot;android:paddingTop=&quot;10dp&quot;android:paddingBottom=&quot;20dp&quot;android:visibility=&quot;gone&quot;android:layout_width=&quot;wrap_content&quot;android:layout_height=&quot;wrap_content&quot;android:layout_marginTop=&quot;25dp&quot;&gt;&lt;RelativeLayout    android:id=&quot;@7f0a25d8&quot;    android:layout_width=&quot;30dp&quot;    android:layout_height=&quot;30dp&quot;    android:layout_marginRight=&quot;3dp&quot;&gt;    &lt;com.tencent.image.URLImageView        android:id=&quot;@7f0a25d9&quot;        android:layout_width=&quot;24dp&quot;        android:layout_height=&quot;24dp&quot;        android:src=&quot;@7f0216f8&quot;［打卡图片］        android:scaleType=&quot;centerCrop&quot;        android:layout_centerInParent=&quot;true&quot; /&gt;&lt;/RelativeLayout&gt;&lt;TextView    android:textSize=&quot;16dp&quot;［打卡文字 改成0dp即不显示］    android:textStyle=&quot;bold&quot;    android:textColor=&quot;@7f0c0524&quot; ［打卡字体颜色］    android:ellipsize=&quot;end&quot;    android:id=&quot;@7f0a25da&quot;    android:layout_width=&quot;wrap_content&quot;    android:layout_height=&quot;wrap_content&quot;    android:singleLine=&quot;true&quot;    android:shadowColor=&quot;#7F000000&quot; /&gt;</code></pre><p>   -LinearLayout&gt;</p><p>   &lt;com.tencent.mobileqq.widget.BounceScrollView</p><pre><code>android:orientation=&quot;vertical&quot;android:id=&quot;@7f0a25db&quot;android:layout_width=&quot;match_parent&quot;android:layout_height=&quot;match_parent&quot;android:layout_marginBottom=&quot;10dp&quot;android:layout_above=&quot;@7f0a0521&quot;android:layout_below=&quot;@7f0a0922&quot;&gt;&lt;LinearLayout    android:orientation=&quot;vertical&quot;    android:id=&quot;@7f0a25dc&quot;    android:paddingTop=&quot;15dp&quot;    android:layout_width=&quot;match_parent&quot;    android:layout_height=&quot;wrap_content&quot;&gt;    &lt;include        android:id=&quot;@7f0a25dd&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25de&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25df&quot;        layout=&quot;@layout/qq_setting_me_item_business&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e0&quot;        layout=&quot;@layout/qq_setting_me_icon_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e1&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e2&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e3&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e4&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e5&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e6&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e7&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;    &lt;include        android:id=&quot;@7f0a25e8&quot;        layout=&quot;@layout/qq_setting_me_item&quot; /&gt;&lt;/LinearLayout&gt;</code></pre><p>   &lt;/com.tencent.mobileqq.widget.BounceScrollView&gt;</p><p>   -&lt;LinearLayout</p><pre><code>android:gravity=&quot;center_vertical&quot;android:orientation=&quot;horizontal&quot;android:id=&quot;@7f0a0521&quot;android:layout_width=&quot;match_parent&quot;android:layout_height=&quot;wrap_content&quot;android:layout_marginLeft=&quot;20dp&quot;android:layout_marginRight=&quot;@7f0d01e8&quot;android:layout_marginBottom=&quot;15dp&quot;android:layout_alignParentLeft=&quot;true&quot;android:layout_alignParentBottom=&quot;true&quot;&gt;&lt;LinearLayout    android:layout_gravity=&quot;bottom&quot;    android:orientation=&quot;vertical&quot;    android:id=&quot;@7f0a25e9&quot;    android:layout_width=&quot;0dp&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_weight=&quot;1&quot;&gt;    &lt;RelativeLayout        android:layout_width=&quot;wrap_content&quot;        android:layout_height=&quot;wrap_content&quot;&gt;        &lt;ImageView            android:id=&quot;@7f0a25ea&quot;            android:layout_width=&quot;20dp&quot;            android:layout_height=&quot;20dp&quot;［这一行和下一行是设置图片大小］            android:layout_marginLeft=&quot;2dp&quot;            android:src=&quot;@7f0216f3&quot;［设置图片］            android:scaleType=&quot;centerCrop&quot;            android:layout_alignParentTop=&quot;true&quot; /&gt;        &lt;com.tencent.mobileqq.widget.RedDotTextView            android:id=&quot;@7f0a25eb&quot;            android:layout_width=&quot;20dp&quot;            android:layout_height=&quot;20dp&quot;            android:layout_marginLeft=&quot;-6dp&quot;            android:text=&quot;@null&quot;            android:layout_toRightOf=&quot;@7f0a25ea&quot; /&gt;    &lt;/RelativeLayout&gt;    &lt;TextView        android:textSize=&quot;12dp&quot;        android:textColor=&quot;@7f0c0521&quot;        android:gravity=&quot;bottom|center|left&quot;        android:id=&quot;@7f0a25ec&quot;        android:duplicateParentState=&quot;true&quot;        android:layout_width=&quot;wrap_content&quot;        android:layout_height=&quot;match_parent&quot;        android:layout_marginTop=&quot;4dp&quot;        android:text=&quot;@7f0b2524&quot; /&gt;&lt;/LinearLayout&gt;&lt;LinearLayout    android:layout_gravity=&quot;bottom|center|left&quot;    android:orientation=&quot;vertical&quot;    android:id=&quot;@7f0a25ed&quot;    android:layout_width=&quot;0dp&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_weight=&quot;1&quot;&gt;    &lt;ImageView        android:id=&quot;@7f0a25ee&quot;        android:layout_width=&quot;20dp&quot;        android:layout_height=&quot;20dp&quot;        android:layout_marginLeft=&quot;2dp&quot;        android:src=&quot;@7f0216df&quot;        android:scaleType=&quot;centerCrop&quot; /&gt;    &lt;TextView        android:textSize=&quot;12dp&quot;        android:textColor=&quot;@7f0c0521&quot;        android:gravity=&quot;bottom&quot;        android:id=&quot;@7f0a25ef&quot;        android:duplicateParentState=&quot;true&quot;        android:layout_width=&quot;wrap_content&quot;        android:layout_height=&quot;match_parent&quot;        android:layout_marginTop=&quot;4dp&quot;        android:text=&quot;@7f0b2525&quot; /&gt;&lt;/LinearLayout&gt;&lt;LinearLayout    android:layout_gravity=&quot;bottom|center|left&quot;    android:orientation=&quot;vertical&quot;    android:id=&quot;@7f0a25f0&quot;    android:layout_width=&quot;0dp&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_weight=&quot;1&quot;&gt;    &lt;RelativeLayout        android:layout_width=&quot;wrap_content&quot;        android:layout_height=&quot;wrap_content&quot;&gt;        &lt;TextView            android:textSize=&quot;18sp&quot;            android:textColor=&quot;@7f0c0521&quot;            android:id=&quot;@7f0a25f1&quot;            android:visibility=&quot;gone&quot;            android:layout_width=&quot;wrap_content&quot;            android:layout_height=&quot;wrap_content&quot;            android:text=&quot;-&quot; /&gt;        &lt;TextView            android:textSize=&quot;18sp&quot;            android:textColor=&quot;@7f0c0521&quot;            android:gravity=&quot;top&quot;            android:id=&quot;@7f0a25f2&quot;            android:layout_width=&quot;wrap_content&quot;            android:layout_height=&quot;wrap_content&quot;            android:text=&quot;@null&quot;            android:layout_toRightOf=&quot;@7f0a25f1&quot; /&gt;        &lt;TextView            android:textSize=&quot;12sp&quot;            android:textColor=&quot;@7f0c0521&quot;            android:id=&quot;@7f0a25f3&quot;            android:layout_width=&quot;wrap_content&quot;            android:layout_height=&quot;wrap_content&quot;            android:text=&quot;@null&quot;            android:layout_toRightOf=&quot;@7f0a25f2&quot; /&gt;    &lt;/RelativeLayout&gt;    &lt;TextView        android:textSize=&quot;12sp&quot;        android:textColor=&quot;@7f0c0521&quot;        android:ellipsize=&quot;end&quot;        android:gravity=&quot;bottom&quot;        android:id=&quot;@7f0a25f4&quot;        android:layout_width=&quot;wrap_content&quot;        android:layout_height=&quot;match_parent&quot;        android:layout_marginTop=&quot;4dp&quot;        android:text=&quot;@null&quot;        android:singleLine=&quot;true&quot;        android:includeFontPadding=&quot;false&quot; /&gt;&lt;/LinearLayout&gt;&lt;LinearLayout    android:gravity=&quot;center_horizontal&quot;    android:layout_gravity=&quot;bottom&quot;    android:orientation=&quot;vertical&quot;    android:id=&quot;@7f0a25f5&quot;    android:visibility=&quot;gone&quot;    android:layout_width=&quot;wrap_content&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_marginLeft=&quot;39dp&quot;&gt;    &lt;ImageView        android:id=&quot;@7f0a25f6&quot;        android:layout_width=&quot;15dp&quot;        android:layout_height=&quot;25dp&quot;        android:src=&quot;@7f02028f&quot;        android:scaleType=&quot;fitCenter&quot;        android:layout_alignParentBottom=&quot;true&quot; /&gt;    &lt;TextView        android:textSize=&quot;14dp&quot;        android:textColor=&quot;@7f0c0521&quot;        android:ellipsize=&quot;end&quot;        android:gravity=&quot;center_vertical&quot;        android:id=&quot;@7f0a25f7&quot;        android:duplicateParentState=&quot;true&quot;        android:layout_width=&quot;wrap_content&quot;        android:layout_height=&quot;match_parent&quot;        android:layout_marginTop=&quot;4dp&quot;        android:text=&quot;厘米秀&quot;        android:singleLine=&quot;true&quot; /&gt;&lt;/LinearLayout&gt;</code></pre><p>   </p><p>   &lt;com.tencent.mobileqq.apollo.view.FrameGifView</p><pre><code>android:id=&quot;@7f0a25f8&quot;android:layout_width=&quot;100dp&quot;android:layout_height=&quot;108dp&quot;android:layout_marginRight=&quot;@7f0d022e&quot;android:layout_marginBottom=&quot;13dp&quot;android:scaleType=&quot;fitCenter&quot;android:layout_alignParentRight=&quot;true&quot;android:layout_alignParentBottom=&quot;true&quot; /&gt;</code></pre><p>   &lt;com.tencent.mobileqq.apollo.store.ApolloBoxEnterView</p><pre><code>android:id=&quot;@7f0a25f9&quot;android:layout_width=&quot;wrap_content&quot;android:layout_height=&quot;wrap_content&quot;android:layout_alignParentRight=&quot;true&quot;android:layout_alignParentBottom=&quot;true&quot; /&gt;</code></pre><p>   -&lt;RelativeLayout</p><pre><code>android:id=&quot;@7f0a25fa&quot;android:visibility=&quot;gone&quot;android:layout_width=&quot;match_parent&quot;android:layout_height=&quot;match_parent&quot;android:layout_alignParentRight=&quot;true&quot;android:layout_alignParentBottom=&quot;true&quot;&gt;&lt;LinearLayout    android:orientation=&quot;vertical&quot;    android:id=&quot;@7f0a25fb&quot;    android:paddingLeft=&quot;60dp&quot;    android:layout_width=&quot;match_parent&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_marginTop=&quot;10dp&quot;    android:layout_marginRight=&quot;@7f0d01fe&quot;    android:layout_alignParentRight=&quot;true&quot;    android:layout_alignParentBottom=&quot;true&quot;&gt;    &lt;TextView        android:textSize=&quot;@7f0d003d&quot;        android:textColor=&quot;#FF000000&quot;        android:ellipsize=&quot;end&quot;        android:gravity=&quot;center_vertical&quot;        android:layout_gravity=&quot;right&quot;        android:id=&quot;@7f0a25fc&quot;        android:background=&quot;@7f020215&quot;        android:paddingLeft=&quot;@7f0d003c&quot;        android:paddingRight=&quot;@7f0d003c&quot;        android:visibility=&quot;gone&quot;        android:layout_width=&quot;wrap_content&quot;        android:layout_height=&quot;wrap_content&quot;        android:layout_marginRight=&quot;33dp&quot;        android:maxWidth=&quot;124dp&quot;        android:maxLines=&quot;2&quot; /&gt;    &lt;com.tencent.mobileqq.dinifly.DiniFlyAnimationView        android:layout_gravity=&quot;right&quot;        android:id=&quot;@7f0a25fd&quot;        android:layout_width=&quot;50dp&quot;        android:layout_height=&quot;50dp&quot;        android:layout_marginBottom=&quot;40dp&quot; /&gt;&lt;/LinearLayout&gt;&lt;LinearLayout    android:id=&quot;@7f0a25fe&quot;    android:paddingBottom=&quot;@7f0d07cc&quot;    android:layout_width=&quot;wrap_content&quot;    android:layout_height=&quot;wrap_content&quot;    android:layout_marginRight=&quot;@7f0d01fe&quot;    android:layout_alignParentRight=&quot;true&quot;    android:layout_alignParentBottom=&quot;true&quot;&gt;    &lt;TextView        android:textSize=&quot;12sp&quot;        android:textColor=&quot;@7f0c0521&quot;        android:gravity=&quot;center&quot;        android:id=&quot;@7f0a25ff&quot;        android:background=&quot;@null&quot;        android:layout_width=&quot;50dp&quot;        android:layout_height=&quot;wrap_content&quot;        android:text=&quot;玩一玩&quot; /&gt;&lt;/LinearLayout&gt;</code></pre><p>   </p><p>&lt;/com.tencent.mobileqq.activity.SettingMeRelativeLayout&gt;</p><p>没写完</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 注释 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>去群聊炫彩昵称</title>
       <link href="/2019/01/15/4/"/>
       <url>/2019/01/15/4/</url>
@@ -1309,29 +1332,6 @@
     </entry>
     
     <entry>
-      <title>抽拉式底栏教程</title>
-      <link href="/2018/12/04/21/"/>
-      <url>/2018/12/04/21/</url>
-      
-        <content type="html"><![CDATA[<p>以下代码 自行对比源文件cbg修改</p><p>红色字体需删</p><p>&lt;?xml version=”1.0” encoding=”utf-8”?&gt;</p><p>&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:android=”<a href="http://schemas.android.com/apk/res/android&quot;" target="_blank" rel="noopener">http://schemas.android.com/apk/res/android&quot;</a></p><p>android:id=”@android:id/tabhost”</p><p>android:layout_width=”match_parent”</p><p>android:layout_height=”match_parent”&gt;</p><p>&lt;com.tencent.mobileqq.activity.recent.cur.DragFrameLayout</p><p>android:id=”@7F0A0905”&lt;!-根据版本修改，对比原文件修改 –&gt;</p><p>android:layout_width=”match_parent”</p><p>android:layout_height=”match_parent”&gt;</p><framelayout android:id="@01020011" android:paddingbottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent"><p>&lt;com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</p><p>android:layout_gravity=”bottom|center|right”</p><p>android:scrollbars=”none”</p><p>android:layout_width=”220dp”</p><p>android:layout_height=”56dp”</p><p>android:fillViewport=”true”</p><p>android:layout_alignParentRight=”true”</p><p>android:layout_alignParentBottom=”true”</p><p>android:overScrollMode=”never”&gt;</p><linearlayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="56dp" android:adjustviewbounds="true" android:minheight="45dp"><br><br><view android:layout_width="220dp" android:layout_height="56dp"><br><br><relativelayout android:layout_gravity="right" android:layout_width="220dp" android:layout_height="56dp" android:layout_alignparentright="true"><br><br>&lt;com.tencent.mobileqq.widget.QQTabWidget<br><br>android:layout_gravity=”bottom”<br><br>android:id=”@01020013”<br><br>android:background=”#00000000”底栏颜色<br><br>android:layout_width=”match_parent”<br><br>android:layout_height=”wrap_content”<br><br>android:layout_alignParentBottom=”true”/&gt;<br><br></relativelayout><br><br></view></linearlayout><p>&lt;/com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView&gt;</p><p>&lt;include</p><p>android:layout_gravity=”center|left|top”</p><p>android:id=”@7F0A0906”<!-- 根据版本修改，对比源文件文件 --></p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p>layout=”@layout/qq_conversation_frame_head”/&gt;</p><p>&lt;/com.tencent.mobileqq.activity.recent.cur.DragFrameLayout&gt;</p><p>&lt;/com.tencent.mobileqq.widget.QQTabHost&gt;</p></framelayout>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>去除Svip标识</title>
       <link href="/2018/12/04/2/"/>
       <url>/2018/12/04/2/</url>
@@ -1366,11 +1366,11 @@
     </entry>
     
     <entry>
-      <title>修改左上角头像为设置按钮</title>
-      <link href="/2018/12/04/19/"/>
-      <url>/2018/12/04/19/</url>
+      <title>抽拉式底栏教程</title>
+      <link href="/2018/12/04/21/"/>
+      <url>/2018/12/04/21/</url>
       
-        <content type="html"><![CDATA[<p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p><p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p><p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure><p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p><p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>]]></content>
+        <content type="html"><![CDATA[<p>以下代码 自行对比源文件cbg修改</p><p>红色字体需删</p><p>&lt;?xml version=”1.0” encoding=”utf-8”?&gt;</p><p>&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:android=”<a href="http://schemas.android.com/apk/res/android&quot;" target="_blank" rel="noopener">http://schemas.android.com/apk/res/android&quot;</a></p><p>android:id=”@android:id/tabhost”</p><p>android:layout_width=”match_parent”</p><p>android:layout_height=”match_parent”&gt;</p><p>&lt;com.tencent.mobileqq.activity.recent.cur.DragFrameLayout</p><p>android:id=”@7F0A0905”&lt;!-根据版本修改，对比原文件修改 –&gt;</p><p>android:layout_width=”match_parent”</p><p>android:layout_height=”match_parent”&gt;</p><framelayout android:id="@01020011" android:paddingbottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent"><p>&lt;com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</p><p>android:layout_gravity=”bottom|center|right”</p><p>android:scrollbars=”none”</p><p>android:layout_width=”220dp”</p><p>android:layout_height=”56dp”</p><p>android:fillViewport=”true”</p><p>android:layout_alignParentRight=”true”</p><p>android:layout_alignParentBottom=”true”</p><p>android:overScrollMode=”never”&gt;</p><linearlayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="56dp" android:adjustviewbounds="true" android:minheight="45dp"><br><br><view android:layout_width="220dp" android:layout_height="56dp"><br><br><relativelayout android:layout_gravity="right" android:layout_width="220dp" android:layout_height="56dp" android:layout_alignparentright="true"><br><br>&lt;com.tencent.mobileqq.widget.QQTabWidget<br><br>android:layout_gravity=”bottom”<br><br>android:id=”@01020013”<br><br>android:background=”#00000000”底栏颜色<br><br>android:layout_width=”match_parent”<br><br>android:layout_height=”wrap_content”<br><br>android:layout_alignParentBottom=”true”/&gt;<br><br></relativelayout><br><br></view></linearlayout><p>&lt;/com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView&gt;</p><p>&lt;include</p><p>android:layout_gravity=”center|left|top”</p><p>android:id=”@7F0A0906”<!-- 根据版本修改，对比源文件文件 --></p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p>layout=”@layout/qq_conversation_frame_head”/&gt;</p><p>&lt;/com.tencent.mobileqq.activity.recent.cur.DragFrameLayout&gt;</p><p>&lt;/com.tencent.mobileqq.widget.QQTabHost&gt;</p></framelayout>]]></content>
       
       
       <categories>
@@ -1412,23 +1412,6 @@
     </entry>
     
     <entry>
-      <title>精简双击聊天气泡后界面</title>
-      <link href="/2018/12/04/3/"/>
-      <url>/2018/12/04/3/</url>
-      
-        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    <entry>
       <title>闪照无需长按查看教程</title>
       <link href="/2018/12/04/7/"/>
       <url>/2018/12/04/7/</url>
@@ -1439,6 +1422,29 @@
       <categories>
           
           <category> Dex4 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>修改左上角头像为设置按钮</title>
+      <link href="/2018/12/04/19/"/>
+      <url>/2018/12/04/19/</url>
+      
+        <content type="html"><![CDATA[<p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p><p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p><p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure><p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p><p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
           
       </categories>
       
@@ -1494,6 +1500,23 @@
             <tag> 教程 </tag>
             
         </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>精简双击聊天气泡后界面</title>
+      <link href="/2018/12/04/3/"/>
+      <url>/2018/12/04/3/</url>
+      
+        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -1567,23 +1590,6 @@
     </entry>
     
     <entry>
-      <title>去高能舞试</title>
-      <link href="/2018/12/04/8/"/>
-      <url>/2018/12/04/8/</url>
-      
-        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex6 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    <entry>
       <title>去除气泡</title>
       <link href="/2018/12/04/22/"/>
       <url>/2018/12/04/22/</url>
@@ -1603,6 +1609,23 @@
             <tag> 教程 </tag>
             
         </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去高能舞试</title>
+      <link href="/2018/12/04/8/"/>
+      <url>/2018/12/04/8/</url>
+      
+        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex6 </category>
+          
+      </categories>
+      
       
     </entry>
     
