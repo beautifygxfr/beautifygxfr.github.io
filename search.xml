@@ -64,7 +64,7 @@
       <link href="/2019/01/15/75/"/>
       <url>/2019/01/15/75/</url>
       
-        <content type="html"><![CDATA[<p>DEX编辑器打开classes2.dex</p><p>常量搜索 effects</p><p>打开Lcom/tencent/mobileqq/trooppiceffects/TroopPicEffectsController;</p><p>再次搜索　effects</p><p>打 开 .<init></init></p><p>内容全删 写上return-void</p><p>原作者@小浅丶</p>]]></content>
+        <content type="html"><![CDATA[<p>DEX编辑器打开classes2.dex</p><p>常量搜索 effects</p><p>打开Lcom/tencent/mobileqq/trooppiceffects/TroopPicEffectsController;</p><p>再次搜索　effects</p><p>#打开 init</p><p>内容全删 写上return-void</p><p>原作者@小浅丶</p>]]></content>
       
       
       <categories>
@@ -1355,103 +1355,11 @@
     </entry>
     
     <entry>
-      <title>去主页全民闯关</title>
-      <link href="/2018/12/04/23/"/>
-      <url>/2018/12/04/23/</url>
+      <title>修改左上角头像为设置按钮</title>
+      <link href="/2018/12/04/19/"/>
+      <url>/2018/12/04/19/</url>
       
-        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex2 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>关于闪照</title>
-      <link href="/2018/12/04/18/"/>
-      <url>/2018/12/04/18/</url>
-      
-        <content type="html"><![CDATA[<p>.防闪照消失，修改闪照时间，且可以截屏</p><p>//用dex编辑器打开classes2.dex</p><p>//搜索常量”flashpichelper”</p><p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p><p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p><p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p><p>//回编译</p><p>//用dex编辑器打开classes4.dex</p><p>//搜索常量”HotChatFlashPicActivity”</p><p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p><p>//继续搜索常量”doOnCreate”</p><p>//打开(Landroid/os/Bundle;)Z</p><p>//搜索”SDK_INT”</p><p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p><p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p><p>//回编译，签名，安装</p><h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p><ol><li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li><li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li></ol><p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex2 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>闪照无需长按查看教程</title>
-      <link href="/2018/12/04/7/"/>
-      <url>/2018/12/04/7/</url>
-      
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4</p><p>搜索Flash<br><a id="more"></a></p><p>得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity，</p><p>打开方法　找到onTouch　修改方法如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgj9mH4AUovPfC_AMw4gk4_ho.jpg" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex4 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>去除气泡</title>
-      <link href="/2018/12/04/22/"/>
-      <url>/2018/12/04/22/</url>
-      
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex4 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>去除闪照倒计时</title>
-      <link href="/2018/12/04/20/"/>
-      <url>/2018/12/04/20/</url>
-      
-        <content type="html"><![CDATA[<p>打开mwj.xml</p><p>搜索CountDownProgressBar</p><p>保留ID其他内容直接删掉，写如下代码进去即可</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg9s7Q1gUo_M6fgAQwuAg4gA8.png" alt="图片"></p><p>原作者@绅士寻欢</p>]]></content>
+        <content type="html"><![CDATA[<p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p><p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p><p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure><p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p><p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>]]></content>
       
       
       <categories>
@@ -1481,16 +1389,16 @@
     </entry>
     
     <entry>
-      <title>修改左上角头像为设置按钮</title>
-      <link href="/2018/12/04/19/"/>
-      <url>/2018/12/04/19/</url>
+      <title>关于闪照</title>
+      <link href="/2018/12/04/18/"/>
+      <url>/2018/12/04/18/</url>
       
-        <content type="html"><![CDATA[<p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p><p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p><p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure><p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p><p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>]]></content>
+        <content type="html"><![CDATA[<p>.防闪照消失，修改闪照时间，且可以截屏</p><p>//用dex编辑器打开classes2.dex</p><p>//搜索常量”flashpichelper”</p><p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p><p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p><p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p><p>//回编译</p><p>//用dex编辑器打开classes4.dex</p><p>//搜索常量”HotChatFlashPicActivity”</p><p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p><p>//继续搜索常量”doOnCreate”</p><p>//打开(Landroid/os/Bundle;)Z</p><p>//搜索”SDK_INT”</p><p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p><p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p><p>//回编译，签名，安装</p><h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p><ol><li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li><li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li></ol><p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>]]></content>
       
       
       <categories>
           
-          <category> XML </category>
+          <category> Dex2 </category>
           
       </categories>
       
@@ -1504,11 +1412,11 @@
     </entry>
     
     <entry>
-      <title>聊天输入框加字</title>
-      <link href="/2018/12/04/24/"/>
-      <url>/2018/12/04/24/</url>
+      <title>去除闪照倒计时</title>
+      <link href="/2018/12/04/20/"/>
+      <url>/2018/12/04/20/</url>
       
-        <content type="html"><![CDATA[<p>打开R\o clc.xml</p><p>找到　</p><p>com.tencent.widget.XEditTextEx 这一段</p><p>在下面加上</p><p>android:hint=”你要加的字”</p><p>以实际参考为准</p>]]></content>
+        <content type="html"><![CDATA[<p>打开mwj.xml</p><p>搜索CountDownProgressBar</p><p>保留ID其他内容直接删掉，写如下代码进去即可</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg9s7Q1gUo_M6fgAQwuAg4gA8.png" alt="图片"></p><p>原作者@绅士寻欢</p>]]></content>
       
       
       <categories>
@@ -1550,11 +1458,11 @@
     </entry>
     
     <entry>
-      <title>抽拉式底栏教程</title>
-      <link href="/2018/12/04/21/"/>
-      <url>/2018/12/04/21/</url>
+      <title>聊天输入框加字</title>
+      <link href="/2018/12/04/24/"/>
+      <url>/2018/12/04/24/</url>
       
-        <content type="html"><![CDATA[<p>以下代码 自行对比源文件cbg修改</p><p>红色字体需删</p><p>&lt;?xml version=”1.0” encoding=”utf-8”?&gt;</p><p>&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:android=”<a href="http://schemas.android.com/apk/res/android&quot;" target="_blank" rel="noopener">http://schemas.android.com/apk/res/android&quot;</a></p><p>android:id=”@android:id/tabhost”</p><p>android:layout_width=”match_parent”</p><p>android:layout_height=”match_parent”&gt;</p><p>&lt;com.tencent.mobileqq.activity.recent.cur.DragFrameLayout</p><p>android:id=”@7F0A0905”&lt;!-根据版本修改，对比原文件修改 –&gt;</p><p>android:layout_width=”match_parent”</p><p>android:layout_height=”match_parent”&gt;</p><framelayout android:id="@01020011" android:paddingbottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent"><p>&lt;com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</p><p>android:layout_gravity=”bottom|center|right”</p><p>android:scrollbars=”none”</p><p>android:layout_width=”220dp”</p><p>android:layout_height=”56dp”</p><p>android:fillViewport=”true”</p><p>android:layout_alignParentRight=”true”</p><p>android:layout_alignParentBottom=”true”</p><p>android:overScrollMode=”never”&gt;</p><linearlayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="56dp" android:adjustviewbounds="true" android:minheight="45dp"><br><br><view android:layout_width="220dp" android:layout_height="56dp"><br><br><relativelayout android:layout_gravity="right" android:layout_width="220dp" android:layout_height="56dp" android:layout_alignparentright="true"><br><br>&lt;com.tencent.mobileqq.widget.QQTabWidget<br><br>android:layout_gravity=”bottom”<br><br>android:id=”@01020013”<br><br>android:background=”#00000000”底栏颜色<br><br>android:layout_width=”match_parent”<br><br>android:layout_height=”wrap_content”<br><br>android:layout_alignParentBottom=”true”/&gt;<br><br></relativelayout><br><br></view></linearlayout><p>&lt;/com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView&gt;</p><p>&lt;include</p><p>android:layout_gravity=”center|left|top”</p><p>android:id=”@7F0A0906”<!-- 根据版本修改，对比源文件文件 --></p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p>layout=”@layout/qq_conversation_frame_head”/&gt;</p><p>&lt;/com.tencent.mobileqq.activity.recent.cur.DragFrameLayout&gt;</p><p>&lt;/com.tencent.mobileqq.widget.QQTabHost&gt;</p></framelayout>]]></content>
+        <content type="html"><![CDATA[<p>打开R\o clc.xml</p><p>找到　</p><p>com.tencent.widget.XEditTextEx 这一段</p><p>在下面加上</p><p>android:hint=”你要加的字”</p><p>以实际参考为准</p>]]></content>
       
       
       <categories>
@@ -1573,19 +1481,25 @@
     </entry>
     
     <entry>
-      <title>去高能舞试</title>
-      <link href="/2018/12/04/8/"/>
-      <url>/2018/12/04/8/</url>
+      <title>闪照无需长按查看教程</title>
+      <link href="/2018/12/04/7/"/>
+      <url>/2018/12/04/7/</url>
       
-        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4</p><p>搜索Flash<br><a id="more"></a></p><p>得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity，</p><p>打开方法　找到onTouch　修改方法如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgj9mH4AUovPfC_AMw4gk4_ho.jpg" alt=""></p>]]></content>
       
       
       <categories>
           
-          <category> Dex6 </category>
+          <category> Dex4 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -1626,6 +1540,92 @@
           
       </categories>
       
+      
+    </entry>
+    
+    <entry>
+      <title>抽拉式底栏教程</title>
+      <link href="/2018/12/04/21/"/>
+      <url>/2018/12/04/21/</url>
+      
+        <content type="html"><![CDATA[<p>以下代码 自行对比源文件cbg修改</p><p>红色字体需删</p><p>&lt;?xml version=”1.0” encoding=”utf-8”?&gt;</p><p>&lt;com.tencent.mobileqq.widget.QQTabHostxmlns:android=”<a href="http://schemas.android.com/apk/res/android&quot;" target="_blank" rel="noopener">http://schemas.android.com/apk/res/android&quot;</a></p><p>android:id=”@android:id/tabhost”</p><p>android:layout_width=”match_parent”</p><p>android:layout_height=”match_parent”&gt;</p><p>&lt;com.tencent.mobileqq.activity.recent.cur.DragFrameLayout</p><p>android:id=”@7F0A0905”&lt;!-根据版本修改，对比原文件修改 –&gt;</p><p>android:layout_width=”match_parent”</p><p>android:layout_height=”match_parent”&gt;</p><framelayout android:id="@01020011" android:paddingbottom="0dp" android:layout_width="match_parent" android:layout_height="match_parent"><p>&lt;com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</p><p>android:layout_gravity=”bottom|center|right”</p><p>android:scrollbars=”none”</p><p>android:layout_width=”220dp”</p><p>android:layout_height=”56dp”</p><p>android:fillViewport=”true”</p><p>android:layout_alignParentRight=”true”</p><p>android:layout_alignParentBottom=”true”</p><p>android:overScrollMode=”never”&gt;</p><linearlayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="56dp" android:adjustviewbounds="true" android:minheight="45dp"><br><br><view android:layout_width="220dp" android:layout_height="56dp"><br><br><relativelayout android:layout_gravity="right" android:layout_width="220dp" android:layout_height="56dp" android:layout_alignparentright="true"><br><br>&lt;com.tencent.mobileqq.widget.QQTabWidget<br><br>android:layout_gravity=”bottom”<br><br>android:id=”@01020013”<br><br>android:background=”#00000000”底栏颜色<br><br>android:layout_width=”match_parent”<br><br>android:layout_height=”wrap_content”<br><br>android:layout_alignParentBottom=”true”/&gt;<br><br></relativelayout><br><br></view></linearlayout><p>&lt;/com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView&gt;</p><p>&lt;include</p><p>android:layout_gravity=”center|left|top”</p><p>android:id=”@7F0A0906”<!-- 根据版本修改，对比源文件文件 --></p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p>layout=”@layout/qq_conversation_frame_head”/&gt;</p><p>&lt;/com.tencent.mobileqq.activity.recent.cur.DragFrameLayout&gt;</p><p>&lt;/com.tencent.mobileqq.widget.QQTabHost&gt;</p></framelayout>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去除气泡</title>
+      <link href="/2018/12/04/22/"/>
+      <url>/2018/12/04/22/</url>
+      
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex4 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去高能舞试</title>
+      <link href="/2018/12/04/8/"/>
+      <url>/2018/12/04/8/</url>
+      
+        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex6 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>去主页全民闯关</title>
+      <link href="/2018/12/04/23/"/>
+      <url>/2018/12/04/23/</url>
+      
+        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
       
     </entry>
     
