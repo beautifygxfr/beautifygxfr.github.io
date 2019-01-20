@@ -27,12 +27,10 @@
     }
 }
 
-
 body {
-    background-color: #ffffff;
+    background-color: #eaeaea;
     margin: 0;
-    background-size:100% 100%;
-    color: #969696;
+    color: #34495e;
 }
 
 h1 {
@@ -164,7 +162,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%); /*顶栏和侧滑顶栏渐变背景*/
+    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
 }
 
 .text-color {
@@ -186,13 +184,12 @@ mark {
     }
 }
 
-/*最底部进度条*/
 .progress-bar {
-    height: 5px;
+    height: 4px;
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #fbc2eb 20%, #a6c1ee 100%);
+    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
     opacity: 0.8;
 }
 
@@ -246,7 +243,7 @@ header .side-nav .mobile-head .logo-desc {
     padding-bottom: 10px;
     font-size: 0.8rem;
     line-height: 1.3rem;
-    color: #ffffff;
+    color: #e3e3e3;
 }
 
 header .side-nav .menu-list li {
@@ -296,8 +293,8 @@ header .side-nav .social-link {
     height: 45px;
     line-height: 45px;
     font-size: 1rem;
-    color: #000;
-    border: 1px solid #000;
+    color: #fff;
+    border: 1px solid #fff;
     background-color: transparent;
     border-radius: 30px;
     box-shadow: none;
@@ -323,7 +320,7 @@ header .side-nav .social-link {
 .cover-social-link a {
     padding: 0 15px;
     font-size: 1.35rem;
-    color: #000;
+    color: #fff;
 }
 
 header .go-back {
@@ -365,7 +362,6 @@ header .go-back i {
     animation: rainbow 60s infinite;
 }
 
-
 .bg-cover:before, .bg-cover:after {
     position: absolute;
     z-index: 1;
@@ -379,10 +375,9 @@ header .go-back i {
 
 .bg-cover .container {
     position: relative;
-    color: rgb(182, 182, 182); /*主页标题文字颜色*/
+    color: #fff;
     z-index: 2;
 }
-
 
 .bg-cover .title {
     font-size: 4rem;
@@ -396,13 +391,13 @@ header .go-back i {
     font-size: 1.25rem;
     font-weight: 300;
     line-height: 1.4em;
-    color: rgb(0, 0, 0);
+    color: #eee;
 }
 
 .bg-cover .post-title {
     font-size: 1.9rem;
 }
-/*
+
 @-webkit-keyframes rainbow {
     0%,
     100% {
@@ -482,7 +477,7 @@ header .go-back i {
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
 }
-*/
+
 .recommend {
     margin-top: 20px;
 }
@@ -492,7 +487,7 @@ header .go-back i {
 }
 
 .notice .card {
-    border-radius: 6px; /*公告圆角*/
+    border-radius: 5px;
 }
 
 #recommend-sections {
@@ -835,6 +830,11 @@ article .article-tags .chip {
 }
 
 #artDetail .post-info .post-date {
+    color: #525f7f;
+}
+
+#artDetail .post-info .post-read {
+    margin-left: 15px;
     color: #525f7f;
 }
 
@@ -1528,12 +1528,16 @@ footer {
     padding-bottom: 1px;
 }
 
+footer .social-statis {
+    margin-top: 10px;
+}
+
 footer a {
-    color: rgba(0, 0, 0, 0.762);
+    color: #fff;
 }
 
 footer .copy-right {
-    color: #f7f7f7;
+    color: #d9d9d9;
 }
 
 /*搜索层样式*/
