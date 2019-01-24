@@ -5,12 +5,12 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="关于闪照, Beautify">
-    <meta name="description" content=".防闪照消失，修改闪照时间，且可以截屏
-//用dex编辑器打开classes2.dex
-//搜索常量”flashpichelper”
-//打开com/tencent/mobileqq/app/FlashPicHelper;
-//打开方法列表">
+    <meta name="keywords" content="聊天界面透明顶栏(一体图), Beautify">
+    <meta name="description" content="首先复制skin_header_bar_bg.9.png的ID   (797 的iD为 7F02244C)然后在复制一张透明图片Id 需要.9
+首先修改Dex2 16进制搜索 7F02244C
+
+进入类 
+点进去继续搜索会得到两个方法a和b">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +18,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>关于闪照 | Beautify</title>
+    <title>聊天界面透明顶栏(一体图) | Beautify</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -270,7 +270,7 @@
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                    关于闪照
+                    聊天界面透明顶栏(一体图)
                     </div>
                 </div>
             </div>
@@ -396,39 +396,30 @@
                         Dex2
                     </a>
                     
+                    <a href="/categories/Dex2/Dex6/" class="post-category" target="_blank">
+                        Dex6
+                    </a>
+                    
                 </span>
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-12-04
+                    <i class="fa fa-clock-o fa-fw"></i>2019-01-24
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>.防闪照消失，修改闪照时间，且可以截屏</p>
-<p>//用dex编辑器打开classes2.dex</p>
-<p>//搜索常量”flashpichelper”</p>
-<p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p>
-<p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p>
-<p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p>
-<p>//回编译</p>
-<p>//用dex编辑器打开classes4.dex</p>
-<p>//搜索常量”HotChatFlashPicActivity”</p>
-<p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p>
-<p>//继续搜索常量”doOnCreate”</p>
-<p>//打开(Landroid/os/Bundle;)Z</p>
-<p>//搜索”SDK_INT”</p>
-<p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p>
-<p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p>
-<p>//回编译，签名，安装</p>
-<h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p>
-<ol>
-<li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li>
-<li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li>
-</ol>
-<p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>
+                <h2 id="首先复制skin-header-bar-bg-9-png的ID-797-的iD为-7F02244C"><a href="#首先复制skin-header-bar-bg-9-png的ID-797-的iD为-7F02244C" class="headerlink" title="首先复制skin_header_bar_bg.9.png的ID   (797 的iD为 7F02244C)"></a>首先复制skin_header_bar_bg.9.png的ID   (797 的iD为 7F02244C)</h2><h2 id="然后在复制一张透明图片Id-需要-9"><a href="#然后在复制一张透明图片Id-需要-9" class="headerlink" title="然后在复制一张透明图片Id 需要.9"></a>然后在复制一张透明图片Id 需要.9</h2><hr>
+<p>首先修改<a href="http://qr17.cn/AKiPQB" target="_blank" rel="noopener">Dex2</a> 16进制搜索 7F02244C</p>
+<p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7Jyf1wUoloycSzChBzj8BA.png" alt=""></p>
+<p>进入类 <img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg4p2n4gUo-sfd3QcwmAg4mwE.png" alt=""></p>
+<h2 id="点进去继续搜索会得到两个方法a和b"><a href="#点进去继续搜索会得到两个方法a和b" class="headerlink" title="点进去继续搜索会得到两个方法a和b"></a>点进去继续搜索会得到两个方法a和b</h2><h2 id="将里面的-7F02244C-这个id改成透明图片的id"><a href="#将里面的-7F02244C-这个id改成透明图片的id" class="headerlink" title="将里面的 7F02244C 这个id改成透明图片的id"></a>将里面的 7F02244C 这个id改成透明图片的id</h2><h1 id="两个方法都要改-然后保存"><a href="#两个方法都要改-然后保存" class="headerlink" title="两个方法都要改 然后保存"></a>两个方法都要改 然后保存</h1><p>打开Dex6 同样的方法搜索 7F02244C</p>
+<p>进入类<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAggaaf1wUo7K3h3gEwuAg4fw.jpg" alt=""></p>
+<p>然后继续搜索 7F02244C  得到方法a</p>
+<h1 id="点进去将137行的-7F02244C-改成透明图片id-行数以实际为准"><a href="#点进去将137行的-7F02244C-改成透明图片id-行数以实际为准" class="headerlink" title="点进去将137行的 7F02244C  改成透明图片id  (行数以实际为准)"></a>点进去将137行的 7F02244C  改成透明图片id  (行数以实际为准)</h1><p><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgiaqf1wUoyNLoxQcwuAg48go.jpg" alt="如图"></p>
+<p>保存</p>
 
             </div>
             <hr>
@@ -441,7 +432,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="https:Beautifys.github.io" class="b-link-green">Beautify</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/04/18/" class="b-link-green">关于闪照</a>
+                    <a href="/2019/01/24/77/" class="b-link-green">聊天界面透明顶栏(一体图)</a>
                 </p>
             </div>
         </div>
@@ -724,29 +715,33 @@
         <div class="article col s12 m6" data-aos="fade-up">
           
             <div class="card">
-                <a href="/2018/12/04/7/">
+                <a href="/2019/01/24/77/">
                     <div class="card-image">
                         
-                        <img src="https://www.hdwallpapers.net/previews/deep-void-973.jpg" class="responsive-img" alt="闪照无需长按查看教程">
                         
-                
+
+                        
                     </div>
                 <div class="card-content article-content">
-                    <div class="summary">以Dex编辑器打开Dex4
-搜索Flash
-得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity，
-打开方法　找到onTouch　修改方法如下图
-</div>
+                    <div class="summary">首先复制skin_header_bar_bg.9.png的ID   (797 的iD为 7F02244C)然后在复制一张透明图片Id 需要.9
+首先修改Dex2 16进制搜索 7F02244C
+
+进入类 
+点进去继续搜索会得到两个方法a和b</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Dex4/" class="post-category" target="_blank">
-                                    Dex4
+                            <a href="/categories/Dex2/" class="post-category" target="_blank">
+                                    Dex2
+                                </a>
+                            
+                            <a href="/categories/Dex2/Dex6/" class="post-category" target="_blank">
+                                    Dex6
                                 </a>
                             
                             
@@ -759,7 +754,7 @@
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">闪照无需长按查看教程</span>
+                        <span class="chip bg-color">聊天界面透明顶栏(一体图)</span>
                     </a>
                     
                 </div>
@@ -771,47 +766,30 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/20/">
+                <a href="/2019/01/20/Help fr/">
                     <div class="card-image">
                         
-                        <img src="https://ws4.sinaimg.cn/large/00676n0Tgy1fy7qd2vncij30jg0ay3zq.jpg" class="responsive-img" alt="去除闪照倒计时">
+                        
+                    
                         
                     </div>
                
                 <div class="card-content article-content">
-                    <div class="summary">打开mwj.xml
-搜索CountDownProgressBar
-保留ID其他内容直接删掉，写如下代码进去即可
-android:visibility=”gone”
-android:layout_width=”0dp”
-android:lay</div>
+                    <div class="summary">需要什么教程的在这底下评论吧</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-01-20
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/XML/" class="post-category" target="_blank">
-                                    XML
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            Likefr
                             
                         </span>
                     </div>
                 </div>
             </a>
 
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/教程/" target="_blank">
-                        <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">去除闪照倒计时</span>
-                    </a>
-                    
-                </div>
                 
             </div>
         </div>
