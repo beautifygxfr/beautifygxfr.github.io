@@ -26,11 +26,11 @@
     </entry>
     
     <entry>
-      <title>抽拉式底栏</title>
+      <title>抽拉式底栏教程</title>
       <link href="/2019/02/01/55/"/>
       <url>/2019/02/01/55/</url>
       
-        <content type="html"><![CDATA[<h1 id="以下代码-自行对比源文件cbg修改"><a href="#以下代码-自行对比源文件cbg修改" class="headerlink" title="以下代码 自行对比源文件cbg修改"></a>以下代码 自行对比源文件cbg修改</h1><h1 id="红色字体需删"><a href="#红色字体需删" class="headerlink" title="红色字体需删"></a>红色字体需删</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">com.tencent.mobileqq.widget.QQTabHost</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@android:id/tabhost"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">com.tencent.mobileqq.activity.recent.cur.DragFrameLayout</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">"@7f0b0dba"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">FrameLayout</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@android:id/tabcontent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginBottom</span>=<span class="string">"-54dp"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_gravity</span>=<span class="string">"bottom|center|right"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:scrollbars</span>=<span class="string">"none"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"220dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:fillViewport</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_alignParentRight</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_alignParentBottom</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:overScrollMode</span>=<span class="string">"never"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:orientation</span>=<span class="string">"horizontal"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:adjustViewBounds</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:minHeight</span>=<span class="string">"45dp"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">View</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_width</span>=<span class="string">"220dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">RelativeLayout</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_gravity</span>=<span class="string">"right"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_width</span>=<span class="string">"220dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_alignParentRight</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">com.tencent.mobileqq.widget.QQTabWidget</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:layout_gravity</span>=<span class="string">"bottom"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:id</span>=<span class="string">"@android:id/tabs"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:background</span>=<span class="string">"#00000000"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:layout_alignParentBottom</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">include</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_gravity</span>=<span class="string">"center|left|top"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@7f0b0dbb"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"@7f090032"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">layout</span>=<span class="string">"@layout/qq_conversation_frame_head"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@7f0b02dd"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:visibility</span>=<span class="string">"gone"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"660dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"60dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginLeft</span>=<span class="string">"-230dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginTop</span>=<span class="string">"24dp"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">com.tencent.mobileqq.activity.recent.cur.DragFrameLayout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">com.tencent.mobileqq.widget.QQTabHost</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h3 id="自行对比源文件cbg修改"><a href="#自行对比源文件cbg修改" class="headerlink" title="自行对比源文件cbg修改"></a>自行对比源文件cbg修改</h3><h1 id="以下代码版本为798-复制粘贴即可保存使用"><a href="#以下代码版本为798-复制粘贴即可保存使用" class="headerlink" title="以下代码版本为798 复制粘贴即可保存使用"></a>以下代码版本为798 复制粘贴即可保存使用</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">com.tencent.mobileqq.widget.QQTabHost</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:id</span>=<span class="string">"@android:id/tabhost"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">com.tencent.mobileqq.activity.recent.cur.DragFrameLayout</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:id</span>=<span class="string">"@7f0b0dba"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">FrameLayout</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@android:id/tabcontent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginBottom</span>=<span class="string">"-54dp"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_gravity</span>=<span class="string">"bottom|center|right"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:scrollbars</span>=<span class="string">"none"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"220dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:fillViewport</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_alignParentRight</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_alignParentBottom</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:overScrollMode</span>=<span class="string">"never"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:orientation</span>=<span class="string">"horizontal"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:adjustViewBounds</span>=<span class="string">"true"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:minHeight</span>=<span class="string">"45dp"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">View</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_width</span>=<span class="string">"220dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">RelativeLayout</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_gravity</span>=<span class="string">"right"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_width</span>=<span class="string">"220dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_height</span>=<span class="string">"56dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_alignParentRight</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">                    <span class="tag">&lt;<span class="name">com.tencent.mobileqq.widget.QQTabWidget</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:layout_gravity</span>=<span class="string">"bottom"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:id</span>=<span class="string">"@android:id/tabs"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:background</span>=<span class="string">"#00000000"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">                        <span class="attr">android:layout_alignParentBottom</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">                <span class="tag">&lt;/<span class="name">RelativeLayout</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">include</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_gravity</span>=<span class="string">"center|left|top"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@7f0b0dbb"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"@7f090032"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">layout</span>=<span class="string">"@layout/qq_conversation_frame_head"</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:id</span>=<span class="string">"@7f0b02dd"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:visibility</span>=<span class="string">"gone"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"660dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"60dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginLeft</span>=<span class="string">"-230dp"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_marginTop</span>=<span class="string">"24dp"</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">com.tencent.mobileqq.activity.recent.cur.DragFrameLayout</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">com.tencent.mobileqq.widget.QQTabHost</span>&gt;</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -1409,17 +1409,6 @@
     </entry>
     
     <entry>
-      <title>去除Svip标识</title>
-      <link href="/2018/12/04/2/"/>
-      <url>/2018/12/04/2/</url>
-      
-        <content type="html"><![CDATA[<p>780</p><p>7F02167E</p><p>以Dex编辑器打开Dex6搜索7F02167E<br><a id="more"></a></p><p>首先打开第一个</p><p>Lcom/tencent/mobileqq/activity/aio/rebuild/FriendChatPie;</p><p>继续搜索 7F02167E</p><p>打开方法bi</p><p>内容全删 写上 return-void保存</p><p>返回打开 类 Lcom/tencent/mobileqq/activity/recent/RecentEfficientItemBuilder;</p><p>继续搜索 7F02167E</p><p>打开方法a</p><p>删除 420 421 422 保存<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAguejN3QUogrbrRTCWBDiACA.jpg" alt="如图"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    <entry>
       <title>修改左上角头像为设置按钮</title>
       <link href="/2018/12/04/19/"/>
       <url>/2018/12/04/19/</url>
@@ -1443,16 +1432,16 @@
     </entry>
     
     <entry>
-      <title>修复收藏底部黑色</title>
-      <link href="/2018/12/04/6/"/>
-      <url>/2018/12/04/6/</url>
+      <title>去除气泡</title>
+      <link href="/2018/12/04/22/"/>
+      <url>/2018/12/04/22/</url>
       
-        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
       
       
       <categories>
           
-          <category> Arsc </category>
+          <category> Dex4 </category>
           
       </categories>
       
@@ -1462,6 +1451,17 @@
             <tag> 教程 </tag>
             
         </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去除Svip标识</title>
+      <link href="/2018/12/04/2/"/>
+      <url>/2018/12/04/2/</url>
+      
+        <content type="html"><![CDATA[<p>780</p><p>7F02167E</p><p>以Dex编辑器打开Dex6搜索7F02167E<br><a id="more"></a></p><p>首先打开第一个</p><p>Lcom/tencent/mobileqq/activity/aio/rebuild/FriendChatPie;</p><p>继续搜索 7F02167E</p><p>打开方法bi</p><p>内容全删 写上 return-void保存</p><p>返回打开 类 Lcom/tencent/mobileqq/activity/recent/RecentEfficientItemBuilder;</p><p>继续搜索 7F02167E</p><p>打开方法a</p><p>删除 420 421 422 保存<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAguejN3QUogrbrRTCWBDiACA.jpg" alt="如图"></p>]]></content>
+      
+      
       
     </entry>
     
@@ -1512,33 +1512,16 @@
     </entry>
     
     <entry>
-      <title>精简双击聊天气泡后界面</title>
-      <link href="/2018/12/04/3/"/>
-      <url>/2018/12/04/3/</url>
+      <title>去主页全民闯关</title>
+      <link href="/2018/12/04/23/"/>
+      <url>/2018/12/04/23/</url>
       
-        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>去消息界面头像</title>
-      <link href="/2018/12/04/25/"/>
-      <url>/2018/12/04/25/</url>
-      
-        <content type="html"><![CDATA[<p>1.去好友头像，vdk.xml(763版本)</p><p>定位：    &lt;com.tencent.widget.RecentDynamicAvatarView</p><p>加入代码：</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p>]]></content>
+        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
       
       
       <categories>
           
-          <category> XML </category>
+          <category> Dex2 </category>
           
       </categories>
       
@@ -1575,16 +1558,16 @@
     </entry>
     
     <entry>
-      <title>去除气泡</title>
-      <link href="/2018/12/04/22/"/>
-      <url>/2018/12/04/22/</url>
+      <title>去消息界面头像</title>
+      <link href="/2018/12/04/25/"/>
+      <url>/2018/12/04/25/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
+        <content type="html"><![CDATA[<p>1.去好友头像，vdk.xml(763版本)</p><p>定位：    &lt;com.tencent.widget.RecentDynamicAvatarView</p><p>加入代码：</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p>]]></content>
       
       
       <categories>
           
-          <category> Dex4 </category>
+          <category> XML </category>
           
       </categories>
       
@@ -1598,16 +1581,39 @@
     </entry>
     
     <entry>
-      <title>去主页全民闯关</title>
-      <link href="/2018/12/04/23/"/>
-      <url>/2018/12/04/23/</url>
+      <title>去除闪照倒计时</title>
+      <link href="/2018/12/04/20/"/>
+      <url>/2018/12/04/20/</url>
       
-        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
+        <content type="html"><![CDATA[<p>打开mwj.xml</p><p>搜索CountDownProgressBar</p><p>保留ID其他内容直接删掉，写如下代码进去即可</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg9s7Q1gUo_M6fgAQwuAg4gA8.png" alt="图片"></p><p>原作者@绅士寻欢</p>]]></content>
       
       
       <categories>
           
-          <category> Dex2 </category>
+          <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>修复收藏底部黑色</title>
+      <link href="/2018/12/04/6/"/>
+      <url>/2018/12/04/6/</url>
+      
+        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Arsc </category>
           
       </categories>
       
@@ -1638,11 +1644,11 @@
     </entry>
     
     <entry>
-      <title>去除闪照倒计时</title>
-      <link href="/2018/12/04/20/"/>
-      <url>/2018/12/04/20/</url>
+      <title>精简双击聊天气泡后界面</title>
+      <link href="/2018/12/04/3/"/>
+      <url>/2018/12/04/3/</url>
       
-        <content type="html"><![CDATA[<p>打开mwj.xml</p><p>搜索CountDownProgressBar</p><p>保留ID其他内容直接删掉，写如下代码进去即可</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg9s7Q1gUo_M6fgAQwuAg4gA8.png" alt="图片"></p><p>原作者@绅士寻欢</p>]]></content>
+        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
       
       
       <categories>
@@ -1651,12 +1657,6 @@
           
       </categories>
       
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
       
     </entry>
     
