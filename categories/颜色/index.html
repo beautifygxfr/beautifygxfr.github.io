@@ -1,550 +1,905 @@
-<!DOCTYPE HTML>
+
+
+
+
+  
+
+
+
+
+<!doctype html>
 <html lang="zh-CN">
-<head>
-    
-
 <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <meta name="keywords" content="分类: 颜色, Beautify">
-    <meta name="description" content="分类: 颜色 | Beautify">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>分类: 颜色 | Beautify</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/css/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-
-    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
-</head>
-
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="author" content="Likefr">
+  
+  
+  
+  
+    <meta name="description" content="2019-暴富-爱情">
+  
+  <title>分类: 颜色 [ Beautify ]</title>
+  
+  
+    <link rel="shortcut icon" href="/hollow.ico">
+  
+  
+  <link rel="stylesheet" href="/css/random.css">
+<link rel="stylesheet" href="/css/vegas.min.css">
+<link rel="stylesheet" href="/css/highlight-railscasts.css">
+<link rel="stylesheet" href="/css/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/iconfont/iconfont.css">
+<link rel="stylesheet" href="/css/jquery.fancybox-thumbs.css">
+<link rel="stylesheet" href="/css/plyr.css">
+  
 </head>
 
 <body>
-
-<header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="container">
-            <div class="nav-wrapper">
-                <div class="brand-logo">
-                    <a href="/" class="waves-effect waves-light">
-                        
-                        <img src="/medias/logo.png" class="logo-img hide-on-small-only">
-                        
-                        <span class="logo-span">Beautify</span>
-                    </a>
-                </div>
-                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-navicon"></i></a>
-<ul class="right">
-    
-    <li class="hide-on-med-and-down">
-        <a href="/" class="waves-effect waves-light">
-            
-            <i class="fa fa-home"></i>
-            
-            <span>主页</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/tags" class="waves-effect waves-light">
-            
-            <i class="fa fa-tags"></i>
-            
-            <span>标签</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/categories/" class="waves-effect waves-light">
-            
-            <i class="fa fa-bookmark"></i>
-            
-            <span>分类</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/archives" class="waves-effect waves-light">
-            
-            <i class="fa fa-archive"></i>
-            
-            <span>日历</span>
-        </a>
-    </li>
-    
-    <li class="hide-on-med-and-down">
-        <a href="/about" class="waves-effect waves-light">
-            
-            <i class="fa fa-user-circle-o"></i>
-            
-            <span>关于我</span>
-        </a>
-    </li>
-    
-    <li>
-        <a id="toggleSearch" class="waves-effect waves-light">
-            <i id="searchIcon" class="mdi-action-search"></i>
-        </a>
-    </li>
-
-</ul>
-
-<div class="side-nav" id="mobile-nav">
-
-    <div class="mobile-head bg-color">
+<div class="side-navigate hide-area">
+  
+  
+</div>
+<div id="outer-container" class="hide-area">
+<div id="container">
+  <div id="menu-outer" class="slide-down">
+    <div id="menu-inner">
+      <div id="brand">
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <a onclick="openUserCard()">
+          <img id="avatar" src="https://ws1.sinaimg.cn/large/00676n0Tgy1fyhz0lxx0qj30fy0fwn4g.jpg">
+          <div id="homelink">Beautify</div>
+        </a>
+      </div>
+      <div id="menu-list">
+        <ul>
         
-        <div class="logo-name">Beautify</div>
-        <div class="logo-desc">
+        
+          
+            <li>
+          
+            <a href="/archives">主页</a>
             
-            2019-暴富-爱情
+          </li>
+        
+          
+            <li>
+          
+            <a href="/archives">归档</a>
             
-        </div>
+          </li>
+        
+          
+            <li>
+          
+            <a href="/tags">标签</a>
+            
+          </li>
+        
+          
+            <li class="active">
+          
+            <a href="/categories">分类</a>
+            
+          </li>
+        
+          
+            <li>
+          
+            <a href="/about">关于我</a>
+            
+          </li>
+        
+        </ul>
+      </div>
+      <div id="show-menu">
+        <button>Menu</button>
+      </div>
     </div>
+  </div>
 
-    <ul class="menu-list mobile-menu-list">
+  <div id="content-outer">
+    <div id="content-inner">
+      
+      
+  <article id="page">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <h1 class="center-title">
+          分类
+          
+        </h1>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <ul class="category-list">
+      
+        <li class="category-list-item">
         
-        <li>
-            <a href="/" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-home"></i>
-                
-                主页
-            </a>
+          <a href="/categories/Dex2/">Dex2</a>
+        
+          <span class="category-list-count">11</span>
         </li>
+      
+        <li class="category-list-item">
         
-        <li>
-            <a href="/tags" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-tags"></i>
-                
-                标签
-            </a>
+          <a href="/categories/Dex6/">Dex6</a>
+        
+          <span class="category-list-count">15</span>
         </li>
+      
+        <li class="category-list-item">
         
-        <li>
-            <a href="/categories/" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-bookmark"></i>
-                
-                分类
-            </a>
+          <a href="/categories/XML/">XML</a>
+        
+          <span class="category-list-count">32</span>
         </li>
+      
+        <li class="category-list-item">
         
-        <li>
-            <a href="/archives" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-archive"></i>
-                
-                日历
-            </a>
+          <a href="/categories/Dex4/">Dex4</a>
+        
+          <span class="category-list-count">5</span>
         </li>
+      
+        <li class="category-list-item">
         
-        <li>
-            <a href="/about" class="waves-effect waves-light">
-                
-                <i class="fa fa-fw fa-user-circle-o"></i>
-                
-                关于我
-            </a>
+          <a href="/categories/XML/Dex6/">Dex6</a>
+        
+          <span class="category-list-count">1</span>
         </li>
+      
+        <li class="category-list-item">
         
+          <a href="/categories/Dex6/XML/">XML</a>
         
-        <li><div class="divider"></div></li>
-        <li>
-            <a href="/friends" class="waves-effect waves-light" target="_blank">
-                <i class="fa fa-github-square fa-fw"></i>Fork Me
-            </a>
+          <span class="category-list-count">2</span>
         </li>
+      
+        <li class="category-list-item">
         
+          <a class="active" href="/categories/颜色/">颜色</a>
+        
+          <span class="category-list-count">1</span>
+        </li>
+      
+        <li class="category-list-item">
+        
+          <a href="/categories/图片/">图片</a>
+        
+          <span class="category-list-count">1</span>
+        </li>
+      
+        <li class="category-list-item">
+        
+          <a href="/categories/Arsc/">Arsc</a>
+        
+          <span class="category-list-count">3</span>
+        </li>
+      
+        <li class="category-list-item">
+        
+          <a href="/categories/Dex3/">Dex3</a>
+        
+          <span class="category-list-count">2</span>
+        </li>
+      
+        <li class="category-list-item">
+        
+          <a href="/categories/签名密钥/">签名密钥</a>
+        
+          <span class="category-list-count">1</span>
+        </li>
+      
+        <li class="category-list-item">
+        
+          <a href="/categories/Dex1/">Dex1</a>
+        
+          <span class="category-list-count">1</span>
+        </li>
+      
+        <li class="category-list-item">
+        
+          <a href="/categories/Dex2/XML/">XML</a>
+        
+          <span class="category-list-count">1</span>
+        </li>
+      
+        <li class="category-list-item">
+        
+          <a href="/categories/Dex2/Dex6/">Dex6</a>
+        
+          <span class="category-list-count">1</span>
+        </li>
+      
     </ul>
-
-    <div class="social-link"><a href="#" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-    <i class="fa fa-github"></i>
-</a>
-<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=jODj_unh6f-M_uX8ov39ou-j4Q" class="tooltipped" target="_blank" data-tooltip="邮件联系我 1476758619@qq.com" data-position="top" data-delay="50">
-    <i class="fa fa-envelope-open"></i>
-</a>
-<a href="http://qm.qq.com/cgi-bin/qm/qr?k=NCfXKruMz-1hGi3u3hFUHoBvKalCPkOL" class="tooltipped" data-tooltip="QQ联系我: 1476758619" data-position="top" data-delay="50">
-    <i class="fa fa-qq"></i>
-</a>
+    
+      
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+        
+      
+      
+    
+      
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+          
+        
+      
+      
+      <div class="post-title-item">
+  
+  <a href="/2018/12/23/38/">
+  
+    颜色路径 R/b
+  
+  </a>
+  <p class="page-title-sub">
+    <span id="post-title-date">12-23</span>
+    
+    <span id="post-title-categories">分类
+    
+    
+      
+      
+      <a href="/categories/颜色/">颜色</a>
+    
+    </span>
+    
+    
+    <span id="post-title-tags">
+    标签
+    
+    
+      
+      
+      <a href="/tags/集合/">集合</a>
+    
+    </span>
+    
+    
+      <br>
+      
+      
+    
+  </p>
+  
 </div>
-</div>
-
-            </div>
-        </div>
-
+      
+    
+      
+      
         
-        <style>
-    .nav-transparent .github-corner {
-        display: none !important;
-    }
-
-    .github-corner {
-        position: absolute;
-        z-index: 10;
-        top: 0;
-        right: 0;
-        border: 0;
-        transform: scale(1.1);
-    }
-
-    .github-corner svg {
-        color: #0f9d58;
-        fill: #fff;
-        height: 64px;
-        width: 64px;
-    }
-
-    .github-corner:hover .octo-arm {
-        animation: a 0.56s ease-in-out;
-    }
-
-    .github-corner .octo-arm {
-        animation: none;
-    }
-
-    @keyframes a {
-        0%,
-        to {
-            transform: rotate(0);
-        }
-        20%,
-        60% {
-            transform: rotate(-25deg);
-        }
-        40%,
-        80% {
-            transform: rotate(10deg);
-        }
-    }
-</style>
-
-<a href="/friends" class="github-corner tooltipped hide-on-med-and-down" target="_blank" data-tooltip="Fork Me" data-position="left" data-delay="50">
-    <svg viewbox="0 0 250 250" aria-hidden="true">
-        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/>
-        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/>
-        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/>
-    </svg>
-</a>
+      
+      
+    
+      
+      
         
-    </nav>
-</header>
-
-<div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-                <div class="brand">
-                    <div class="title center-align">
-                    
-                        Beautify
-                    
-                    </div>
-
-                    <div class="description center-align">
-                    
-                        2019-暴富-爱情
-                    
-                    </div>
-                </div>
-            </div>
-        </div>
+      
+      
+    
+      
+      
         
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+      
+    
+      
+      
+        
+      
+      
+    
+      
+      
+        
+      
+      
+    
+  </article>
+
+  
+
+      
+      
     </div>
+  </div>
+
+  <div id="bottom-outer">
+    <div id="bottom-inner">
+      Site by Likefr using
+      <a href="http://hexo.io">Hexo</a> & <a href="https://github.com/stiekel/hexo-theme-random">Random</a>
+      <br>
+      
+    </div>
+  </div>
 </div>
+
+</div>
+
+
+<div id="user-card">
+  <div class="center-field">
+    <img class="avatar" src="https://ws1.sinaimg.cn/large/00676n0Tgy1fyhz0lxx0qj30fy0fwn4g.jpg">
+    <p id="description">2019-暴富-爱情</p>
+    <ul class="social-icon">
+  
+  
+    <li>
+      <a href="mailto:1476758619@qq.com">
+        
+          M
+        
+      </a>
+    </li>
+  
+</ul>
+  </div>
+</div>
+
+
+<div id="btn-view">Hide</div>
 
 <script>
-// Dynamically switch banner pictures every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
+// is trigger analytics / tongji script
+var isIgnoreHost = false;
+
+if(window && window.location && window.location.host) {
+  isIgnoreHost = ["localhost","127.0.0.1"].some(function(address){
+    return 0 === window.location.host.indexOf(address);
+  });
+}
+
+var isTriggerAnalytics = !( true && isIgnoreHost );
+
 </script>
 
-<main class="content">
 
+
+
+  
+  
+    <script src="/js/jquery-2.2.3.min.js"></script>
+  
+    <script src="/js/vegas.min.js"></script>
+  
+    <script src="/js/random.js"></script>
+  
+    <script src="/js/highlight.pack.js"></script>
+  
+    <script src="/js/jquery.mousewheel.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox.pack.js"></script>
+  
+    <script src="/js/jquery.fancybox-thumbs.js"></script>
+  
+    <script src="/js/plyr.js"></script>
+  
+
+<script>
+
+  // fancybox
+  var backgroundImages = [];
+  
     
-
-<div id="category-cloud" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">文章分类</div>
-            <div class="tag-chips">
-                
-                
-                
-                <a href="/categories/Dex2/" title="Dex2: 11">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #F9EBEA;">Dex2
-                        <span class="tag-length">11</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Dex6/" title="Dex6: 15">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #F5EEF8;">Dex6
-                        <span class="tag-length">15</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/XML/" title="XML: 32">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #D5F5E3;">XML
-                        <span class="tag-length">32</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Dex4/" title="Dex4: 5">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #E8F8F5;">Dex4
-                        <span class="tag-length">5</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/XML/Dex6/" title="Dex6: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #FEF9E7;">Dex6
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Dex6/XML/" title="XML: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #F8F9F9;">XML
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/图片/" title="图片: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #82E0AA;">图片
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/颜色/" title="颜色: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active " style="background-color: #D7BDE2;">颜色
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Arsc/" title="Arsc: 3">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #A3E4D7;">Arsc
-                        <span class="tag-length">3</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Dex3/" title="Dex3: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #85C1E9;">Dex3
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/签名密钥/" title="签名密钥: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #F8C471;">签名密钥
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Dex1/" title="Dex1: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #F9E79F;">Dex1
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Dex2/XML/" title="XML: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #85C1E9;">XML
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Dex2/Dex6/" title="Dex6: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #F8F9F9;">Dex6
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-            </div>
-        </div>
-    </div>
-</div>
-
+      backgroundImages.push('http://7te9fe.com1.z0.glb.clouddn.com/bgimg_1.jpg?imageView2/1/w/__width__/h/__height__');
     
+      backgroundImages.push('http://7te9fe.com1.z0.glb.clouddn.com/bgimg_2.jpg?imageView2/1/w/__width__/h/__height__');
+    
+      backgroundImages.push('http://7te9fe.com1.z0.glb.clouddn.com/bgimg_3.jpg?imageView2/1/w/__width__/h/__height__');
+    
+      backgroundImages.push('http://7te9fe.com1.z0.glb.clouddn.com/bgimg_4.jpg?imageView2/1/w/__width__/h/__height__');
+    
+      backgroundImages.push('http://7te9fe.com1.z0.glb.clouddn.com/bgimg_5.jpg?imageView2/1/w/__width__/h/__height__');
+    
+  
+  $('#post').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox') || $(this).parent().hasClass('fancybox-thumb')) return;
+      var alt = this.alt || this.title;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'post' + i);
+    });
+  });
+  $(".fancybox").fancybox();
 
-    <article id="articles" class="container articles">
-        <div class="row tags-posts">
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2018/12/23/38/">
-                        <div class="card-image tag-image">
-                            
-                            
-                         
-                            
-                 
-                        </div>
-                   
-                    <div class="card-content article-content">
-                        <div class="summary"> 以下颜色以#开头 
-点击查看透明度注释侧滑文字颜色 qq_setting_me_item_title_color.xml
-侧滑个性签名颜色</div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-23
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fa fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/颜色/" class="post-category" target="_blank">
-                                    颜色
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-                </a>
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/集合/" target="_blank">
-                            <span class="chip bg-color">集合</span>
-                            <span class="chip bg-color">  颜色路径 R/b</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-        </div>
-    </article>
-</main>
+var vegasConfig = {"preload­Image":true,"transition":["flash"],"timer":true,"delay":1500000,"shuffle":true,"count":12};
+var unsplashConfig = {"gravity":"center"};
+// is show background images
+var turnoffBackgroundImage = false;
 
 
-<footer class="page-footer bg-color">
-    <div class="container row center-align">
-        <div class="col s12 m8 l8 copy-right">
-                <span class="shaky">Copyright © 2018 Likefr All Rights Reserved 
-                    由<a href="#" target="_blank">hexo-theme-matery</a> 主题搭建.</span>
-      
-     <br>  <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-      <script>
-    var now = new Date(); 
-    function createtime() { 
-        var grt= new Date("12/16/2018 00:00:00");//在此处修改你的建站时间
-        now.setTime(now.getTime()+250); 
-        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
-        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
-        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
-        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
-        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
-        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
-        document.getElementById("timeDate").innerHTML = "本站在各种困难中勉强存活了 "+dnum+" 天 "; 
-        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
-    } 
-setInterval("createtime()",250);
+
+
+var backgroundColor = "34495E";
+
+$(".fancybox-thumb").fancybox({
+  prevEffect: 'none',
+  nextEffect: 'none',
+  helpers: {
+    title: {
+      type: 'outside'
+    },
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+
+// show video with plyr
+$(".video-container iframe").each(function(i){
+  var url = $(this).attr('src');
+  var id = url.split('/').pop();
+  var plyrContainer = document.createElement('div');
+  plyrContainer.className = 'plyr';
+  var plyrElement = document.createElement('div');
+  plyrElement.dataset.videoId = id;
+  switch(true) {
+    case url.search('youtube.com') >= 0:
+      plyrElement.dataset.type = 'youtube';
+      break;
+    case url.search('vimeo.com') >= 0:
+      plyrElement.dataset.type = 'vimeo';
+      break;
+    default:
+      return;
+  };
+  plyrContainer.appendChild(plyrElement);
+  $(this).parent().html(plyrContainer);
+});
+plyr.setup('.plyr', {iconUrl: '/css/sprite.svg'});
 </script>
-
-<br><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-        <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
-        <span class="post-meta-divider">|</span>
-        <span id="busuanzi_container_site_uv">本站访客数<span id="busuanzi_value_site_uv"></span>人</span>
-        </div>
-
-        <div class="col s12 m4 l4 social-link"><a href="#" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-    <i class="fa fa-github"></i>
-</a>
-<a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=jODj_unh6f-M_uX8ov39ou-j4Q" class="tooltipped" target="_blank" data-tooltip="邮件联系我 1476758619@qq.com" data-position="top" data-delay="50">
-    <i class="fa fa-envelope-open"></i>
-</a>
-<a href="http://qm.qq.com/cgi-bin/qm/qr?k=NCfXKruMz-1hGi3u3hFUHoBvKalCPkOL" class="tooltipped" data-tooltip="QQ联系我: 1476758619" data-position="top" data-delay="50">
-    <i class="fa fa-qq"></i>
-</a>
-</div>
-    </div>
-</footer>
-<div class="progress-bar"></div>
-
-<!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title">搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input" autofocus>
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script src="/js/search.js"></script>
-<script type="text/javascript">
-    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
-</script>
-<!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fa fa-angle-up"></i>
-    </a>
-</div>
-
-
-<script src="/libs/materialize/js/materialize.min.js"></script>
-<script src="/libs/masonry/masonry.pkgd.min.js"></script>
-<script src="/libs/aos/aos.js"></script>
-<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-<script src="/js/matery.js"></script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-
-
 </body>
 </html>
-<!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/love.js"></script>
- <!--点击爆炸效果-->
-<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
- 
- 
-   <!--浏览器搞笑标题
-<script type="text/javascript" src="\js\FunnyTitle.js"></script>
 
-动态线条背景
-<script type="text/javascript"
-color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
-</script> -->
