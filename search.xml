@@ -1432,16 +1432,16 @@
     </entry>
     
     <entry>
-      <title>去除气泡</title>
-      <link href="/2018/12/04/22/"/>
-      <url>/2018/12/04/22/</url>
+      <title>修改左上角头像为设置按钮</title>
+      <link href="/2018/12/04/19/"/>
+      <url>/2018/12/04/19/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
+        <content type="html"><![CDATA[<p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p><p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p><p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure><p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p><p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>]]></content>
       
       
       <categories>
           
-          <category> Dex4 </category>
+          <category> XML </category>
           
       </categories>
       
@@ -1501,16 +1501,16 @@
     </entry>
     
     <entry>
-      <title>修改左上角头像为设置按钮</title>
-      <link href="/2018/12/04/19/"/>
-      <url>/2018/12/04/19/</url>
+      <title>修改非Svip也可以贴收藏表情</title>
+      <link href="/2018/12/04/17/"/>
+      <url>/2018/12/04/17/</url>
       
-        <content type="html"><![CDATA[<p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p><p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p><p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure><p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p><p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开dex4</p><p>常量搜索 贴收藏表情</p><p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p><p>打开方法列表，最后一个 onTouchEvent</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p><p>找到1253行</p><p>修改 nez 为lez</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p><p>保存</p>]]></content>
       
       
       <categories>
           
-          <category> XML </category>
+          <category> Dex4 </category>
           
       </categories>
       
@@ -1524,11 +1524,11 @@
     </entry>
     
     <entry>
-      <title>修改非Svip也可以贴收藏表情</title>
-      <link href="/2018/12/04/17/"/>
-      <url>/2018/12/04/17/</url>
+      <title>去除气泡</title>
+      <link href="/2018/12/04/22/"/>
+      <url>/2018/12/04/22/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开dex4</p><p>常量搜索 贴收藏表情</p><p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p><p>打开方法列表，最后一个 onTouchEvent</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p><p>找到1253行</p><p>修改 nez 为lez</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p><p>保存</p>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
       
       
       <categories>
@@ -1570,29 +1570,6 @@
     </entry>
     
     <entry>
-      <title>去主页全民闯关</title>
-      <link href="/2018/12/04/23/"/>
-      <url>/2018/12/04/23/</url>
-      
-        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex2 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>精简双击聊天气泡后界面</title>
       <link href="/2018/12/04/3/"/>
       <url>/2018/12/04/3/</url>
@@ -1606,46 +1583,6 @@
           
       </categories>
       
-      
-    </entry>
-    
-    <entry>
-      <title>去高能舞试</title>
-      <link href="/2018/12/04/8/"/>
-      <url>/2018/12/04/8/</url>
-      
-        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex6 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>去消息界面头像</title>
-      <link href="/2018/12/04/25/"/>
-      <url>/2018/12/04/25/</url>
-      
-        <content type="html"><![CDATA[<p>1.去好友头像，vdk.xml(763版本)</p><p>定位：    &lt;com.tencent.widget.RecentDynamicAvatarView</p><p>加入代码：</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -1673,6 +1610,46 @@
     </entry>
     
     <entry>
+      <title>去消息界面头像</title>
+      <link href="/2018/12/04/25/"/>
+      <url>/2018/12/04/25/</url>
+      
+        <content type="html"><![CDATA[<p>1.去好友头像，vdk.xml(763版本)</p><p>定位：    &lt;com.tencent.widget.RecentDynamicAvatarView</p><p>加入代码：</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去高能舞试</title>
+      <link href="/2018/12/04/8/"/>
+      <url>/2018/12/04/8/</url>
+      
+        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex6 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>去除闪照倒计时</title>
       <link href="/2018/12/04/20/"/>
       <url>/2018/12/04/20/</url>
@@ -1683,6 +1660,29 @@
       <categories>
           
           <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去主页全民闯关</title>
+      <link href="/2018/12/04/23/"/>
+      <url>/2018/12/04/23/</url>
+      
+        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex2 </category>
           
       </categories>
       
