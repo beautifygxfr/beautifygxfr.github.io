@@ -274,69 +274,8 @@ window.oldVersion = [
         <a href="/search" class="navbar-link">搜索</a>
     
     
+        <a href="/about/" class="navbar-link">关于</a>
     
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
-        
-        <li class="menu-item">
-            <a href="http://service.weibo.com/share/share.php?appkey=&title=Beautify&url=https://Beautifys.github.io&pic=https://Beautifys.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="noopener noreferrer nofollow">分享到微博</a>
-        </li>
-        
-
-        <!-- Share Twitter -->
-        
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=Beautify&url=https://Beautifys.github.io&via=Likefr" target="_blank" rel="noopener noreferrer nofollow">分享到 Twitter</a>
-        </li>
-        
-
-        <!-- Share Facebook -->
-        
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://Beautifys.github.io" target="_blank" rel="noopener noreferrer nofollow">分享到 Facebook</a>
-        </li>
-        
-
-        <!-- Share Google+ -->
-        
-        <li class="menu-item">
-            <a href="https://plus.google.com/share?url=https://Beautifys.github.io" target="_blank" rel="noopener noreferrer nofollow">分享到 Google+</a>
-        </li>
-        
-
-        <!-- Share LinkedIn -->
-        
-        <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://Beautifys.github.io&title=" target="_blank" rel="noopener noreferrer nofollow">分享到 LinkedIn</a>
-        </li>
-        
-
-        <!-- Share QQ -->
-        
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=Beautify&title=&summary=2019-暴富-爱情&pics=https://Beautifys.github.io/img/suka-favicon.ico&url=https://Beautifys.github.io" target="_blank" rel="noopener noreferrer nofollow"> 分享到 QQ</a>
-        </li>
-        
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=https://Beautifys.github.io&text=" target="_blank" rel="noopener noreferrer nofollow">分享到 Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB2klEQVR42u2ay67CMAxE+/8/DRsWqDQz47ZIiXuyuVwozolk/Bhne024NqCAAgqoA6hNrKNnfgx93ht9r7QPUG2gDp1OGHev97DxPkC1gto73pGxxPnV+2ofoJ4HpQJn4shAAZUYU0lY2QPqGVCueEueT38Ul6sEoKaHUgX9nX9v62aAmhrKig4iOLpN/6a6ADU1VNXoKDG7AJrYB6oHVCpCDAuzQeGXPDdMyEAtD5U0n6ppUME1bUqB6gXlHNQ1Eq65iA8EVAsot0kyKBrZKh8QqBZQleGPTKYmgJ5qRoFaFsoJG0mxlgIpIQ2onlCpwbNDIiV8ANULKhliJ0HSBdNoYATU0lDJIDFx8KQ4jAUOoJaGSor7RLB1F3eUgwPVCyop+NNB92hzt4DqBeWEjqRZqCRzOYwCqgXUmYtZaYPpnP1SlQDU1FBOKEt/FG6Y6RpToPpBjZze/V8p/uThgGoFlYjxTvCvBM5y5QnUMlD28p4p0KoOXrrBAdSSUIkDqgsQqpFwAohMyEAtDZUMfZyYmiTz0gUcoJaHqgy2k8RcbUSBehaUa0hTgcQeCiigzKZlMReoVlBueO0G1y4RR58B1QbKJc3KJVMn2MqDA9UCaqYFFFBAAfW13kiFsA9DFq3BAAAAAElFTkSuQmCC" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
     
     
 </nav>
@@ -515,53 +454,18 @@ android...
             
                 <div class="column col-12">
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/18/">关于闪照</a></h2>
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/24/">聊天输入框加字</a></h2>
 
 
 <p class="mb-0 card-body">
     
-        .防闪照消失，修改闪照时间，且可以截屏
-//用dex编辑器打开classes2.dex
-//搜索常量”flashpichelper”
-//打开com/tencent/mobileqq/a...
-    <a href="/2018/12/04/18/">阅读全文</a>
-</p>
+        打开R\o clc.xml
+找到　
+com.tencent.widget.XEditTextEx 这一段
+在下面加上
+android:hint=”你要加的字”
 
-
-
-
-    <!-- Date & Category -->
-    <div class="card-footer post-entry-info text-gray">
-        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Likefr's Avatar">
-        <time>2018-12-04</time>
-        
-            <span class="suka-devide-dot"></span>
-            <a class="category-link" href="/categories/Dex2/">Dex2</a>
-        
-        
-    </div>
-
-                </div>
-            
-        </div>
-</article>
-
-                
-                    
-    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
-
-<article class="post-entry container px-0 card">
-        <div class="columns col-gapless">
-            
-                <div class="column col-12">
-                    
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/19/">修改左上角头像为设置按钮</a></h2>
-
-
-<p class="mb-0 card-body">
-    
-        首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用...
-    <a href="/2018/12/04/19/">阅读全文</a>
+    <a href="/2018/12/04/24/">阅读全文</a>
 </p>
 
 
@@ -630,16 +534,16 @@ android...
             
                 <div class="column col-12">
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/23/">去主页全民闯关</a></h2>
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/17/">修改非Svip也可以贴收藏表情</a></h2>
 
 
 <p class="mb-0 card-body">
     
-        dex2中搜索继续下拉进入全民闯关
-打开类名
-Lcom/tencent/mobilegg/now/enter/ConversationNowController
-继续搜索下拉进入全民闯关...
-    <a href="/2018/12/04/23/">阅读全文</a>
+        以Dex编辑器打开dex4
+常量搜索 贴收藏表情
+打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector
+打开方法列表，最...
+    <a href="/2018/12/04/17/">阅读全文</a>
 </p>
 
 
@@ -651,7 +555,7 @@ Lcom/tencent/mobilegg/now/enter/ConversationNowController
         <time>2018-12-04</time>
         
             <span class="suka-devide-dot"></span>
-            <a class="category-link" href="/categories/Dex2/">Dex2</a>
+            <a class="category-link" href="/categories/Dex4/">Dex4</a>
         
         
     </div>
@@ -670,17 +574,13 @@ Lcom/tencent/mobilegg/now/enter/ConversationNowController
             
                 <div class="column col-12">
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/20/">去除闪照倒计时</a></h2>
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/19/">修改左上角头像为设置按钮</a></h2>
 
 
 <p class="mb-0 card-body">
     
-        打开mwj.xml
-搜索CountDownProgressBar
-保留ID其他内容直接删掉，写如下代码进去即可
-android:visibility=”gone”
-andr...
-    <a href="/2018/12/04/20/">阅读全文</a>
+        首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用...
+    <a href="/2018/12/04/19/">阅读全文</a>
 </p>
 
 
@@ -693,6 +593,43 @@ andr...
         
             <span class="suka-devide-dot"></span>
             <a class="category-link" href="/categories/XML/">XML</a>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                
+                    
+    <script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+
+<article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/6/">修复收藏底部黑色</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        打开Arsc编辑器搜索　移动到分组 如下图.
+    <a href="/2018/12/04/6/">阅读全文</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Likefr's Avatar">
+        <time>2018-12-04</time>
+        
+            <span class="suka-devide-dot"></span>
+            <a class="category-link" href="/categories/Arsc/">Arsc</a>
         
         
     </div>
