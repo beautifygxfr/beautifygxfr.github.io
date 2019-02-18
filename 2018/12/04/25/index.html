@@ -33,6 +33,8 @@ window.oldVersion = [
 
 
 
+    <link rel="dns-prefetch" href="//cdn1.lncld.net">
+
 
 <!-- analytics -->
 
@@ -454,9 +456,9 @@ android:vi..."
     <!-- Prev Nav -->
     
         <li class="page-item page-prev">
-            <a href="/2018/12/04/20/">
+            <a href="/2018/12/04/17/">
                 <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">去除闪照倒计时</div>
+                <div class="page-item-subtitle">修改非Svip也可以贴收藏表情</div>
             </a>
         </li>
     
@@ -464,9 +466,9 @@ android:vi..."
     <!-- Next Nav -->
     
         <li class="page-item page-next">
-            <a href="/2018/12/04/8/">
+            <a href="/2018/12/04/23/">
                 <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
-                <div class="page-item-subtitle">去高能舞试</div>
+                <div class="page-item-subtitle">去主页全民闯关</div>
             </a>
         </li>
     
@@ -475,6 +477,36 @@ android:vi..."
 
                 
                     <!-- # Comment # -->
+                    
+                        <div class="card-footer post-comment">
+                            <div id="vcomments"></div>
+
+<script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+<script>
+    var GUEST_INFO = ['nick','mail','link'];
+    var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+        return GUEST_INFO.indexOf(item) > -1
+    });
+    var notify = '' === 'true';
+    var verify = '' === 'true';
+    new Valine({
+        el: '#vcomments',
+        notify: notify,
+        verify: verify,
+        appId: "Wcu0Ukjicgom0fjKPNWuBAF4-gzGzoHsz",
+        appKey: "bckwXYIQi9TN0JtUSngG2ebB",
+        placeholder: "Just go go",
+        meta: guest_info,
+        pageSize:'10',
+        avatar:'identicon',
+        lang:'zh-cn',
+        guest_info: guest_info,
+        visitor: false
+    });
+</script>
+
+                        </div>
                     
                 
             </div>
@@ -565,6 +597,10 @@ console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.2 %c 
 
 
 <!-- Comment -->
+
+    
+        
+    
 
 
 <!-- ### Custom Footer ### -->
