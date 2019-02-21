@@ -592,18 +592,13 @@ android...
             
                 <div class="column col-12">
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/24/">聊天输入框加字</a></h2>
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/19/">修改左上角头像为设置按钮</a></h2>
 
 
 <p class="mb-0 card-body">
     
-        打开R\o clc.xml
-找到　
-com.tencent.widget.XEditTextEx 这一段
-在下面加上
-android:hint=”你要加的字”
-
-    <a href="/2018/12/04/24/">阅读全文</a>
+        首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用...
+    <a href="/2018/12/04/19/">阅读全文</a>
 </p>
 
 
@@ -678,17 +673,18 @@ android:vi...
             
                 <div class="column col-12">
                     
-    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/20/">去除闪照倒计时</a></h2>
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/04/24/">聊天输入框加字</a></h2>
 
 
 <p class="mb-0 card-body">
     
-        打开mwj.xml
-搜索CountDownProgressBar
-保留ID其他内容直接删掉，写如下代码进去即可
-android:visibility=”gone”
-andr...
-    <a href="/2018/12/04/20/">阅读全文</a>
+        打开R\o clc.xml
+找到　
+com.tencent.widget.XEditTextEx 这一段
+在下面加上
+android:hint=”你要加的字”
+
+    <a href="/2018/12/04/24/">阅读全文</a>
 </p>
 
 
