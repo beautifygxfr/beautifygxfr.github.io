@@ -1518,29 +1518,6 @@
     </entry>
     
     <entry>
-      <title>去主页全民闯关</title>
-      <link href="/2018/12/04/23/"/>
-      <url>/2018/12/04/23/</url>
-      
-        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex2 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>精简双击聊天气泡后界面</title>
       <link href="/2018/12/04/3/"/>
       <url>/2018/12/04/3/</url>
@@ -1568,6 +1545,75 @@
       <categories>
           
           <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>修改非Svip也可以贴收藏表情</title>
+      <link href="/2018/12/04/17/"/>
+      <url>/2018/12/04/17/</url>
+      
+        <content type="html"><![CDATA[<p>以Dex编辑器打开dex4</p><p>常量搜索 贴收藏表情</p><p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p><p>打开方法列表，最后一个 onTouchEvent</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p><p>找到1253行</p><p>修改 nez 为lez</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p><p>保存</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex4 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>聊天输入框加字</title>
+      <link href="/2018/12/04/24/"/>
+      <url>/2018/12/04/24/</url>
+      
+        <content type="html"><![CDATA[<p>打开R\o clc.xml</p><p>找到　</p><p>com.tencent.widget.XEditTextEx 这一段</p><p>在下面加上</p><p>android:hint=”你要加的字”</p><p>以实际参考为准</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>修复收藏底部黑色</title>
+      <link href="/2018/12/04/6/"/>
+      <url>/2018/12/04/6/</url>
+      
+        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Arsc </category>
           
       </categories>
       
@@ -1621,29 +1667,6 @@
     </entry>
     
     <entry>
-      <title>修改非Svip也可以贴收藏表情</title>
-      <link href="/2018/12/04/17/"/>
-      <url>/2018/12/04/17/</url>
-      
-        <content type="html"><![CDATA[<p>以Dex编辑器打开dex4</p><p>常量搜索 贴收藏表情</p><p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p><p>打开方法列表，最后一个 onTouchEvent</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p><p>找到1253行</p><p>修改 nez 为lez</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p><p>保存</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex4 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>闪照无需长按查看教程</title>
       <link href="/2018/12/04/7/"/>
       <url>/2018/12/04/7/</url>
@@ -1690,39 +1713,16 @@
     </entry>
     
     <entry>
-      <title>修复收藏底部黑色</title>
-      <link href="/2018/12/04/6/"/>
-      <url>/2018/12/04/6/</url>
+      <title>去主页全民闯关</title>
+      <link href="/2018/12/04/23/"/>
+      <url>/2018/12/04/23/</url>
       
-        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Arsc </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>聊天输入框加字</title>
-      <link href="/2018/12/04/24/"/>
-      <url>/2018/12/04/24/</url>
-      
-        <content type="html"><![CDATA[<p>打开R\o clc.xml</p><p>找到　</p><p>com.tencent.widget.XEditTextEx 这一段</p><p>在下面加上</p><p>android:hint=”你要加的字”</p><p>以实际参考为准</p>]]></content>
+        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
       
       
       <categories>
           
-          <category> XML </category>
+          <category> Dex2 </category>
           
       </categories>
       
