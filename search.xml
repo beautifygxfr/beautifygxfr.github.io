@@ -1518,16 +1518,16 @@
     </entry>
     
     <entry>
-      <title>关于闪照</title>
-      <link href="/2018/12/04/18/"/>
-      <url>/2018/12/04/18/</url>
+      <title>去除气泡</title>
+      <link href="/2018/12/04/22/"/>
+      <url>/2018/12/04/22/</url>
       
-        <content type="html"><![CDATA[<p>.防闪照消失，修改闪照时间，且可以截屏</p><p>//用dex编辑器打开classes2.dex</p><p>//搜索常量”flashpichelper”</p><p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p><p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p><p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p><p>//回编译</p><p>//用dex编辑器打开classes4.dex</p><p>//搜索常量”HotChatFlashPicActivity”</p><p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p><p>//继续搜索常量”doOnCreate”</p><p>//打开(Landroid/os/Bundle;)Z</p><p>//搜索”SDK_INT”</p><p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p><p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p><p>//回编译，签名，安装</p><h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p><ol><li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li><li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li></ol><p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
       
       
       <categories>
           
-          <category> Dex2 </category>
+          <category> Dex4 </category>
           
       </categories>
       
@@ -1564,23 +1564,6 @@
     </entry>
     
     <entry>
-      <title>精简双击聊天气泡后界面</title>
-      <link href="/2018/12/04/3/"/>
-      <url>/2018/12/04/3/</url>
-      
-        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    <entry>
       <title>修改左上角头像为设置按钮</title>
       <link href="/2018/12/04/19/"/>
       <url>/2018/12/04/19/</url>
@@ -1604,97 +1587,11 @@
     </entry>
     
     <entry>
-      <title>修改非Svip也可以贴收藏表情</title>
-      <link href="/2018/12/04/17/"/>
-      <url>/2018/12/04/17/</url>
+      <title>关于闪照</title>
+      <link href="/2018/12/04/18/"/>
+      <url>/2018/12/04/18/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开dex4</p><p>常量搜索 贴收藏表情</p><p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p><p>打开方法列表，最后一个 onTouchEvent</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p><p>找到1253行</p><p>修改 nez 为lez</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p><p>保存</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex4 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>修复收藏底部黑色</title>
-      <link href="/2018/12/04/6/"/>
-      <url>/2018/12/04/6/</url>
-      
-        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Arsc </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>聊天输入框加字</title>
-      <link href="/2018/12/04/24/"/>
-      <url>/2018/12/04/24/</url>
-      
-        <content type="html"><![CDATA[<p>打开R\o clc.xml</p><p>找到　</p><p>com.tencent.widget.XEditTextEx 这一段</p><p>在下面加上</p><p>android:hint=”你要加的字”</p><p>以实际参考为准</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>去高能舞试</title>
-      <link href="/2018/12/04/8/"/>
-      <url>/2018/12/04/8/</url>
-      
-        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex6 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    <entry>
-      <title>去主页全民闯关</title>
-      <link href="/2018/12/04/23/"/>
-      <url>/2018/12/04/23/</url>
-      
-        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
+        <content type="html"><![CDATA[<p>.防闪照消失，修改闪照时间，且可以截屏</p><p>//用dex编辑器打开classes2.dex</p><p>//搜索常量”flashpichelper”</p><p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p><p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p><p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p><p>//回编译</p><p>//用dex编辑器打开classes4.dex</p><p>//搜索常量”HotChatFlashPicActivity”</p><p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p><p>//继续搜索常量”doOnCreate”</p><p>//打开(Landroid/os/Bundle;)Z</p><p>//搜索”SDK_INT”</p><p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p><p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p><p>//回编译，签名，安装</p><h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p><ol><li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li><li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li></ol><p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>]]></content>
       
       
       <categories>
@@ -1736,16 +1633,56 @@
     </entry>
     
     <entry>
-      <title>去除气泡</title>
-      <link href="/2018/12/04/22/"/>
-      <url>/2018/12/04/22/</url>
+      <title>修改非Svip也可以贴收藏表情</title>
+      <link href="/2018/12/04/17/"/>
+      <url>/2018/12/04/17/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开dex4</p><p>常量搜索 贴收藏表情</p><p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p><p>打开方法列表，最后一个 onTouchEvent</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p><p>找到1253行</p><p>修改 nez 为lez</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p><p>保存</p>]]></content>
       
       
       <categories>
           
           <category> Dex4 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>精简双击聊天气泡后界面</title>
+      <link href="/2018/12/04/3/"/>
+      <url>/2018/12/04/3/</url>
+      
+        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>修复收藏底部黑色</title>
+      <link href="/2018/12/04/6/"/>
+      <url>/2018/12/04/6/</url>
+      
+        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Arsc </category>
           
       </categories>
       
@@ -1778,6 +1715,69 @@
             <tag> 教程 </tag>
             
         </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>聊天输入框加字</title>
+      <link href="/2018/12/04/24/"/>
+      <url>/2018/12/04/24/</url>
+      
+        <content type="html"><![CDATA[<p>打开R\o clc.xml</p><p>找到　</p><p>com.tencent.widget.XEditTextEx 这一段</p><p>在下面加上</p><p>android:hint=”你要加的字”</p><p>以实际参考为准</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去主页全民闯关</title>
+      <link href="/2018/12/04/23/"/>
+      <url>/2018/12/04/23/</url>
+      
+        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去高能舞试</title>
+      <link href="/2018/12/04/8/"/>
+      <url>/2018/12/04/8/</url>
+      
+        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex6 </category>
+          
+      </categories>
+      
       
     </entry>
     
