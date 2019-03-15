@@ -5,12 +5,13 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="精简双击聊天气泡后界面, Beautify">
-    <meta name="description" content="反编译打开　cod.xml
-将46行后面改成0dp
-保存
-效果图
-原创教程@Delete小海
+    <meta name="keywords" content="主页滑动换壁纸, Beautify">
+    <meta name="description" content="适用于所有版本
+最好应用在一体图底包
+反编译打开cbg.xml
+在第一个 FrameLayout
+下面加上一句 android:layout_marginBottom=”-58dp”   (任意一行都行)
+然后16行 和19行和下图改一样
 ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>精简双击聊天气泡后界面 | Beautify</title>
+    <title>主页滑动换壁纸 | Beautify</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -265,13 +266,13 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('https://static1.hdwallpapers.net/wallpapers/2016/04/18/1003/thumb_z-i-g-z-a-g.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                    精简双击聊天气泡后界面
+                    主页滑动换壁纸
                     </div>
                 </div>
             </div>
@@ -380,6 +381,14 @@
     <div class="card">
         <div class="card-content article-info">
             
+            <div class="article-tag">
+                
+                <a href="/tags/教程/" target="_blank">
+                    <span class="chip bg-color">教程</span>
+                </a>
+                
+            </div>
+            
             <div class="post-info">
                 
                 <span class="post-cate">
@@ -393,18 +402,22 @@
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-12-04
+                    <i class="fa fa-clock-o fa-fw"></i>2019-03-15
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>反编译打开　cod.xml</p>
-<p>将46行后面改成0dp<br><a id="more"></a></p>
-<p>保存</p>
-<p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p>
-<p>原创教程@Delete小海</p>
+                <p>适用于所有版本</p>
+<p>最好应用在一体图底包</p>
+<p>反编译打开cbg.xml</p>
+<p>在第一个 FrameLayout</p>
+<p>下面加上一句 android:layout_marginBottom=”-58dp”   (任意一行都行)</p>
+<p>然后16行 和19行和下图改一样</p>
+<p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgqpju2AUox5Gc6QcwoQM4zwM.png" alt="图片"></p>
+<p>最后加入 滑动壁纸的代码<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:scrollbars</span>=<span class="string">"none"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">            <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_weight</span>=<span class="string">"1"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:background</span>=<span class="string">"@图片ID"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_width</span>=<span class="string">"545dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_weight</span>=<span class="string">"1"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:background</span>=<span class="string">"@图片ID"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_width</span>=<span class="string">"545dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_weight</span>=<span class="string">"1"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:background</span>=<span class="string">"@图片ID"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_width</span>=<span class="string">"545dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">LinearLayout</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_weight</span>=<span class="string">"1"</span></span></span><br><span class="line"><span class="tag">                <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">ImageView</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:background</span>=<span class="string">"@图片ID"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_width</span>=<span class="string">"545dp"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></span></span><br><span class="line"><span class="tag">                    <span class="attr">android:layout_centerVertical</span>=<span class="string">"true"</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">com.tencent.mobileqq.profile.view.ReboundHorizontalScrollView</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>如下图 加上<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg847u2AUo1pKmVTDQBTjICw.png" alt="图片"></p>
 
             </div>
             <hr>
@@ -417,7 +430,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="https://Beautifys.github.io" class="b-link-green">Beautify</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/04/3/" class="b-link-green">精简双击聊天气泡后界面</a>
+                    <a href="/2019/03/15/84/" class="b-link-green">主页滑动换壁纸</a>
                 </p>
             </div>
         </div>
@@ -700,45 +713,29 @@
         <div class="article col s12 m6" data-aos="fade-up">
           
             <div class="card">
-                <a href="/2018/12/04/6/">
+                <a href="/2020/01/20/Help fr/">
                     <div class="card-image">
                         
-                        <img src="https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd40ox6j30jg0ayaay.jpg" class="responsive-img" alt="修复收藏底部黑色">
+                        
+                      
                         
                 
                     </div>
                 <div class="card-content article-content">
-                    <div class="summary">打开Arsc编辑器搜索　移动到分组 如下图.
-然后长按复制ID返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）
-打开第六行后面改成#FFFFFFFF
-
-</div>
+                    <div class="summary">需要什么教程的在这底下评论吧</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-20
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Arsc/" class="post-category" target="_blank">
-                                    Arsc
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            Likefr
                             
                         </span>
                     </div>
                 </div>
             </a>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/教程/" target="_blank">
-                        <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">修复收藏底部黑色</span>
-                    </a>
-                    
-                </div>
                 
             </div>
         </div>
@@ -747,7 +744,7 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/04/18/">
+                <a href="/2019/03/02/83/">
                     <div class="card-image">
                         
                         
@@ -756,21 +753,20 @@
                     </div>
                
                 <div class="card-content article-content">
-                    <div class="summary">.防闪照消失，修改闪照时间，且可以截屏
-//用dex编辑器打开classes2.dex
-//搜索常量”flashpichelper”
-//打开com/tencent/mobileqq/app/FlashPicHelper;
-//打开方法列表</div>
+                    <div class="summary">反编译打开cpo.xml
+加上以下代码
+12345ImageView;layout_width="fill"src="图片id"layout_height="fill"scaleType="fitXY"/&gt;
+</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-04
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-02
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Dex2/" class="post-category" target="_blank">
-                                    Dex2
+                            <a href="/categories/XML/" class="post-category" target="_blank">
+                                    XML
                                 </a>
                             
                             
@@ -784,7 +780,7 @@
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">关于闪照</span>
+                        <span class="chip bg-color">qq关于加入二维码</span>
                     </a>
                     
                 </div>
