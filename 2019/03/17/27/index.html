@@ -5,12 +5,15 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="主页一体图教程, Beautify">
-    <meta name="description" content="(旧版本)
-以下教程不需要深入理解  照着做就对了！
-我们先来改Dex6
-首先打开Arsc 复制 bg_texture_theme_version2 这个文件的ID  (763的Id为 7F0202C7      
-然后再复制 aio_fa">
+    <meta name="keywords" content="修改侧滑图标为水平, Beautify">
+    <meta name="description" content="打开Ro hwi.xml 
+前提是已去除文字右上角查找 BounceScrollView 定位到
+185行 （参考）
+如下图将
+194行后面的vertical改成
+horizontal 即可
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>主页一体图教程 | Beautify</title>
+    <title>修改侧滑图标为水平 | Beautify</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -270,7 +273,7 @@
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                    主页一体图教程
+                    修改侧滑图标为水平
                     </div>
                 </div>
             </div>
@@ -392,11 +395,7 @@
                 <span class="post-cate">
                     <i class="fa fa-bookmark fa-fw icon-category"></i>
                     
-                    <a href="/categories/Dex6/" class="post-category" target="_blank">
-                        Dex6
-                    </a>
-                    
-                    <a href="/categories/Dex6/XML/" class="post-category" target="_blank">
+                    <a href="/categories/XML/" class="post-category" target="_blank">
                         XML
                     </a>
                     
@@ -404,59 +403,20 @@
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-12-29
+                    <i class="fa fa-clock-o fa-fw"></i>2019-03-17
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>(旧版本)</p>
-<p>以下教程不需要深入理解  照着做就对了！</p>
-<p>我们先来改Dex6</p>
-<p>首先打开Arsc 复制 bg_texture_theme_version2 这个文件的ID  (763的Id为 7F0202C7      </p>
-<p>然后再复制 aio_face_bg.9.png 这个透明图片的id  注意如果这张图不是透明的请把它改成透明图片尺寸随意需要点九 (763版本的Id为 7F020043)</p>
-<p>不会复制ID的看这里</p>
-<p>以Dex编辑器打开Dex6</p>
-<p>十六进制搜索刚才复制的 Id 7F0202C7    ( bg_texture_theme_version2.xml)<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg3Yve2AUom-Dx4AEwiAU4gwQ.png" alt=""></p>
-<p>搜索出来的结果如下 我们要改的就是红框内的</p>
-<p><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAg_JTe2AUopbazyQMw0AU46Qc.jpg" alt=""></p>
-<p>我们一个一个改 打开第一个 继续搜索 7F0202C7</p>
-<p>会得到两个方法 (两个都要改)</p>
-<p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg1I7e2AUotL-6VjDDBTi_Ag.png" alt=""></p>
-<p>先改第一个 打开以后 点击右上角</p>
-<p>继续搜索这个Id 7f0202c7  (这里要注意 id要小写的 不然可能搜索不出来)</p>
-<p>然后点击 替换 输入 7F020043  (aio_face_bg.9.png 这张透明图片的id )</p>
-<p>如下图  最后点击全部这个按钮</p>
-<p><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgppPe2AUo_f_HswIw0AU4-QQ.jpg" alt=""><br>最后返回 保存并退出</p>
-<p>刚才改的只是第一个方法 还有一个方法也需要改</p>
-<p>当然了红框内的都需要改 都一样改</p>
-<p>我就不一一描述了</p>
-<p><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAg_JTe2AUopbazyQMw0AU46Qc.jpg" alt=""></p>
-<p>改完之后退出保存就行了</p>
-<p>我们还需要把R/k/conversation_bg_gezi.png 这张图改成透明图片</p>
-<p>接下来要改的是R/o/cic.xml  ryu.xml（763版本）    ccd.xml</p>
-<p>先改消息界面 cic.xml 如下图在第 15 行下面加上      android:alpha=”0” 退出保存 如下图</p>
-<p><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAg7cnf2AUomuDOyAMw0AM42AM.jpg" alt=""><br>然后我们改联系人界面  （ryu.xml  763版本）（这个文件每个版本都不一样 ）</p>
-<p>直接看下图加上 并保存</p>
-<p>Screenshot_20180606-214854.jpg<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAg9Mzf2AUo0JyFgQMw0AM4sAM.jpg" alt=""></p>
-<p>还有最后一个动态 ccd.xml</p>
-<p>如下图加上 并保存<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgms7f2AUolr-W8wcw0AM46AI.jpg" alt=""></p>
-<p>这里我说一下</p>
-<p>android:alpha=”0” 这段代码是透明的意思</p>
-<p>刚才把主页消息 联系人 动态这三个界面的顶栏都透明了</p>
-<p>下面我以Rz bdkd.png 为例子</p>
-<p>它的ID为 7F030009</p>
-<p>然后反编译打开R/o/cbg.xml</p>
-<p>在第7行下面加上   android:background=”@7F030009”</p>
-<p>然后 将第19行后面改成#00000000</p>
-<p>如下图 保存</p>
-<p><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAg5dnf2AUowof0ywcw0AM4_QU.jpg" alt=""></p>
-<p>最后 bdkd.png就是你的主页一体图啦 想改成什么图就改成什么图..</p>
-<p>ps</p>
-<p>至于下拉刷新那你的阴影 只需要透明 R/k/gcu.png 即可</p>
-<p>因为透明了主页顶栏 所以加号也会被透明 可以将加号改成悬浮加号‍</p>
-<p><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAg3O-i2AUo7vXf3QIwuAg44RA.jpg" alt=""></p>
+                <p>打开Ro hwi.xml </p>
+<h2 id="前提是已去除文字"><a href="#前提是已去除文字" class="headerlink" title="前提是已去除文字"></a><a href="https://likefrfrbf.github.io/2018/12/30/59/" target="_blank" rel="noopener">前提是已去除文字</a></h2><p>右上角查找 BounceScrollView 定位到</p>
+<p>185行 （参考）</p>
+<p>如下图将</p>
+<p>194行后面的vertical改成</p>
+<p>horizontal 即可</p>
+<p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgjKWF2wUo1LHjqAEwuAg4rBE.png" alt="图片"></p>
 
             </div>
             <hr>
@@ -469,7 +429,7 @@
                     <span class="reprint-tip">转载请注明: </span>
                     <a href="https://Beautifys.github.io" class="b-link-green">Beautify</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/29/45/" class="b-link-green">主页一体图教程</a>
+                    <a href="/2019/03/17/27/" class="b-link-green">修改侧滑图标为水平</a>
                 </p>
             </div>
         </div>
@@ -752,7 +712,7 @@
         <div class="article col s12 m6" data-aos="fade-up">
           
             <div class="card">
-                <a href="/2018/12/29/46/">
+                <a href="/2020/01/20/Help fr/">
                     <div class="card-image">
                         
                         
@@ -761,36 +721,20 @@
                 
                     </div>
                 <div class="card-content article-content">
-                    <div class="summary">以Dex编辑器打开Dex6
-常量搜索 PanelIconLinearLayout
-找到：com/tencent/mobileqq/activity/aio/panel/PanelIconLinearLayout;类名
-方法列表找到d;()V</div>
+                    <div class="summary">需要什么教程的在这底下评论吧</div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-29
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-01-20
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/Dex6/" class="post-category" target="_blank">
-                                    Dex6
-                                </a>
-                            
+                            <i class="fa fa-user fa-fw"></i>
+                            Likefr
                             
                         </span>
                     </div>
                 </div>
             </a>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/教程/" target="_blank">
-                        <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">去除底栏戳一戳</span>
-                    </a>
-                    
-                </div>
                 
             </div>
         </div>
@@ -799,7 +743,7 @@
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">下一篇</div>
             <div class="card">
-                <a href="/2018/12/29/44/">
+                <a href="/2019/03/17/86/">
                     <div class="card-image">
                         
                         
@@ -808,22 +752,22 @@
                     </div>
                
                 <div class="card-content article-content">
-                    <div class="summary">水波纹特效只能在Android5.0及以上版本使用
-我就简单说一下
-找一个无用的　xml　比如765的
-将里面的内容全删
-写上以下代码　第一个color为背景颜色　第二个color为水波纹颜色
-12345678910&lt;?xml ver</div>
+                    <div class="summary">以Dex编辑器打开 Classes.dex常量搜索 splashpic
+打开如下图 这个类
+
+继续常量搜索 splashpic
+打开方法列表a右上角查找splashpic 也就是定位到146行
+把splashpic 改成000000  保存</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-29
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-03-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/XML/" class="post-category" target="_blank">
-                                    XML
+                            <a href="/categories/Dex1/" class="post-category" target="_blank">
+                                    Dex1
                                 </a>
                             
                             
@@ -837,7 +781,7 @@
                     
                     <a href="/tags/教程/" target="_blank">
                         <span class="chip bg-color">教程</span>
-                        <span class="chip bg-color">水波纹效果</span>
+                        <span class="chip bg-color">去节日启动图</span>
                     </a>
                     
                 </div>
