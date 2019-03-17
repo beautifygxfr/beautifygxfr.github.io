@@ -1294,7 +1294,7 @@
       <link href="/2018/12/21/34/"/>
       <url>/2018/12/21/34/</url>
       
-        <content type="html"><![CDATA[<p>推荐使用方法二</p><p>方法一</p><p>打开R\o\bkz.xml</p><p>找到第三个com.tencent.mobileqq.widget.FormSimpleItem</p><p>在控件的这一段com.tencent.mobileqq.widget.FormSimpleItem上面插个 <relativelayout android:layout_width="0dp" android:layout_height="0dp"> 在控件结尾android:layout_marginBottom=”@7f0d0165” /&gt;这一段下面插个<br></relativelayout></p><p>如下图<br><img src="https://images-cdn.shimo.im/QbNoM5ZohTIcJvrZ/82748F6DA2144AA891C9F26EF8EA069A.jpg" alt="图片"></p><p>方法二<br>以dex编辑器打开classes6.dex</p><p>进入com/tencent/mobileqq/activity/QQSettingSettingActivity;</p><p>打开方法a</p><p>内容全删　输入return-void</p><p><img src="https://images-cdn.shimo.im/5tNSTvAgf1AENiOX/83763161D3F2407BB6F56213E0C4E7C4.jpg" alt=""></p>]]></content>
+        <content type="html"><![CDATA[<p>推荐使用方法二</p><p>方法一</p><p>打开R\o\bkz.xml</p><p>找到第三个com.tencent.mobileqq.widget.FormSimpleItem</p><p>在控件的这一段com.tencent.mobileqq.widget.FormSimpleItem上面插入<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span></span></span><br><span class="line"><span class="tag"> <span class="attr">android:layout_width</span>=<span class="string">"0dp"</span> </span></span><br><span class="line"><span class="tag"> <span class="attr">android:layout_height</span>=<span class="string">"0dp"</span>&gt;</span></span><br></pre></td></tr></table></figure></p><p>  在控件结尾android:layout_marginBottom=”@7FXXXXXX” /&gt; //这一段下面插个<br> </p><p>如下图<br><img src="https://images-cdn.shimo.im/QbNoM5ZohTIcJvrZ/82748F6DA2144AA891C9F26EF8EA069A.jpg!thumbnail" alt="图片"></p><p>方法二<br>以dex编辑器打开classes6.dex</p><p>进入com/tencent/mobileqq/activity/QQSettingSettingActivity;</p><p>打开方法a</p><p>内容全删　输入return-void</p><p><img src="https://images-cdn.shimo.im/5tNSTvAgf1AENiOX/83763161D3F2407BB6F56213E0C4E7C4.jpg!thumbnail" alt=""></p>]]></content>
       
       
       <categories>
@@ -1342,7 +1342,7 @@
       <link href="/2018/12/21/31/"/>
       <url>/2018/12/21/31/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex6<br>常量搜索   录制口令红包<br>打开类 </p><p><img src="https://images-cdn.shimo.im/xXLYmYstbi8odZ8X/PicsArt_06_02_03.58.46.jpg" alt="图片"><br>继续搜索 口令红包<br>打开 方法a</p><p>如下图 将112行 前面改成 goto 保存<br><img src="https://images-cdn.shimo.im/FRzj2ZJl9osJKcnI/Screenshot_20180602_155207.png" alt="图片"></p><p>此教程可能会导致某期间无法正常领取红包</p>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex6<br>常量搜索   录制口令红包<br>打开类 </p><p><img src="https://images-cdn.shimo.im/xXLYmYstbi8odZ8X/PicsArt_06_02_03.58.46.jpg!thumbnail" alt="图片"><br>继续搜索 口令红包<br>打开 方法a</p><p>如下图 将112行 前面改成 goto 保存<br><img src="https://images-cdn.shimo.im/FRzj2ZJl9osJKcnI/Screenshot_20180602_155207.png!thumbnail" alt="图片"></p><p>此教程可能会导致某期间无法正常领取红包</p>]]></content>
       
       
       <categories>
@@ -1633,11 +1633,11 @@
     </entry>
     
     <entry>
-      <title>精简双击聊天气泡后界面</title>
-      <link href="/2018/12/04/3/"/>
-      <url>/2018/12/04/3/</url>
+      <title>去除闪照倒计时</title>
+      <link href="/2018/12/04/20/"/>
+      <url>/2018/12/04/20/</url>
       
-        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
+        <content type="html"><![CDATA[<p>打开mwj.xml</p><p>搜索CountDownProgressBar</p><p>保留ID其他内容直接删掉，写如下代码进去即可</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg9s7Q1gUo_M6fgAQwuAg4gA8.png" alt="图片"></p><p>原作者@绅士寻欢</p>]]></content>
       
       
       <categories>
@@ -1646,6 +1646,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -1736,16 +1742,16 @@
     </entry>
     
     <entry>
-      <title>修复收藏底部黑色</title>
-      <link href="/2018/12/04/6/"/>
-      <url>/2018/12/04/6/</url>
+      <title>去主页全民闯关</title>
+      <link href="/2018/12/04/23/"/>
+      <url>/2018/12/04/23/</url>
       
-        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
+        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
       
       
       <categories>
           
-          <category> Arsc </category>
+          <category> Dex2 </category>
           
       </categories>
       
@@ -1805,29 +1811,6 @@
     </entry>
     
     <entry>
-      <title>聊天输入框加字</title>
-      <link href="/2018/12/04/24/"/>
-      <url>/2018/12/04/24/</url>
-      
-        <content type="html"><![CDATA[<p>打开R\o clc.xml</p><p>找到　</p><p>com.tencent.widget.XEditTextEx 这一段</p><p>在下面加上</p><p>android:hint=”你要加的字”</p><p>以实际参考为准</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>去除气泡</title>
       <link href="/2018/12/04/22/"/>
       <url>/2018/12/04/22/</url>
@@ -1851,16 +1834,33 @@
     </entry>
     
     <entry>
-      <title>去主页全民闯关</title>
-      <link href="/2018/12/04/23/"/>
-      <url>/2018/12/04/23/</url>
+      <title>精简双击聊天气泡后界面</title>
+      <link href="/2018/12/04/3/"/>
+      <url>/2018/12/04/3/</url>
       
-        <content type="html"><![CDATA[<p>dex2中搜索继续下拉进入全民闯关</p><p>打开类名</p><p>Lcom/tencent/mobilegg/now/enter/ConversationNowController</p><p>继续搜索下拉进入全民闯关</p><p>方法e里面内容全部删除 写上</p><p>然后重新搜索 showNowrefreshentrance</p><p>方法a里面内容删除写上 return-void</p><p>如下图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgisyX1gUojo7xzwIwuAg42wM.jpg" alt="图片"></p><p>原作者@反派少年</p>]]></content>
+        <content type="html"><![CDATA[<p>反编译打开　cod.xml</p><p>将46行后面改成0dp<br><a id="more"></a></p><p>保存</p><p>效果图<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAglKnb2wUozq6HuwIwuAg4gA8.jpg" alt="如图"></p><p>原创教程@Delete小海</p>]]></content>
       
       
       <categories>
           
-          <category> Dex2 </category>
+          <category> XML </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>修复收藏底部黑色</title>
+      <link href="/2018/12/04/6/"/>
+      <url>/2018/12/04/6/</url>
+      
+        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Arsc </category>
           
       </categories>
       
@@ -1874,11 +1874,11 @@
     </entry>
     
     <entry>
-      <title>去除闪照倒计时</title>
-      <link href="/2018/12/04/20/"/>
-      <url>/2018/12/04/20/</url>
+      <title>聊天输入框加字</title>
+      <link href="/2018/12/04/24/"/>
+      <url>/2018/12/04/24/</url>
       
-        <content type="html"><![CDATA[<p>打开mwj.xml</p><p>搜索CountDownProgressBar</p><p>保留ID其他内容直接删掉，写如下代码进去即可</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p><p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg9s7Q1gUo_M6fgAQwuAg4gA8.png" alt="图片"></p><p>原作者@绅士寻欢</p>]]></content>
+        <content type="html"><![CDATA[<p>打开R\o clc.xml</p><p>找到　</p><p>com.tencent.widget.XEditTextEx 这一段</p><p>在下面加上</p><p>android:hint=”你要加的字”</p><p>以实际参考为准</p>]]></content>
       
       
       <categories>

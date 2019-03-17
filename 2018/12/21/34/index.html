@@ -264,7 +264,7 @@
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('https://ws1.sinaimg.cn/large/00676n0Tgy1fy7qd40ox6j30jg0ayaay.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -415,13 +415,14 @@
 <p>方法一</p>
 <p>打开R\o\bkz.xml</p>
 <p>找到第三个com.tencent.mobileqq.widget.FormSimpleItem</p>
-<p>在控件的这一段com.tencent.mobileqq.widget.FormSimpleItem上面插个 <relativelayout android:layout_width="0dp" android:layout_height="0dp"> 在控件结尾android:layout_marginBottom=”@7f0d0165” /&gt;这一段下面插个<br></relativelayout></p>
-<p>如下图<br><img src="https://images-cdn.shimo.im/QbNoM5ZohTIcJvrZ/82748F6DA2144AA891C9F26EF8EA069A.jpg" alt="图片"></p>
+<p>在控件的这一段com.tencent.mobileqq.widget.FormSimpleItem上面插入<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span></span></span><br><span class="line"><span class="tag"> <span class="attr">android:layout_width</span>=<span class="string">"0dp"</span> </span></span><br><span class="line"><span class="tag"> <span class="attr">android:layout_height</span>=<span class="string">"0dp"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>  在控件结尾android:layout_marginBottom=”@7FXXXXXX” /&gt; //这一段下面插个<br> </p>
+<p>如下图<br><img src="https://images-cdn.shimo.im/QbNoM5ZohTIcJvrZ/82748F6DA2144AA891C9F26EF8EA069A.jpg!thumbnail" alt="图片"></p>
 <p>方法二<br>以dex编辑器打开classes6.dex</p>
 <p>进入com/tencent/mobileqq/activity/QQSettingSettingActivity;</p>
 <p>打开方法a</p>
 <p>内容全删　输入return-void</p>
-<p><img src="https://images-cdn.shimo.im/5tNSTvAgf1AENiOX/83763161D3F2407BB6F56213E0C4E7C4.jpg" alt=""></p>
+<p><img src="https://images-cdn.shimo.im/5tNSTvAgf1AENiOX/83763161D3F2407BB6F56213E0C4E7C4.jpg!thumbnail" alt=""></p>
 
             </div>
             <hr>
