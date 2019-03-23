@@ -791,17 +791,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[修复收藏底部黑色]]></title>
-    <url>%2F2018%2F12%2F04%2F6%2F</url>
-    <content type="text"><![CDATA[打开Arsc编辑器搜索 移动到分组 如下图. 然后长按复制ID返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770） 打开第六行后面改成#FFFFFFFF]]></content>
-      <categories>
-        <category>Arsc</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[去除闪照倒计时]]></title>
     <url>%2F2018%2F12%2F04%2F20%2F</url>
     <content type="text"><![CDATA[打开mwj.xml 搜索CountDownProgressBar 保留ID其他内容直接删掉，写如下代码进去即可 android:visibility=”gone” android:layout_width=”0dp” android:layout_height=”0dp” 原作者@绅士寻欢]]></content>
@@ -835,6 +824,14 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[去高能舞试]]></title>
+    <url>%2F2018%2F12%2F04%2F8%2F</url>
+    <content type="text"><![CDATA[以dex编辑器打开classes6.dex 点击右上角 搜索常量 RecentOptPopBar 搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry 进入方法列表 e 删除41 42行 保存]]></content>
+      <categories>
+        <category>Dex6</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[修改非Svip也可以贴收藏表情]]></title>
     <url>%2F2018%2F12%2F04%2F17%2F</url>
     <content type="text"><![CDATA[以Dex编辑器打开dex4 常量搜索 贴收藏表情 打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector 打开方法列表，最后一个 onTouchEvent 找到1253行 修改 nez 为lez 保存]]></content>
@@ -844,55 +841,6 @@
       <tags>
         <tag>教程</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[精简双击聊天气泡后界面]]></title>
-    <url>%2F2018%2F12%2F04%2F3%2F</url>
-    <content type="text"><![CDATA[反编译打开 cod.xml 将46行后面改成0dp 保存 效果图 原创教程@Delete小海]]></content>
-      <categories>
-        <category>XML</category>
-      </categories>
-  </entry>
-  <entry>
-    <title><![CDATA[闪照无需长按查看教程]]></title>
-    <url>%2F2018%2F12%2F04%2F7%2F</url>
-    <content type="text"><![CDATA[以Dex编辑器打开Dex4 搜索Flash 得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity， 打开方法 找到onTouch 修改方法如下图]]></content>
-      <categories>
-        <category>Dex4</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[去除气泡]]></title>
-    <url>%2F2018%2F12%2F04%2F22%2F</url>
-    <content type="text"><![CDATA[以Dex编辑器打开Dex4常量搜索 bubble_info打开 com/tencent/mobileqq/bubble/BubbleManager;继续常量搜索：bubble_info打开方法 a修改 第5行的 “bubble_info”为”imei”返回打开 另外一个类adcc 继续搜索 bubble_info 打开方法run 内容全删写上 return-void 去字体 以Dex编辑器打开Dex4常量搜索 font_info打开 com/etrump/mixlayout/FontManager;继续搜索 font_info打开 ⑥删除4-14行 去随机大小字体特效 以Dex编辑器打开Dex5 常量搜索 vip_font_id打开com/etrump/mixlayout/FontManager;继续常量搜索 vip_font_id打开方法 a保留第二行跟倒数第一行，其他删除 原作者@cc]]></content>
-      <categories>
-        <category>Dex4</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[聊天输入框加字]]></title>
-    <url>%2F2018%2F12%2F04%2F24%2F</url>
-    <content type="text"><![CDATA[打开R\o clc.xml 找到 com.tencent.widget.XEditTextEx 这一段 在下面加上 android:hint=”你要加的字” 以实际参考为准]]></content>
-      <categories>
-        <category>XML</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[去高能舞试]]></title>
-    <url>%2F2018%2F12%2F04%2F8%2F</url>
-    <content type="text"><![CDATA[以dex编辑器打开classes6.dex 点击右上角 搜索常量 RecentOptPopBar 搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry 进入方法列表 e 删除41 42行 保存]]></content>
-      <categories>
-        <category>Dex6</category>
-      </categories>
   </entry>
   <entry>
     <title><![CDATA[去主页全民闯关]]></title>
@@ -911,6 +859,58 @@
     <content type="text"><![CDATA[1.去好友头像，vdk.xml(763版本) 定位： &lt;com.tencent.widget.RecentDynamicAvatarView 加入代码： android:visibility=”gone” android:layout_width=”0dp” android:layout_height=”0dp”]]></content>
       <categories>
         <category>XML</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[闪照无需长按查看教程]]></title>
+    <url>%2F2018%2F12%2F04%2F7%2F</url>
+    <content type="text"><![CDATA[以Dex编辑器打开Dex4 搜索Flash 得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity， 打开方法 找到onTouch 修改方法如下图]]></content>
+      <categories>
+        <category>Dex4</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[精简双击聊天气泡后界面]]></title>
+    <url>%2F2018%2F12%2F04%2F3%2F</url>
+    <content type="text"><![CDATA[反编译打开 cod.xml 将46行后面改成0dp 保存 效果图 原创教程@Delete小海]]></content>
+      <categories>
+        <category>XML</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[聊天输入框加字]]></title>
+    <url>%2F2018%2F12%2F04%2F24%2F</url>
+    <content type="text"><![CDATA[打开R\o clc.xml 找到 com.tencent.widget.XEditTextEx 这一段 在下面加上 android:hint=”你要加的字” 以实际参考为准]]></content>
+      <categories>
+        <category>XML</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[修复收藏底部黑色]]></title>
+    <url>%2F2018%2F12%2F04%2F6%2F</url>
+    <content type="text"><![CDATA[打开Arsc编辑器搜索 移动到分组 如下图. 然后长按复制ID返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770） 打开第六行后面改成#FFFFFFFF]]></content>
+      <categories>
+        <category>Arsc</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[去除气泡]]></title>
+    <url>%2F2018%2F12%2F04%2F22%2F</url>
+    <content type="text"><![CDATA[以Dex编辑器打开Dex4常量搜索 bubble_info打开 com/tencent/mobileqq/bubble/BubbleManager;继续常量搜索：bubble_info打开方法 a修改 第5行的 “bubble_info”为”imei”返回打开 另外一个类adcc 继续搜索 bubble_info 打开方法run 内容全删写上 return-void 去字体 以Dex编辑器打开Dex4常量搜索 font_info打开 com/etrump/mixlayout/FontManager;继续搜索 font_info打开 ⑥删除4-14行 去随机大小字体特效 以Dex编辑器打开Dex5 常量搜索 vip_font_id打开com/etrump/mixlayout/FontManager;继续常量搜索 vip_font_id打开方法 a保留第二行跟倒数第一行，其他删除 原作者@cc]]></content>
+      <categories>
+        <category>Dex4</category>
       </categories>
       <tags>
         <tag>教程</tag>
