@@ -292,6 +292,166 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://Beautifys.github.io/2018/12/29/44/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Likefr">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beautify">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/29/44/" itemprop="url">水波纹效果</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-29T18:03:58+08:00">
+                2018-12-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/XML/" itemprop="url" rel="index">
+                    <span itemprop="name">XML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>水波纹特效只能在Android5.0及以上版本使用</p>
+<p>我就简单说一下</p>
+<p>找一个无用的　xml　比如765的<br><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgyoT62AUo3vLu9wIw5QI4zAg.jpg" alt=""></p>
+<p>将里面的内容全删</p>
+<p>写上以下代码　第一个color为背景颜色　第二个color为水波纹颜色</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ripple</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag">   <span class="attr">android:color</span>=<span class="string">"#FFFFFFFF"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">item</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">shape</span> <span class="attr">android:shape</span>=<span class="string">"rectangle"</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">solid</span> <span class="attr">android:color</span>=<span class="string">"#FF000000"</span> /&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">corners</span> <span class="attr">android:radius</span>=<span class="string">"4dp"</span> /&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">shape</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">item</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ripple</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>然后复制这个xml的ID</p>
+<p>接下来我们需要去引用这个xml</p>
+<p>android:background=”@这里写上刚才xml的ID”</p>
+<p>举个例子　我们在qq登录按钮增加一个水波纹效果</p>
+<p>反编译打开R/p/efw.xml 如下图　</p>
+<p><img src="https://16361087.s21i.faiusr.com/2/ABUIABACGAAgvJL62AUotNehpQIw0AU4yAs.jpg" alt=""></p>
+<p>在这个id下面插入　android:background=”@这里写上刚才xml的ID”</p>
+<p>保存</p>
+<p>预览图<br><img src="https://16361087.s21i.faiusr.com/3/ABUIABADGAAg25n62AUorMPwlQIw9AE4wAI.gif" alt=""></p>
+<p>以上是有界水波纹</p>
+<p>无界水波纹代码如下</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ripple</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></span><br><span class="line"><span class="tag"></span></span><br><span class="line"><span class="tag"><span class="attr">android:color</span>=<span class="string">"#ff00BFFF"</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">ripple</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p><img src="https://16361087.s21i.faiusr.com/3/ABUIABADGAAgk4yH2QUolJ_emgMwjgI4hwQ.gif" alt=""></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://Beautifys.github.io/2018/12/26/43/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -1647,170 +1807,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Beautifys.github.io/2018/12/21/34/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Likefr">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Beautify">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/21/34/" itemprop="url">去除设置免流量入口</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-21T17:41:33+08:00">
-                2018-12-21
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Dex6/" itemprop="url" rel="index">
-                    <span itemprop="name">Dex6</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Dex6/XML/" itemprop="url" rel="index">
-                    <span itemprop="name">XML</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>推荐使用方法二</p>
-<p>方法一</p>
-<p>打开R\o\bkz.xml</p>
-<p>找到第三个com.tencent.mobileqq.widget.FormSimpleItem</p>
-<p>在控件的这一段com.tencent.mobileqq.widget.FormSimpleItem上面插入<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">RelativeLayout</span></span></span><br><span class="line"><span class="tag"> <span class="attr">android:layout_width</span>=<span class="string">"0dp"</span> </span></span><br><span class="line"><span class="tag"> <span class="attr">android:layout_height</span>=<span class="string">"0dp"</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
-<p>  在控件结尾android:layout_marginBottom=”@7FXXXXXX” /&gt; //这一段下面插个<br> </p>
-<p>如下图<br><img src="https://images-cdn.shimo.im/QbNoM5ZohTIcJvrZ/82748F6DA2144AA891C9F26EF8EA069A.jpg!thumbnail" alt="图片"></p>
-<p>方法二<br>以dex编辑器打开classes6.dex</p>
-<p>进入com/tencent/mobileqq/activity/QQSettingSettingActivity;</p>
-<p>打开方法a</p>
-<p>内容全删　输入return-void</p>
-<p><img src="https://images-cdn.shimo.im/5tNSTvAgf1AENiOX/83763161D3F2407BB6F56213E0C4E7C4.jpg!thumbnail" alt=""></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1861,7 +1857,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">87</span>
+                  <span class="site-state-item-count">88</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1872,7 +1868,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">16</span>
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
