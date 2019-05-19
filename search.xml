@@ -6,6 +6,39 @@
     <content type="text"><![CDATA[需要什么教程的在这底下评论吧]]></content>
   </entry>
   <entry>
+    <title><![CDATA[去除主页横屏广告]]></title>
+    <url>%2F2019%2F05%2F20%2F42%2F</url>
+    <content type="text"><![CDATA[打开classes6.dex 打开类列表 打开路径 打开方法列表 右上角点击搜索 搜索代码内容 getlayout 得到下面这个方法列表 查找getlayout 把红框文字改成goto 保存，退出 以下为旧版本教程适用于所有版本 反编译打开bym.xml 如下图 将所有宽和高改成0dp 即可]]></content>
+      <categories>
+        <category>DEX</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[去除联系人界面坦白说卡片（无红点）]]></title>
+    <url>%2F2019%2F05%2F19%2F41%2F</url>
+    <content type="text"><![CDATA[7.9.0＋版本 dex编辑器方式打开classes6.dex 搜索字符串CTEntryController 打开com/tencent/mobileqq/activity/contacts/topentry/CTEntryController 打开方法列表 找到并打开方法a描述符(J)V 全删并写入return-void 老版本去除方法（7.2.0~7.9） 以DEX编辑器方式打开classes6.dex 搜索常量字符mSlideCardView 打开com/tencent/mobileqq/activity/contacts/base/CardController 打开方法列表 找到下面2个方法 删除掉这两个方法里面的内容都写入 123const/4 v0 0return-void 以下为旧版本教程 反编译打开kzp.xml（765版本） 其他版本可以使用xml字符串搜索 SlideCardView 来定位 打开以后 将12 13行改成0dp 如下图 保存]]></content>
+      <categories>
+        <category>Dex1</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[添加点击链接]]></title>
+    <url>%2F2019%2F05%2F18%2F90%2F</url>
+    <content type="text"><![CDATA[以Dex编辑器打开Dex6右上角菜单常量搜索 AboutActivity 打开类 Lcom/tencent/mobileqq/activity/AboutActivity; 进入方法点击右上角新建 一个方法 如下图： 12345678910111213141516171819202122move-object v0 v9move-object v1 v10new-instance v5 Landroid/content/Intent;move-object v8 v5move-object v5 v8move-object v6 v8invoke-direct &#123;v6&#125; Landroid/content/Intent;-&gt;&lt;init&gt;()Vmove-object v3 v5move-object v5 v3const-string v6 &quot;这里写链接&quot;invoke-static &#123;v6&#125; Landroid/net/Uri;-&gt;parse(Ljava/lang/String;)Landroid/net/Uri;move-result-object v6invoke-virtual &#123;v5,v6&#125; Landroid/content/Intent;-&gt;setData(Landroid/net/Uri;)Landroid/content/Intent;move-result-object v5move-object v5 v3const-string v6 &quot;android.intent.action.VIEW&quot;invoke-virtual &#123;v5,v6&#125; Landroid/content/Intent;-&gt;setAction(Ljava/lang/String;)Landroid/content/Intent;move-result-object v5move-object v5 v0move-object v6 v3invoke-virtual &#123;v5,v6&#125; Lcom/tencent/mobileqq/activity/AboutActivity;-&gt;startActivity(Landroid/content/Intent;)Vreturn-void 然后保存 反编译cpo.xml添加以下代码 12345678&lt;Buttonandroid:textSize="17sp"android:gravity="center|left"android:background="#ffff0000"android:layout_width="match_parent"android:layout_height="45dp"android:text=" 点击进入"android:onClick="love" /&gt;]]></content>
+      <categories>
+        <category>Dex6</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[qq内点击效果]]></title>
     <url>%2F2019%2F05%2F05%2Ffenxiang3%2F</url>
     <content type="text"><![CDATA[##(搬运自酷安) 原贴 下载附件 先看效果: 解压将Dex文件 还有assets文件夹都放进QQ里面 然后反编译cic.xml 如下图加上 123&lt;com.aruze.library.widget.FloaterView android:layout_width=&quot;match_parent&quot; android:layout_height=&quot;match_parent&quot;/&gt; 当然还可以在其他界面加上 效果是一样的]]></content>
@@ -583,28 +616,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[去除联系人坦白说]]></title>
-    <url>%2F2018%2F12%2F23%2F41%2F</url>
-    <content type="text"><![CDATA[反编译打开kzp.xml（765版本） 其他版本可以使用xml字符串搜索 SlideCardView 来定位 打开以后 将12 13行改成0dp 如下图 保存]]></content>
-      <categories>
-        <category>XML</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[去除主页横屏广告]]></title>
-    <url>%2F2018%2F12%2F23%2F42%2F</url>
-    <content type="text"><![CDATA[适用于所有版本 反编译打开bym.xml 如下图 将所有宽和高改成0dp 即可]]></content>
-      <categories>
-        <category>XML</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[Arsc的使用方法]]></title>
     <url>%2F2018%2F12%2F23%2F40%2F</url>
     <content type="text"><![CDATA[首先打开 Arsc编辑器 搜索字符串 qq里的大部分字词都在这搜索修改 进行编辑 还有搜索出来的结果长按复制可以获取ID ID搜索资源 举个例子 比如消息的ID 7F0B16D0 搜索出来的结果就是消息 我们可以点击进行任意编辑]]></content>
@@ -835,6 +846,28 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[修复收藏底部黑色]]></title>
+    <url>%2F2018%2F12%2F04%2F6%2F</url>
+    <content type="text"><![CDATA[打开Arsc编辑器搜索 移动到分组 如下图. 然后长按复制ID返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770） 打开第六行后面改成#FFFFFFFF]]></content>
+      <categories>
+        <category>Arsc</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[去除气泡]]></title>
+    <url>%2F2018%2F12%2F04%2F22%2F</url>
+    <content type="text"><![CDATA[以Dex编辑器打开Dex4常量搜索 bubble_info打开 com/tencent/mobileqq/bubble/BubbleManager;继续常量搜索：bubble_info打开方法 a修改 第5行的 “bubble_info”为”imei”返回打开 另外一个类adcc 继续搜索 bubble_info 打开方法run 内容全删写上 return-void 去字体 以Dex编辑器打开Dex4常量搜索 font_info打开 com/etrump/mixlayout/FontManager;继续搜索 font_info打开 ⑥删除4-14行 去随机大小字体特效 以Dex编辑器打开Dex5 常量搜索 vip_font_id打开com/etrump/mixlayout/FontManager;继续常量搜索 vip_font_id打开方法 a保留第二行跟倒数第一行，其他删除 原作者@cc]]></content>
+      <categories>
+        <category>Dex4</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[去主页全民闯关]]></title>
     <url>%2F2018%2F12%2F04%2F23%2F</url>
     <content type="text"><![CDATA[dex2中搜索继续下拉进入全民闯关 打开类名 Lcom/tencent/mobilegg/now/enter/ConversationNowController 继续搜索下拉进入全民闯关 方法e里面内容全部删除 写上 然后重新搜索 showNowrefreshentrance 方法a里面内容删除写上 return-void 如下图 原作者@反派少年]]></content>
@@ -846,9 +879,31 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[聊天输入框加字]]></title>
+    <url>%2F2018%2F12%2F04%2F24%2F</url>
+    <content type="text"><![CDATA[打开R\o clc.xml 找到 com.tencent.widget.XEditTextEx 这一段 在下面加上 android:hint=”你要加的字” 以实际参考为准]]></content>
+      <categories>
+        <category>XML</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[去除闪照倒计时]]></title>
     <url>%2F2018%2F12%2F04%2F20%2F</url>
     <content type="text"><![CDATA[打开mwj.xml 搜索CountDownProgressBar 保留ID其他内容直接删掉，写如下代码进去即可 android:visibility=”gone” android:layout_width=”0dp” android:layout_height=”0dp” 原作者@绅士寻欢]]></content>
+      <categories>
+        <category>XML</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[去消息界面头像]]></title>
+    <url>%2F2018%2F12%2F04%2F25%2F</url>
+    <content type="text"><![CDATA[1.去好友头像，vdk.xml(763版本) 定位： &lt;com.tencent.widget.RecentDynamicAvatarView 加入代码： android:visibility=”gone” android:layout_width=”0dp” android:layout_height=”0dp”]]></content>
       <categories>
         <category>XML</category>
       </categories>
@@ -868,6 +923,14 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[去高能舞试]]></title>
+    <url>%2F2018%2F12%2F04%2F8%2F</url>
+    <content type="text"><![CDATA[以dex编辑器打开classes6.dex 点击右上角 搜索常量 RecentOptPopBar 搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry 进入方法列表 e 删除41 42行 保存]]></content>
+      <categories>
+        <category>Dex6</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[修改非Svip也可以贴收藏表情]]></title>
     <url>%2F2018%2F12%2F04%2F17%2F</url>
     <content type="text"><![CDATA[以Dex编辑器打开dex4 常量搜索 贴收藏表情 打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector 打开方法列表，最后一个 onTouchEvent 找到1253行 修改 nez 为lez 保存]]></content>
@@ -877,58 +940,6 @@
       <tags>
         <tag>教程</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[关于闪照]]></title>
-    <url>%2F2018%2F12%2F04%2F18%2F</url>
-    <content type="text"><![CDATA[.防闪照消失，修改闪照时间，且可以截屏 //用dex编辑器打开classes2.dex //搜索常量”flashpichelper” //打开com/tencent/mobileqq/app/FlashPicHelper; //打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V //将第三行的const-string/jumbo v1 “true”中的true修改成false //回编译 //用dex编辑器打开classes4.dex //搜索常量”HotChatFlashPicActivity” //打开com/tencent/mobileqq/dating/HotChatFlashPicActivity; //继续搜索常量”doOnCreate” //打开(Landroid/os/Bundle;)Z //搜索”SDK_INT” //删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去) //继续搜索”1194”（这个1194为时间，我个人设置4500为15秒） //回编译，签名，安装 以上方法可能失效 可以用下面的 防止闪照消失可截屏 dex 搜索 flashpichelper2.打开 com/tencent/mobileqq/app/FalshPicHelper3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V将第三行的“true”→“false”4.保存，返回 dex4 搜索 HotChatFlashPicActivity6.方法列表找到 HotChatFlashPicActivity 打开方法doOnCreate（Landroid/os/Bundle）z7.搜索 “SDKINT”将“invocke-it………adag dilV”删除8.继续搜索 1194 将其改为 4500 [就是15s]9.保存，返回 修复失效问题打开 .dex4搜索HotChatFlashPicActivity打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity打开方法列表删除最下面 的 finish方法]]></content>
-      <categories>
-        <category>Dex2</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[去消息界面头像]]></title>
-    <url>%2F2018%2F12%2F04%2F25%2F</url>
-    <content type="text"><![CDATA[1.去好友头像，vdk.xml(763版本) 定位： &lt;com.tencent.widget.RecentDynamicAvatarView 加入代码： android:visibility=”gone” android:layout_width=”0dp” android:layout_height=”0dp”]]></content>
-      <categories>
-        <category>XML</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[聊天输入框加字]]></title>
-    <url>%2F2018%2F12%2F04%2F24%2F</url>
-    <content type="text"><![CDATA[打开R\o clc.xml 找到 com.tencent.widget.XEditTextEx 这一段 在下面加上 android:hint=”你要加的字” 以实际参考为准]]></content>
-      <categories>
-        <category>XML</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[去除气泡]]></title>
-    <url>%2F2018%2F12%2F04%2F22%2F</url>
-    <content type="text"><![CDATA[以Dex编辑器打开Dex4常量搜索 bubble_info打开 com/tencent/mobileqq/bubble/BubbleManager;继续常量搜索：bubble_info打开方法 a修改 第5行的 “bubble_info”为”imei”返回打开 另外一个类adcc 继续搜索 bubble_info 打开方法run 内容全删写上 return-void 去字体 以Dex编辑器打开Dex4常量搜索 font_info打开 com/etrump/mixlayout/FontManager;继续搜索 font_info打开 ⑥删除4-14行 去随机大小字体特效 以Dex编辑器打开Dex5 常量搜索 vip_font_id打开com/etrump/mixlayout/FontManager;继续常量搜索 vip_font_id打开方法 a保留第二行跟倒数第一行，其他删除 原作者@cc]]></content>
-      <categories>
-        <category>Dex4</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[去高能舞试]]></title>
-    <url>%2F2018%2F12%2F04%2F8%2F</url>
-    <content type="text"><![CDATA[以dex编辑器打开classes6.dex 点击右上角 搜索常量 RecentOptPopBar 搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry 进入方法列表 e 删除41 42行 保存]]></content>
-      <categories>
-        <category>Dex6</category>
-      </categories>
   </entry>
   <entry>
     <title><![CDATA[闪照无需长按查看教程]]></title>
@@ -950,11 +961,11 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[修复收藏底部黑色]]></title>
-    <url>%2F2018%2F12%2F04%2F6%2F</url>
-    <content type="text"><![CDATA[打开Arsc编辑器搜索 移动到分组 如下图. 然后长按复制ID返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770） 打开第六行后面改成#FFFFFFFF]]></content>
+    <title><![CDATA[关于闪照]]></title>
+    <url>%2F2018%2F12%2F04%2F18%2F</url>
+    <content type="text"><![CDATA[.防闪照消失，修改闪照时间，且可以截屏 //用dex编辑器打开classes2.dex //搜索常量”flashpichelper” //打开com/tencent/mobileqq/app/FlashPicHelper; //打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V //将第三行的const-string/jumbo v1 “true”中的true修改成false //回编译 //用dex编辑器打开classes4.dex //搜索常量”HotChatFlashPicActivity” //打开com/tencent/mobileqq/dating/HotChatFlashPicActivity; //继续搜索常量”doOnCreate” //打开(Landroid/os/Bundle;)Z //搜索”SDK_INT” //删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去) //继续搜索”1194”（这个1194为时间，我个人设置4500为15秒） //回编译，签名，安装 以上方法可能失效 可以用下面的 防止闪照消失可截屏 dex 搜索 flashpichelper2.打开 com/tencent/mobileqq/app/FalshPicHelper3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V将第三行的“true”→“false”4.保存，返回 dex4 搜索 HotChatFlashPicActivity6.方法列表找到 HotChatFlashPicActivity 打开方法doOnCreate（Landroid/os/Bundle）z7.搜索 “SDKINT”将“invocke-it………adag dilV”删除8.继续搜索 1194 将其改为 4500 [就是15s]9.保存，返回 修复失效问题打开 .dex4搜索HotChatFlashPicActivity打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity打开方法列表删除最下面 的 finish方法]]></content>
       <categories>
-        <category>Arsc</category>
+        <category>Dex2</category>
       </categories>
       <tags>
         <tag>教程</tag>
