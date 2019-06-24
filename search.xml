@@ -14,11 +14,34 @@
     </entry>
     
     <entry>
+      <title>去除聊天页面的底栏图标</title>
+      <link href="/2019/06/24/96/"/>
+      <url>/2019/06/24/96/</url>
+      
+        <content type="html"><![CDATA[<p>1.在R/k里面找到要去除的图标。复制如下图名称</p><p><img src="https://ae01.alicdn.com/kf/HTB1._dId.KF3KVjSZFEq6xExFXaQ.jpg" alt="图1"></p><blockquote><h1 id="本次就以去除红包作为例子"><a href="#本次就以去除红包作为例子" class="headerlink" title="(本次就以去除红包作为例子)"></a>(本次就以去除红包作为例子)</h1></blockquote><h1 id="2-首先复制一个底栏图标ID。"><a href="#2-首先复制一个底栏图标ID。" class="headerlink" title="2.首先复制一个底栏图标ID。"></a>2.首先复制一个底栏图标ID。</h1><h1 id="3-Dex-打开Class6，搜索图标ID，得到一个类"><a href="#3-Dex-打开Class6，搜索图标ID，得到一个类" class="headerlink" title="3.Dex++打开Class6，搜索图标ID，得到一个类"></a>3.Dex++打开Class6，搜索图标ID，得到一个类</h1><p><img src="https://ae01.alicdn.com/kf/HTB1tD8Id21H3KVjSZFBq6zSMXXau.jpg" alt="图2"></p><p>点击右上角 转为JAVA搜索ID定位一下。记住int[] 后面字母</p><p><img src="https://ae01.alicdn.com/kf/HTB1XdVJd4iH3KVjSZPfq6xBiVXaM.jpg" alt="图3"></p><h1 id="4-在类列表里面定位到com-tencent-mobileqq-activity-aio-panel"><a href="#4-在类列表里面定位到com-tencent-mobileqq-activity-aio-panel" class="headerlink" title="4.在类列表里面定位到com.tencent.mobileqq.activity.aio.panel"></a>4.在类列表里面定位到<code>com.tencent.mobileqq.activity.aio.panel</code></h1><h1 id="5-打开-PanellconLinearLayout-搜索代码"><a href="#5-打开-PanellconLinearLayout-搜索代码" class="headerlink" title="5.打开 PanellconLinearLayout 搜索代码"></a>5.打开 PanellconLinearLayout 搜索代码</h1><p><code>Ladhu;-&gt;q</code>加刚才的字母，定位到两个方法。</p><p><img src="https://ae01.alicdn.com/kf/HTB19s0Jd21H3KVjSZFBq6zSMXXaF.jpg" alt="图4"></p><p><img src="https://ae01.alicdn.com/kf/HTB1Y2NMd.uF3KVjSZK9q6zVtXXat.jpg" alt="图5"></p><h1 id="6-依次打开方法，继续搜索Ladhu-gt-q定位到每一句，删除其上下及定位句三条代码。删除所有定位到的句子退出"><a href="#6-依次打开方法，继续搜索Ladhu-gt-q定位到每一句，删除其上下及定位句三条代码。删除所有定位到的句子退出" class="headerlink" title="6.依次打开方法，继续搜索Ladhu;-&gt;q定位到每一句，删除其上下及定位句三条代码。删除所有定位到的句子退出"></a>6.依次打开方法，继续搜索Ladhu;-&gt;q定位到每一句，删除其上下及定位句三条代码。删除所有定位到的句子退出</h1><p>把第二个用同样的方法处理，保存，反编译class文件。</p><p><img src="https://ae01.alicdn.com/kf/HTB1vRRLd8OD3KVjSZFFq6An9pXab.jpg" alt="图6"></p><p><img src="https://ae01.alicdn.com/kf/HTB1xwNTdWSs3KVjSZPiq6AsiVXay.jpg" alt="图7"></p><p>原作者:<a href="https://www.coolapk.com/feed/12383047?shareKey=YmUzNjg5NTdkMTIxNWQxMDhlYTA~&amp;shareUid=733711&amp;shareFrom=com.coolapk.market_9.3-beta3" target="_blank" rel="noopener">酷安@陌路丶随缘</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex6 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>去除侧滑我的状态</title>
       <link href="/2019/06/22/95/"/>
       <url>/2019/06/22/95/</url>
       
-        <content type="html"><![CDATA[<p>搜索hwi，反编译</p><p>搜索incould，找到如图所示的位置</p><p><img src="https://ww2.sinaimg.cn/large/007dZnP6ly1g4a2jpvgxpj30u01hctmp.jpg" alt="图片"></p><p>改成0dp，如下图所示</p><p><img src="https://ww2.sinaimg.cn/large/007dZnP6ly1g4a2goa8rtj30u01hck52.jpg" alt="图片"></p>]]></content>
+        <content type="html"><![CDATA[<p>搜索hwi，反编译</p><p>搜索include，找到如图所示的位置</p><p><img src="https://ww2.sinaimg.cn/large/007dZnP6ly1g4a2jpvgxpj30u01hctmp.jpg" alt="图片"></p><p>改成0dp，如下图所示</p><p><img src="https://ww2.sinaimg.cn/large/007dZnP6ly1g4a2goa8rtj30u01hck52.jpg" alt="图片"></p>]]></content>
       
       
       <categories>
@@ -281,7 +304,7 @@
       <link href="/2019/03/17/27/"/>
       <url>/2019/03/17/27/</url>
       
-        <content type="html"><![CDATA[<p>打开Ro hwi.xml </p><h2 id="前提是已去除文字"><a href="#前提是已去除文字" class="headerlink" title="前提是已去除文字"></a><a href="HTTPS://likefrsuka.github.io/2018/12/30/59/">前提是已去除文字</a></h2><p>右上角查找 BounceScrollView 定位到</p><p>185行 （参考）</p><p>如下图将</p><p>194行后面的vertical改成</p><p>horizontal 即可</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgjKWF2wUo1LHjqAEwuAg4rBE.png" alt="图片"></p>]]></content>
+        <content type="html"><![CDATA[<p>打开Ro hwi.xml </p><h2 id="前提是已去除文字"><a href="#前提是已去除文字" class="headerlink" title="前提是已去除文字"></a><a href="HTTPS://likefrsuka.github.io/2018/12/30/59/" target="_blank" rel="noopener">前提是已去除文字</a></h2><p>右上角查找 BounceScrollView 定位到</p><p>185行 （参考）</p><p>如下图将</p><p>194行后面的vertical改成</p><p>horizontal 即可</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgjKWF2wUo1LHjqAEwuAg4rBE.png" alt="图片"></p>]]></content>
       
       
       <categories>
@@ -1881,16 +1904,33 @@
     </entry>
     
     <entry>
-      <title>修复收藏底部黑色</title>
-      <link href="/2018/12/04/6/"/>
-      <url>/2018/12/04/6/</url>
+      <title>去高能舞试</title>
+      <link href="/2018/12/04/8/"/>
+      <url>/2018/12/04/8/</url>
       
-        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
+        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
       
       
       <categories>
           
-          <category> Arsc </category>
+          <category> Dex6 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>去除气泡</title>
+      <link href="/2018/12/04/22/"/>
+      <url>/2018/12/04/22/</url>
+      
+        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> Dex4 </category>
           
       </categories>
       
@@ -1950,29 +1990,6 @@
     </entry>
     
     <entry>
-      <title>修改非Svip也可以贴收藏表情</title>
-      <link href="/2018/12/04/17/"/>
-      <url>/2018/12/04/17/</url>
-      
-        <content type="html"><![CDATA[<p>以Dex编辑器打开dex4</p><p>常量搜索 贴收藏表情</p><p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p><p>打开方法列表，最后一个 onTouchEvent</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p><p>找到1253行</p><p>修改 nez 为lez</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p><p>保存</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex4 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>闪照无需长按查看教程</title>
       <link href="/2018/12/04/7/"/>
       <url>/2018/12/04/7/</url>
@@ -1992,23 +2009,6 @@
             <tag> 教程 </tag>
             
         </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>去高能舞试</title>
-      <link href="/2018/12/04/8/"/>
-      <url>/2018/12/04/8/</url>
-      
-        <content type="html"><![CDATA[<p>以dex编辑器打开classes6.dex</p><p>点击右上角 搜索常量 RecentOptPopBar</p><p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p><p>进入方法列表 e</p><p>删除41 42行 保存</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Dex6 </category>
-          
-      </categories>
-      
       
     </entry>
     
@@ -2053,29 +2053,6 @@
     </entry>
     
     <entry>
-      <title>去消息界面头像</title>
-      <link href="/2018/12/04/25/"/>
-      <url>/2018/12/04/25/</url>
-      
-        <content type="html"><![CDATA[<p>1.去好友头像，vdk.xml(763版本)</p><p>定位：    &lt;com.tencent.widget.RecentDynamicAvatarView</p><p>加入代码：</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> XML </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>聊天输入框加字</title>
       <link href="/2018/12/04/24/"/>
       <url>/2018/12/04/24/</url>
@@ -2099,11 +2076,11 @@
     </entry>
     
     <entry>
-      <title>去除气泡</title>
-      <link href="/2018/12/04/22/"/>
-      <url>/2018/12/04/22/</url>
+      <title>修改非Svip也可以贴收藏表情</title>
+      <link href="/2018/12/04/17/"/>
+      <url>/2018/12/04/17/</url>
       
-        <content type="html"><![CDATA[<p>以Dex编辑器打开Dex4<br>常量搜索　bubble_info<br>打开 com/tencent/mobileqq/bubble/BubbleManager;<br>继续常量搜索：bubble_info<br>打开方法　a<br>修改 第5行的　“bubble_info”为”imei”<br>返回打开 另外一个类adcc</p><p>继续搜索 bubble_info</p><p>打开方法run</p><p>内容全删写上 return-void</p><p>去字体</p><p>以Dex编辑器打开Dex4<br>常量搜索　font_info<br>打开 com/etrump/mixlayout/FontManager;<br>继续搜索　font_info<br>打开 <clinit><br>⑥删除4-14行</clinit></p><p>去随机大小字体特效</p><p>以Dex编辑器打开Dex5</p><p>常量搜索　vip_font_id<br>打开com/etrump/mixlayout/FontManager;<br>继续常量搜索 vip_font_id<br>打开方法　a<br>保留第二行跟倒数第一行，其他删除</p><h3 id="原作者-cc"><a href="#原作者-cc" class="headerlink" title="原作者@cc"></a>原作者@cc</h3>]]></content>
+        <content type="html"><![CDATA[<p>以Dex编辑器打开dex4</p><p>常量搜索 贴收藏表情</p><p>打开Lcom/tencent/mobileqq/emoticonview/StickerGestureDetector</p><p>打开方法列表，最后一个 onTouchEvent</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg4YzR1gUoqqm3kgcwuAg4fw.jpg" alt="如图"></p><p>找到1253行</p><p>修改 nez 为lez</p><p><img src="https://16551543.s21i.faiusr.com/2/ABUIABACGAAg74zR1gUozcqPugYwuAg4gA8.jpg" alt="如图"></p><p>保存</p>]]></content>
       
       
       <categories>
@@ -2132,6 +2109,52 @@
       <categories>
           
           <category> Dex2 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>修复收藏底部黑色</title>
+      <link href="/2018/12/04/6/"/>
+      <url>/2018/12/04/6/</url>
+      
+        <content type="html"><![CDATA[<p>打开Arsc编辑器搜索　移动到分组 如下图.<br><a id="more"></a><br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAgpKXb2wUoqZKSyQQwpwg43As.png" alt="如图"></p><p>然后长按复制ID<br>返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770）<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg0abb2wUouOWJ_wYw3Qc41wk.png" alt="如图"></p><p>打开第六行后面改成#FFFFFFFF</p><p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg-qXb2wUotJXZFzCiCDjhBA.png" alt="如图"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Arsc </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>去消息界面头像</title>
+      <link href="/2018/12/04/25/"/>
+      <url>/2018/12/04/25/</url>
+      
+        <content type="html"><![CDATA[<p>1.去好友头像，vdk.xml(763版本)</p><p>定位：    &lt;com.tencent.widget.RecentDynamicAvatarView</p><p>加入代码：</p><p>android:visibility=”gone”</p><p>android:layout_width=”0dp”</p><p>android:layout_height=”0dp”</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> XML </category>
           
       </categories>
       
