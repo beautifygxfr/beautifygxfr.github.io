@@ -922,22 +922,11 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[去主页全民闯关]]></title>
-    <url>%2F2018%2F12%2F04%2F23%2F</url>
-    <content type="text"><![CDATA[dex2中搜索继续下拉进入全民闯关 打开类名 Lcom/tencent/mobilegg/now/enter/ConversationNowController 继续搜索下拉进入全民闯关 方法e里面内容全部删除 写上 然后重新搜索 showNowrefreshentrance 方法a里面内容删除写上 return-void 如下图 原作者@反派少年]]></content>
+    <title><![CDATA[关于闪照]]></title>
+    <url>%2F2018%2F12%2F04%2F18%2F</url>
+    <content type="text"><![CDATA[.防闪照消失，修改闪照时间，且可以截屏 //用dex编辑器打开classes2.dex //搜索常量”flashpichelper” //打开com/tencent/mobileqq/app/FlashPicHelper; //打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V //将第三行的const-string/jumbo v1 “true”中的true修改成false //回编译 //用dex编辑器打开classes4.dex //搜索常量”HotChatFlashPicActivity” //打开com/tencent/mobileqq/dating/HotChatFlashPicActivity; //继续搜索常量”doOnCreate” //打开(Landroid/os/Bundle;)Z //搜索”SDK_INT” //删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去) //继续搜索”1194”（这个1194为时间，我个人设置4500为15秒） //回编译，签名，安装 以上方法可能失效 可以用下面的 防止闪照消失可截屏 dex 搜索 flashpichelper2.打开 com/tencent/mobileqq/app/FalshPicHelper3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V将第三行的“true”→“false”4.保存，返回 dex4 搜索 HotChatFlashPicActivity6.方法列表找到 HotChatFlashPicActivity 打开方法doOnCreate（Landroid/os/Bundle）z7.搜索 “SDKINT”将“invocke-it………adag dilV”删除8.继续搜索 1194 将其改为 4500 [就是15s]9.保存，返回 修复失效问题打开 .dex4搜索HotChatFlashPicActivity打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity打开方法列表删除最下面 的 finish方法]]></content>
       <categories>
         <category>Dex2</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[聊天输入框加字]]></title>
-    <url>%2F2018%2F12%2F04%2F24%2F</url>
-    <content type="text"><![CDATA[打开R\o clc.xml 找到 com.tencent.widget.XEditTextEx 这一段 在下面加上 android:hint=”你要加的字” 以实际参考为准]]></content>
-      <categories>
-        <category>XML</category>
       </categories>
       <tags>
         <tag>教程</tag>
@@ -955,11 +944,11 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[修改左上角头像为设置按钮]]></title>
-    <url>%2F2018%2F12%2F04%2F19%2F</url>
-    <content type="text"><![CDATA[首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。 2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标) 3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为 123456789101112131415&lt;ImageViewandroid:layout_width=&quot;24dp&quot;android:layout_height=&quot;24dp&quot;android:layout_marginLeft=&quot;12dp&quot;android:src=&quot;@7F02123A&quot;(这个id后面要改)android:scaleType=&quot;fitXY&quot;android:layout_alignParentLeft=&quot;true&quot;android:layout_centerVertical=&quot;true&quot; /&gt; 然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。 4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。]]></content>
+    <title><![CDATA[去主页全民闯关]]></title>
+    <url>%2F2018%2F12%2F04%2F23%2F</url>
+    <content type="text"><![CDATA[dex2中搜索继续下拉进入全民闯关 打开类名 Lcom/tencent/mobilegg/now/enter/ConversationNowController 继续搜索下拉进入全民闯关 方法e里面内容全部删除 写上 然后重新搜索 showNowrefreshentrance 方法a里面内容删除写上 return-void 如下图 原作者@反派少年]]></content>
       <categories>
-        <category>XML</category>
+        <category>Dex2</category>
       </categories>
       <tags>
         <tag>教程</tag>
@@ -977,9 +966,31 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[闪照无需长按查看教程]]></title>
-    <url>%2F2018%2F12%2F04%2F7%2F</url>
-    <content type="text"><![CDATA[以Dex编辑器打开Dex4 搜索Flash 得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity， 打开方法 找到onTouch 修改方法如下图]]></content>
+    <title><![CDATA[修改左上角头像为设置按钮]]></title>
+    <url>%2F2018%2F12%2F04%2F19%2F</url>
+    <content type="text"><![CDATA[首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。 2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标) 3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为 123456789101112131415&lt;ImageViewandroid:layout_width=&quot;24dp&quot;android:layout_height=&quot;24dp&quot;android:layout_marginLeft=&quot;12dp&quot;android:src=&quot;@7F02123A&quot;(这个id后面要改)android:scaleType=&quot;fitXY&quot;android:layout_alignParentLeft=&quot;true&quot;android:layout_centerVertical=&quot;true&quot; /&gt; 然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。 4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。]]></content>
+      <categories>
+        <category>XML</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[聊天输入框加字]]></title>
+    <url>%2F2018%2F12%2F04%2F24%2F</url>
+    <content type="text"><![CDATA[打开R\o clc.xml 找到 com.tencent.widget.XEditTextEx 这一段 在下面加上 android:hint=”你要加的字” 以实际参考为准]]></content>
+      <categories>
+        <category>XML</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[去除气泡]]></title>
+    <url>%2F2018%2F12%2F04%2F22%2F</url>
+    <content type="text"><![CDATA[以Dex编辑器打开Dex4常量搜索 bubble_info打开 com/tencent/mobileqq/bubble/BubbleManager;继续常量搜索：bubble_info打开方法 a修改 第5行的 “bubble_info”为”imei”返回打开 另外一个类adcc 继续搜索 bubble_info 打开方法run 内容全删写上 return-void 去字体 以Dex编辑器打开Dex4常量搜索 font_info打开 com/etrump/mixlayout/FontManager;继续搜索 font_info打开 ⑥删除4-14行 去随机大小字体特效 以Dex编辑器打开Dex5 常量搜索 vip_font_id打开com/etrump/mixlayout/FontManager;继续常量搜索 vip_font_id打开方法 a保留第二行跟倒数第一行，其他删除 原作者@cc]]></content>
       <categories>
         <category>Dex4</category>
       </categories>
@@ -988,11 +999,30 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[关于闪照]]></title>
-    <url>%2F2018%2F12%2F04%2F18%2F</url>
-    <content type="text"><![CDATA[.防闪照消失，修改闪照时间，且可以截屏 //用dex编辑器打开classes2.dex //搜索常量”flashpichelper” //打开com/tencent/mobileqq/app/FlashPicHelper; //打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V //将第三行的const-string/jumbo v1 “true”中的true修改成false //回编译 //用dex编辑器打开classes4.dex //搜索常量”HotChatFlashPicActivity” //打开com/tencent/mobileqq/dating/HotChatFlashPicActivity; //继续搜索常量”doOnCreate” //打开(Landroid/os/Bundle;)Z //搜索”SDK_INT” //删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去) //继续搜索”1194”（这个1194为时间，我个人设置4500为15秒） //回编译，签名，安装 以上方法可能失效 可以用下面的 防止闪照消失可截屏 dex 搜索 flashpichelper2.打开 com/tencent/mobileqq/app/FalshPicHelper3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V将第三行的“true”→“false”4.保存，返回 dex4 搜索 HotChatFlashPicActivity6.方法列表找到 HotChatFlashPicActivity 打开方法doOnCreate（Landroid/os/Bundle）z7.搜索 “SDKINT”将“invocke-it………adag dilV”删除8.继续搜索 1194 将其改为 4500 [就是15s]9.保存，返回 修复失效问题打开 .dex4搜索HotChatFlashPicActivity打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity打开方法列表删除最下面 的 finish方法]]></content>
+    <title><![CDATA[精简双击聊天气泡后界面]]></title>
+    <url>%2F2018%2F12%2F04%2F3%2F</url>
+    <content type="text"><![CDATA[反编译打开 cod.xml 将46行后面改成0dp 保存 效果图 原创教程@Delete小海]]></content>
       <categories>
-        <category>Dex2</category>
+        <category>XML</category>
+      </categories>
+  </entry>
+  <entry>
+    <title><![CDATA[去消息界面头像]]></title>
+    <url>%2F2018%2F12%2F04%2F25%2F</url>
+    <content type="text"><![CDATA[1.去好友头像，vdk.xml(763版本) 定位： &lt;com.tencent.widget.RecentDynamicAvatarView 加入代码： android:visibility=”gone” android:layout_width=”0dp” android:layout_height=”0dp”]]></content>
+      <categories>
+        <category>XML</category>
+      </categories>
+      <tags>
+        <tag>教程</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[闪照无需长按查看教程]]></title>
+    <url>%2F2018%2F12%2F04%2F7%2F</url>
+    <content type="text"><![CDATA[以Dex编辑器打开Dex4 搜索Flash 得到Lcom/tencent/mobileqq/dating/HotChatFlashPicActivity， 打开方法 找到onTouch 修改方法如下图]]></content>
+      <categories>
+        <category>Dex4</category>
       </categories>
       <tags>
         <tag>教程</tag>
@@ -1007,41 +1037,11 @@
       </categories>
   </entry>
   <entry>
-    <title><![CDATA[精简双击聊天气泡后界面]]></title>
-    <url>%2F2018%2F12%2F04%2F3%2F</url>
-    <content type="text"><![CDATA[反编译打开 cod.xml 将46行后面改成0dp 保存 效果图 原创教程@Delete小海]]></content>
-      <categories>
-        <category>XML</category>
-      </categories>
-  </entry>
-  <entry>
     <title><![CDATA[修复收藏底部黑色]]></title>
     <url>%2F2018%2F12%2F04%2F6%2F</url>
     <content type="text"><![CDATA[打开Arsc编辑器搜索 移动到分组 如下图. 然后长按复制ID返回xml 十六进制搜索刚才的ID 得到mjx.xml（版本为770） 打开第六行后面改成#FFFFFFFF]]></content>
       <categories>
         <category>Arsc</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[去消息界面头像]]></title>
-    <url>%2F2018%2F12%2F04%2F25%2F</url>
-    <content type="text"><![CDATA[1.去好友头像，vdk.xml(763版本) 定位： &lt;com.tencent.widget.RecentDynamicAvatarView 加入代码： android:visibility=”gone” android:layout_width=”0dp” android:layout_height=”0dp”]]></content>
-      <categories>
-        <category>XML</category>
-      </categories>
-      <tags>
-        <tag>教程</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[去除气泡]]></title>
-    <url>%2F2018%2F12%2F04%2F22%2F</url>
-    <content type="text"><![CDATA[以Dex编辑器打开Dex4常量搜索 bubble_info打开 com/tencent/mobileqq/bubble/BubbleManager;继续常量搜索：bubble_info打开方法 a修改 第5行的 “bubble_info”为”imei”返回打开 另外一个类adcc 继续搜索 bubble_info 打开方法run 内容全删写上 return-void 去字体 以Dex编辑器打开Dex4常量搜索 font_info打开 com/etrump/mixlayout/FontManager;继续搜索 font_info打开 ⑥删除4-14行 去随机大小字体特效 以Dex编辑器打开Dex5 常量搜索 vip_font_id打开com/etrump/mixlayout/FontManager;继续常量搜索 vip_font_id打开方法 a保留第二行跟倒数第一行，其他删除 原作者@cc]]></content>
-      <categories>
-        <category>Dex4</category>
       </categories>
       <tags>
         <tag>教程</tag>
