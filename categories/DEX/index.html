@@ -108,7 +108,7 @@
 <meta name="description" content="翻新:酷安@幻夜龙">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Beautify">
-<meta property="og:url" content="https://beautifysukaf.github.io/categories/dex/index.html">
+<meta property="og:url" content="https://beautifysukaf.github.io/categories/Dex/index.html">
 <meta property="og:site_name" content="Beautify">
 <meta property="og:description" content="翻新:酷安@幻夜龙">
 <meta property="og:locale" content="zh-CN">
@@ -144,13 +144,13 @@
 
 
 
-  <link rel="canonical" href="https://beautifysukaf.github.io/categories/dex/">
+  <link rel="canonical" href="https://beautifysukaf.github.io/categories/Dex/">
 
 
 
 
 
-  <title>分类: dex | Beautify</title>
+  <title>分类: Dex | Beautify</title>
   
 
 
@@ -284,7 +284,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>dex<small>分类</small>
+        <h1>Dex<small>分类</small>
         </h1>
       </div>
 
@@ -296,43 +296,17 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/2019/05/26/92/" itemprop="url">
+            <a class="post-title-link" href="/2019/07/24/98/" itemprop="url">
               
-                <span itemprop="name">修复7.7.5群助手滑动断触</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-26T22:45:37+08:00" content="2019-05-26">
-          05-26
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/05/26/91/" itemprop="url">
-              
-                <span itemprop="name">去除聊天界面关键词引发的表情掉落/</span>
+                <span itemprop="name">状态栏反色</span>
               
             </a>
         
       </h2>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-05-26T22:35:41+08:00" content="2019-05-26">
-          05-26
+        <time class="post-time" itemprop="dateCreated" datetime="2019-07-24T17:31:44+08:00" content="2019-07-24">
+          07-24
         </time>
       </div>
 
@@ -916,6 +890,50 @@
     }
 
     // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
+gger popup window;
     $('.popup-trigger').click(function(e) {
       e.stopPropagation();
       if (isfetched === false) {
