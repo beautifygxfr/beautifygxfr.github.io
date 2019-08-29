@@ -105,16 +105,16 @@
 
 
 
-<meta name="description" content="翻新:酷安@幻夜龙">
+<meta name="description" content="酷安@Likefr">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Beautify">
 <meta property="og:url" content="https://beautifysukaf.github.io/page/7/index.html">
 <meta property="og:site_name" content="Beautify">
-<meta property="og:description" content="翻新:酷安@幻夜龙">
+<meta property="og:description" content="酷安@Likefr">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Beautify">
-<meta name="twitter:description" content="翻新:酷安@幻夜龙">
+<meta name="twitter:description" content="酷安@Likefr">
 
 
 
@@ -278,6 +278,156 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/30/59/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Likefr">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beautify">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/30/59/" itemprop="url">侧滑去除图标 和去除文字</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-30T15:43:42+08:00">
+                2018-12-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/XML/" itemprop="url" rel="index">
+                    <span itemprop="name">XML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>首先打开R/o/hwi 并找到以下布局 如下图<br><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAgoem81gUoxtL--AYwlQU4pwo.png" alt=""></p>
+<h2 id="第一个-了解会员"><a href="#第一个-了解会员" class="headerlink" title="第一个　了解会员"></a>第一个　了解会员</h2><h2 id="第二个-钱包"><a href="#第二个-钱包" class="headerlink" title="第二个　　钱包"></a>第二个　　钱包</h2><h2 id="第三个-未知"><a href="#第三个-未知" class="headerlink" title="第三个　　未知"></a>第三个　　未知</h2><h2 id="第四个-个性装扮"><a href="#第四个-个性装扮" class="headerlink" title="第四个　个性装扮"></a>第四个　个性装扮</h2><h2 id="第五个-我的收藏"><a href="#第五个-我的收藏" class="headerlink" title="第五个　我的收藏"></a>第五个　我的收藏</h2><h2 id="第六个-我的相册"><a href="#第六个-我的相册" class="headerlink" title="第六个　我的相册"></a>第六个　我的相册</h2><h2 id="第七个-我的文件"><a href="#第七个-我的文件" class="headerlink" title="第七个　我的文件"></a>第七个　我的文件</h2><h2 id="第八个-未知"><a href="#第八个-未知" class="headerlink" title="第八个　　未知"></a>第八个　　未知</h2><h2 id="第九个-我的名片夹"><a href="#第九个-我的名片夹" class="headerlink" title="第九个　我的名片夹"></a>第九个　我的名片夹</h2><h2 id="第十个-未知"><a href="#第十个-未知" class="headerlink" title="第十个　　未知"></a>第十个　　未知</h2><h2 id="第十一个-免流量特权"><a href="#第十一个-免流量特权" class="headerlink" title="第十一个　免流量特权"></a>第十一个　免流量特权</h2><p>去除图标：<br>准备的代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">android:layout_width=&quot;0dp&quot;</span><br><span class="line">android:layout_height=&quot;0dp&quot;</span><br></pre></td></tr></table></figure>
+<p>将这两行代码加入到每一个控件的下面如图1也就是红色的框框都加入了这两行代码　这就去除了图标<br>不去除图标之去除文字　也就是蓝色的框框</p>
+<p>你会发现代码是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">android:layout_width=&quot;64dp&quot;</span><br><span class="line">android:layout_height=&quot;64dp&quot;</span><br></pre></td></tr></table></figure>
+<p>也就是说去除图标和文字就是:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">android:layout_width=&quot;0dp&quot;</span><br><span class="line">android:layout_height=&quot;0dp&quot;</span><br></pre></td></tr></table></figure>
+<p>保留图标去除文字就是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">android:layout_width=&quot;64dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;64dp&quot;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -1640,156 +1790,6 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/29/47/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Likefr">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Beautify">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/29/47/" itemprop="url">去非好友聊天顶栏的那条竖线</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-29T18:35:25+08:00">
-                2018-12-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Dex6/" itemprop="url" rel="index">
-                    <span itemprop="name">Dex6</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>去除如下图</p>
-<p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg4pvE1wUo2Nyj1QUwuAg4rBE.png" alt=""></p>
-<p>以Dex编辑器打开Dex6</p>
-<p>右上角搜索代码  #d3d5dc  （注意是搜索代码）</p>
-<p>进入Lcom/tencent/mobileqq/activity/BaseChatPie;</p>
-<p>继续搜索代码 #d3d5dc</p>
-<p>得到方法名i<br>打开搜索到这个颜色</p>
-<p>改成#00000000<br><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg4pvE1wUo2Nyj1QUwuAg4rBE.png" alt=""></p>
-<p>227行就是背景啦~</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
   </section>
 
   
@@ -1830,7 +1830,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Likefr</p>
-              <p class="site-description motion-element" itemprop="description">翻新:酷安@幻夜龙</p>
+              <p class="site-description motion-element" itemprop="description">酷安@Likefr</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -1840,7 +1840,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">107</span>
+                  <span class="site-state-item-count">108</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
