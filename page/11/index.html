@@ -292,169 +292,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/04/18/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Likefr">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Beautify">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/04/18/" itemprop="url">关于闪照</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-04T23:21:17+08:00">
-                2018-12-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Dex2/" itemprop="url" rel="index">
-                    <span itemprop="name">Dex2</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>.防闪照消失，修改闪照时间，且可以截屏</p>
-<p>//用dex编辑器打开classes2.dex</p>
-<p>//搜索常量”flashpichelper”</p>
-<p>//打开com/tencent/mobileqq/app/FlashPicHelper;</p>
-<p>//打开方法列表:a方法(Lcom/tencent/mobileqq/data/MessageRecord;)V</p>
-<p>//将第三行的const-string/jumbo v1 “true”中的true修改成false</p>
-<p>//回编译</p>
-<p>//用dex编辑器打开classes4.dex</p>
-<p>//搜索常量”HotChatFlashPicActivity”</p>
-<p>//打开com/tencent/mobileqq/dating/HotChatFlashPicActivity;</p>
-<p>//继续搜索常量”doOnCreate”</p>
-<p>//打开(Landroid/os/Bundle;)Z</p>
-<p>//搜索”SDK_INT”</p>
-<p>//删除下面的invoke-virtual…………addFlags(I)V(也就是往下数第三四五六行删去)</p>
-<p>//继续搜索”1194”（这个1194为时间，我个人设置4500为15秒）</p>
-<p>//回编译，签名，安装</p>
-<h3 id="以上方法可能失效-可以用下面的"><a href="#以上方法可能失效-可以用下面的" class="headerlink" title="以上方法可能失效  可以用下面的"></a>以上方法可能失效  可以用下面的</h3><p> 防止闪照消失可截屏</p>
-<ol>
-<li>dex  搜索  flashpichelper<br>2.打开  com/tencent/mobileqq/app/FalshPicHelper<br>3.打开方法a（Lcom/tencent/mobileqq/data/MessageRecord）V<br>将第三行的“true”→“false”<br>4.保存，返回</li>
-<li>dex4  搜索  HotChatFlashPicActivity<br>6.方法列表找到 HotChatFlashPicActivity  打开方法doOnCreate（Landroid/os/Bundle）z<br>7.搜索  “SDKINT”<br>将“invocke-it………adag  dilV”删除<br>8.继续搜索   1194   将其改为  4500   [就是15s]<br>9.保存，返回</li>
-</ol>
-<p>修复失效问题<br>打开 .dex4<br>搜索HotChatFlashPicActivity<br>打开类com/tencent/mobileqq/dating/HotChatFlashPicActivity<br>打开方法列表<br>删除最下面  的  finish方法</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/04/6/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
@@ -558,153 +395,6 @@
         
       
     </p></div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/04/8/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Likefr">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Beautify">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/04/8/" itemprop="url">去高能舞试</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-04T23:21:17+08:00">
-                2018-12-04
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/Dex6/" itemprop="url" rel="index">
-                    <span itemprop="name">Dex6</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>以dex编辑器打开classes6.dex</p>
-<p>点击右上角 搜索常量 RecentOptPopBar</p>
-<p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p>
-<p>进入方法列表 e</p>
-<p>删除41 42行 保存</p>
-<p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>
-
-          
-        
-      
-    </div>
     
     
     
@@ -1342,7 +1032,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/04/3/">
+    <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/04/20/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Likefr">
@@ -1361,7 +1051,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/12/04/3/" itemprop="url">精简双击聊天气泡后界面</a></h1>
+                <a class="post-title-link" href="/2018/12/04/20/" itemprop="url">去除闪照倒计时</a></h1>
         
 
         <div class="post-meta">
@@ -1434,18 +1124,314 @@
 
       
         
-          <p>反编译打开　cod.xml</p>
-<p>将46行后面改成0dp<br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2018/12/04/3/#post.more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+          
+            <p>打开mwj.xml</p>
+<p>搜索CountDownProgressBar</p>
+<p>保留ID其他内容直接删掉，写如下代码进去即可</p>
+<p>android:visibility=”gone”</p>
+<p>android:layout_width=”0dp”</p>
+<p>android:layout_height=”0dp”</p>
+<p><img src="https://16551543.s21i.faiusr.com/4/ABUIABAEGAAg9s7Q1gUo_M6fgAQwuAg4gA8.png" alt="图片"></p>
+<p>原作者@绅士寻欢</p>
+
+          
         
       
-    </p></div>
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/04/19/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Likefr">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beautify">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/04/19/" itemprop="url">修改左上角头像为设置按钮</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-04T23:21:17+08:00">
+                2018-12-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/XML/" itemprop="url" rel="index">
+                    <span itemprop="name">XML</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>首先用mt搜索xml，qq_conversation_frame_head，这个是头像的。一般只会找到一个xml，然后反编译打开，找到带有qq_conversation_frame_head的代码，然后复制$后面的16进制数，用mt直接点击resources.arsc，也就是搜索资源，选择搜索id，粘贴杠杠的16进制代码 ，然后搜索，会找到一个xml文件，去相应路径打开xml文件。</p>
+<p>2，这个就是控制头像的xml，第一个imageview就是头像代码，把width，height数值设为0sp，dp也行，不建议用px，这样左上角的头像就会隐藏了。(如果只想调整大小也可以调整大小什么的，不想换设置图标)</p>
+<p>3，接下来就是去弄个设置的图片放在那个位置，在头像代码下边新建一行代码(imageview)代码为</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;ImageView</span><br><span class="line"></span><br><span class="line">android:layout_width=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_height=&quot;24dp&quot;</span><br><span class="line"></span><br><span class="line">android:layout_marginLeft=&quot;12dp&quot;</span><br><span class="line"></span><br><span class="line">android:src=&quot;@7F02123A&quot;(这个id后面要改)</span><br><span class="line"></span><br><span class="line">android:scaleType=&quot;fitXY&quot;</span><br><span class="line"></span><br><span class="line">android:layout_alignParentLeft=&quot;true&quot;</span><br><span class="line"></span><br><span class="line">android:layout_centerVertical=&quot;true&quot; /&gt;</span><br></pre></td></tr></table></figure>
+<p>然后去r/k或者r/m，里找一张QQ里没用到的图片，不要找点九结尾的，推荐一个skin_tab_icon_now_normal.png(在r/m里的日迹图标)，然后复制名字，去搜索资源(同上)然后选择搜索字符串，把图片名字粘贴(记得带上后缀)搜索，长按复制id。</p>
+<p>4，然后去之前搜索到头像代码的xml里，去把我上面备注要改的id换为刚刚复制的id，最后就是去把那张图片换为设置样式的(名字不能改，是替换)，联系大小95x95。然后就签名QQ包，安装，结束。。。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://beautifysukaf.github.io/2018/12/04/8/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Likefr">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Beautify">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/12/04/8/" itemprop="url">去高能舞试</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-04T23:21:17+08:00">
+                2018-12-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/Dex6/" itemprop="url" rel="index">
+                    <span itemprop="name">Dex6</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>以dex编辑器打开classes6.dex</p>
+<p>点击右上角 搜索常量 RecentOptPopBar</p>
+<p>搜索出来的结果 如图3 点开之后在搜索 F2FRedpackEntry</p>
+<p>进入方法列表 e</p>
+<p>删除41 42行 保存</p>
+<p><img src="https://16361087.s21i.faiusr.com/4/ABUIABAEGAAg7PW72gUolJPXrwUwuAg4rBE.png" alt="如图"></p>
+
+          
+        
+      
+    </div>
     
     
     
